@@ -70,6 +70,7 @@ struct GearCatalogScreen: View {
 			}
 		}
 		.sensoryFeedback(.success, trigger: hapticSaved)
+		.presentationDetents([.large])
 		.interactiveDismissDisabled()
 	}
 }

@@ -129,6 +129,7 @@ struct GearCatalogAddAccessoryView: View {
 				MyGearAccessoryTypeInfoView(dismiss: $isShowingAccessoriesTypeInfo)
 			}
 			.sensoryFeedback(.success, trigger: hapticSaved)
+			.presentationDetents([.large])
 			.interactiveDismissDisabled()
 		}
 	}

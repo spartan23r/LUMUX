@@ -145,6 +145,7 @@ struct GearCatalogAddFilterView: View {
 				}
 			}
 			.sensoryFeedback(.success, trigger: hapticSaved)
+			.presentationDetents([.large])
 			.interactiveDismissDisabled()
 		}
 	}

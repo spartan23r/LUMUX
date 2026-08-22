@@ -182,6 +182,10 @@ private extension MyGearScreen {
 								Label("Cameras", systemImage: "camera")
 								
 								if !cameraSortExpanded {
+								Spacer()
+								}
+								
+								if !cameraSortExpanded {
 									Text(sortedCameras.count, format: .number)
 										.foregroundStyle(.secondary)
 								}
@@ -202,6 +206,7 @@ private extension MyGearScreen {
 							} label: {
 								Image(systemName: "arrow.up.arrow.down")
 							}
+							.transition(.asymmetric(insertion: .push(from: .trailing), removal: .push(from: .leading)))
 						}
 						
 					}
@@ -235,6 +240,10 @@ private extension MyGearScreen {
 								Label("Lenses", image: "camera.aperture.circle")
 								
 								if !lensSortExpanded {
+								Spacer()
+								}
+								
+								if !lensSortExpanded {
 									Text(sortedLenses.count, format: .number)
 										.foregroundStyle(.secondary)
 								}
@@ -255,6 +264,7 @@ private extension MyGearScreen {
 							} label: {
 								Image(systemName: "arrow.up.arrow.down")
 							}
+							.transition(.asymmetric(insertion: .push(from: .trailing), removal: .push(from: .leading)))
 						}
 						
 					}
@@ -288,6 +298,10 @@ private extension MyGearScreen {
 								Label("Filters", systemImage: "camera.filters")
 								
 								if !filterSortExpanded {
+								Spacer()
+								}
+								
+								if !filterSortExpanded {
 									Text(sortedFilters.count, format: .number)
 										.foregroundStyle(.secondary)
 								}
@@ -308,6 +322,7 @@ private extension MyGearScreen {
 							} label: {
 								Image(systemName: "arrow.up.arrow.down")
 							}
+							.transition(.asymmetric(insertion: .push(from: .trailing), removal: .push(from: .leading)))
 						}
 						
 					}
@@ -341,6 +356,10 @@ private extension MyGearScreen {
 								Label("Accessories", systemImage: "wrench.adjustable")
 								
 								if !accessorySortExpanded {
+								Spacer()
+								}
+								
+								if !accessorySortExpanded {
 									Text(sortedAccessories.count, format: .number)
 										.foregroundStyle(.secondary)
 								}
@@ -361,6 +380,7 @@ private extension MyGearScreen {
 							} label: {
 								Image(systemName: "arrow.up.arrow.down")
 							}
+							.transition(.asymmetric(insertion: .push(from: .trailing), removal: .push(from: .leading)))
 						}
 						
 					}
@@ -1001,4 +1021,5 @@ extension MyGearScreen {
 	MyGearScreen()
 		.modelContainer(for: OwnedGearItem.self, inMemory: true)
 		.environment(GearCatalog())
+		.environment(SettingsStore())
 }
