@@ -71,7 +71,7 @@ struct QuickReferenceScreen: View {
 			placement: .navigationBarDrawer(
 				displayMode: .automatic
 			),
-			prompt: "Search quick reference"
+			prompt: "Search topics"
 		)
 		.overlay {
 			if

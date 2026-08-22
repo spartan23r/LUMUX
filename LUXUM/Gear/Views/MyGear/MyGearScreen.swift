@@ -25,12 +25,19 @@ struct MyGearScreen: View {
 	@State private var isShowingAddAccessory = false
 	@State private var searchText = ""
 
+	@AppStorage("myGear.cameraSortExpanded") private var cameraSortExpanded = true
 	@AppStorage("myGear.cameraSortOption") private var cameraSortRawValue = CameraSortOption.dateAdded.rawValue
 	@AppStorage("myGear.cameraSortAscending") private var cameraSortAscending = false
+	
+	@AppStorage("myGear.lensSortExpanded") private var lensSortExpanded = true
 	@AppStorage("myGear.lensSortOption") private var lensSortRawValue = LensSortOption.dateAdded.rawValue
 	@AppStorage("myGear.lensSortAscending") private var lensSortAscending = false
+	
+	@AppStorage("myGear.filterSortExpanded") private var filterSortExpanded = true
 	@AppStorage("myGear.filterSortOption") private var filterSortRawValue = FilterSortOption.dateAdded.rawValue
 	@AppStorage("myGear.filterSortAscending") private var filterSortAscending = false
+	
+	@AppStorage("myGear.accessorySortExpanded") private var accessorySortExpanded = true
 	@AppStorage("myGear.accessorySortOption") private var accessorySortRawValue = AccessorySortOption.dateAdded.rawValue
 	@AppStorage("myGear.accessorySortAscending") private var accessorySortAscending = false
 	
@@ -151,114 +158,219 @@ private extension MyGearScreen {
 			
 			if !filteredCameras.isEmpty {
 				Section {
-					ForEach(sortedCameras) { ownedItem in
-						cameraRow(for: ownedItem)
-							.swipeActions(edge: .trailing, allowsFullSwipe: false) {
-								Button(role: .destructive) {
-									modelContext.delete(ownedItem)
-									settingsStore.triggerHaptic(&hapticSaved)
-								} label: {
-									Label("Delete", systemImage: "trash")
+					if cameraSortExpanded {
+						ForEach(sortedCameras) { ownedItem in
+							cameraRow(for: ownedItem)
+								.swipeActions(edge: .trailing, allowsFullSwipe: false) {
+									Button(role: .destructive) {
+										modelContext.delete(ownedItem)
+										settingsStore.triggerHaptic(&hapticSaved)
+									} label: {
+										Label("Delete", systemImage: "trash")
+									}
 								}
-							}
+						}
 					}
 				} header: {
 					HStack {
-						Label("Cameras", systemImage: "camera")
-						Text(sortedCameras.count, format: .number)
-						Spacer()
-						Menu {
-							cameraSortMenu
+						
+						Button {
+							cameraSortExpanded.toggle()
 						} label: {
-							Image(systemName: "arrow.up.arrow.down")
+							HStack {
+								
+								Label("Cameras", systemImage: "camera")
+								
+								if !cameraSortExpanded {
+									Text(sortedCameras.count, format: .number)
+										.foregroundStyle(.secondary)
+								}
+								
+								Image(systemName: "chevron.right")
+									.foregroundStyle(.accent)
+									.rotationEffect(.degrees(cameraSortExpanded ? 90 : 0))
+								
+							}
 						}
+						.buttonStyle(.plain)
+						
+						if cameraSortExpanded {
+							Spacer()
+							
+							Menu {
+								cameraSortMenu
+							} label: {
+								Image(systemName: "arrow.up.arrow.down")
+							}
+						}
+						
 					}
+					.frame(maxWidth: .infinity, alignment: .leading)
 				}
 			}
 			
 			if !filteredLenses.isEmpty {
 				Section {
-					ForEach(sortedLenses) { ownedItem in
-						lensRow(for: ownedItem)
-							.swipeActions(edge: .trailing, allowsFullSwipe: false) {
-								Button(role: .destructive) {
-									modelContext.delete(ownedItem)
-									settingsStore.triggerHaptic(&hapticSaved)
-								} label: {
-									Label("Delete", systemImage: "trash")
+					if lensSortExpanded {
+						ForEach(sortedLenses) { ownedItem in
+							lensRow(for: ownedItem)
+								.swipeActions(edge: .trailing, allowsFullSwipe: false) {
+									Button(role: .destructive) {
+										modelContext.delete(ownedItem)
+										settingsStore.triggerHaptic(&hapticSaved)
+									} label: {
+										Label("Delete", systemImage: "trash")
+									}
 								}
-							}
+						}
 					}
 				} header: {
 					HStack {
-						Label("Lenses", image: "camera.aperture.circle")
-						Text(sortedLenses.count, format: .number)
-						Spacer()
-						Menu {
-							lensSortMenu
+						
+						Button {
+							lensSortExpanded.toggle()
 						} label: {
-							Image(systemName: "arrow.up.arrow.down")
+							HStack {
+								
+								Label("Lenses", image: "camera.aperture.circle")
+								
+								if !lensSortExpanded {
+									Text(sortedLenses.count, format: .number)
+										.foregroundStyle(.secondary)
+								}
+								
+								Image(systemName: "chevron.right")
+									.foregroundStyle(.accent)
+									.rotationEffect(.degrees(lensSortExpanded ? 90 : 0))
+								
+							}
 						}
+						.buttonStyle(.plain)
+						
+						if lensSortExpanded {
+							Spacer()
+							
+							Menu {
+								lensSortMenu
+							} label: {
+								Image(systemName: "arrow.up.arrow.down")
+							}
+						}
+						
 					}
+					.frame(maxWidth: .infinity, alignment: .leading)
 				}
 			}
 			
 			if !filteredFilters.isEmpty {
 				Section {
-					ForEach(sortedFilters) { ownedItem in
-						filterRow(for: ownedItem)
-							.swipeActions(edge: .trailing, allowsFullSwipe: false) {
-								Button(role: .destructive) {
-									modelContext.delete(ownedItem)
-									settingsStore.triggerHaptic(&hapticSaved)
-								} label: {
-									Label("Delete", systemImage: "trash")
+					if filterSortExpanded {
+						ForEach(sortedFilters) { ownedItem in
+							filterRow(for: ownedItem)
+								.swipeActions(edge: .trailing, allowsFullSwipe: false) {
+									Button(role: .destructive) {
+										modelContext.delete(ownedItem)
+										settingsStore.triggerHaptic(&hapticSaved)
+									} label: {
+										Label("Delete", systemImage: "trash")
+									}
 								}
-							}
+						}
 					}
 				} header: {
 					HStack {
-						Label("Filters", systemImage: "camera.filters")
-						Text(sortedFilters.count, format: .number)
-						Spacer()
-						Menu {
-							filterSortMenu
+						
+						Button {
+							filterSortExpanded.toggle()
 						} label: {
-							Image(systemName: "arrow.up.arrow.down")
+							HStack {
+								
+								Label("Filters", systemImage: "camera.filters")
+								
+								if !filterSortExpanded {
+									Text(sortedFilters.count, format: .number)
+										.foregroundStyle(.secondary)
+								}
+								
+								Image(systemName: "chevron.right")
+									.foregroundStyle(.accent)
+									.rotationEffect(.degrees(filterSortExpanded ? 90 : 0))
+								
+							}
 						}
+						.buttonStyle(.plain)
+						
+						if filterSortExpanded {
+							Spacer()
+							
+							Menu {
+								filterSortMenu
+							} label: {
+								Image(systemName: "arrow.up.arrow.down")
+							}
+						}
+						
 					}
+					.frame(maxWidth: .infinity, alignment: .leading)
 				}
 			}
 			
 			if !filteredAccessories.isEmpty {
 				Section {
-					ForEach(sortedAccessories) { ownedItem in
-						accessoryRow(for: ownedItem)
-							.swipeActions(edge: .trailing, allowsFullSwipe: false) {
-								Button(role: .destructive) {
-									modelContext.delete(ownedItem)
-									settingsStore.triggerHaptic(&hapticSaved)
-								} label: {
-									Label("Delete", systemImage: "trash")
+					if accessorySortExpanded {
+						ForEach(sortedAccessories) { ownedItem in
+							accessoryRow(for: ownedItem)
+								.swipeActions(edge: .trailing, allowsFullSwipe: false) {
+									Button(role: .destructive) {
+										modelContext.delete(ownedItem)
+										settingsStore.triggerHaptic(&hapticSaved)
+									} label: {
+										Label("Delete", systemImage: "trash")
+									}
 								}
-							}
+						}
 					}
 				} header: {
 					HStack {
-						Label("Accessories", systemImage: "wrench.adjustable")
-						Text(sortedAccessories.count, format: .number)
-						Spacer()
-						Menu {
-							accessorySortMenu
+						
+						Button {
+							accessorySortExpanded.toggle()
 						} label: {
-							Image(systemName: "arrow.up.arrow.down")
+							HStack {
+								
+								Label("Accessories", systemImage: "wrench.adjustable")
+								
+								if !accessorySortExpanded {
+									Text(sortedAccessories.count, format: .number)
+										.foregroundStyle(.secondary)
+								}
+								
+								Image(systemName: "chevron.right")
+									.foregroundStyle(.accent)
+									.rotationEffect(.degrees(accessorySortExpanded ? 90 : 0))
+								
+							}
 						}
+						.buttonStyle(.plain)
+						
+						if accessorySortExpanded {
+							Spacer()
+							
+							Menu {
+								accessorySortMenu
+							} label: {
+								Image(systemName: "arrow.up.arrow.down")
+							}
+						}
+						
 					}
+					.frame(maxWidth: .infinity, alignment: .leading)
 				}
 			}
 			
 		}
 		.scrollDismissesKeyboard(.interactively)
+		.animation(.snappy, value: [cameraSortExpanded, lensSortExpanded, filterSortExpanded, accessorySortExpanded])
 		.searchable(
 			text: $searchText,
 			placement: .navigationBarDrawer(

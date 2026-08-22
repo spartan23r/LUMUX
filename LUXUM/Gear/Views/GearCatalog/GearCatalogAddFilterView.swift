@@ -89,7 +89,7 @@ struct GearCatalogAddFilterView: View {
 					.tint(.accent)
 					
 				} header: {
-					Text("Filter")
+					Text("General")
 				} footer: {
 					Text("* Required")
 				}

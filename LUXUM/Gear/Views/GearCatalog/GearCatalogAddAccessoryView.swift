@@ -99,7 +99,7 @@ struct GearCatalogAddAccessoryView: View {
 					}
 					
 				} header: {
-					Text("Accessory")
+					Text("General")
 				} footer: {
 					Text("* Required")
 				}

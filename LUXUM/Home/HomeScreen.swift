@@ -400,13 +400,13 @@ private extension HomeScreen {
 							)
 						)
 						.font(.subheadline)
-						.fontWeight(.semibold)
+						.fontWeight(.medium)
 						.fixedSize(horizontal: true, vertical: false)
 						.layoutPriority(1)
 					} else {
 						Text("—")
 							.font(.subheadline)
-							.fontWeight(.semibold)
+							.fontWeight(.medium)
 							.foregroundStyle(.secondary)
 					}
 				}
