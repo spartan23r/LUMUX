@@ -1,0 +1,86 @@
+{
+  "cameras": [
+	{
+	  "id": "om-system-om-1-mark-ii",
+	  "brandID": "om-system",
+	  "name": "OM-1 Mark II",
+	  "family": "OM",
+	  "series": "OM-1",
+	  "releaseYear": 2024,
+	  "cameraType": "mirrorless",
+	  "mountID": "micro-four-thirds",
+	  "sensorFormat": "four-thirds",
+	  "cropFactor": 2.0,
+	  "megapixels": 20.4,
+	  "hasIBIS": true,
+	  "weatherSealed": true,
+	  "fixedLens": null
+	},
+	{
+	  "id": "om-system-om-1",
+	  "brandID": "om-system",
+	  "name": "OM-1",
+	  "family": "OM",
+	  "series": "OM-1",
+	  "releaseYear": 2022,
+	  "cameraType": "mirrorless",
+	  "mountID": "micro-four-thirds",
+	  "sensorFormat": "four-thirds",
+	  "cropFactor": 2.0,
+	  "megapixels": 20.4,
+	  "hasIBIS": true,
+	  "weatherSealed": true,
+	  "fixedLens": null
+	},
+
+	{
+	  "id": "om-system-om-3",
+	  "brandID": "om-system",
+	  "name": "OM-3",
+	  "family": "OM",
+	  "series": "OM-3",
+	  "releaseYear": 2025,
+	  "cameraType": "mirrorless",
+	  "mountID": "micro-four-thirds",
+	  "sensorFormat": "four-thirds",
+	  "cropFactor": 2.0,
+	  "megapixels": 20.4,
+	  "hasIBIS": true,
+	  "weatherSealed": true,
+	  "fixedLens": null
+	},
+
+	{
+	  "id": "om-system-om-5-mark-ii",
+	  "brandID": "om-system",
+	  "name": "OM-5 Mark II",
+	  "family": "OM",
+	  "series": "OM-5",
+	  "releaseYear": 2025,
+	  "cameraType": "mirrorless",
+	  "mountID": "micro-four-thirds",
+	  "sensorFormat": "four-thirds",
+	  "cropFactor": 2.0,
+	  "megapixels": 20.4,
+	  "hasIBIS": true,
+	  "weatherSealed": true,
+	  "fixedLens": null
+	},
+	{
+	  "id": "om-system-om-5",
+	  "brandID": "om-system",
+	  "name": "OM-5",
+	  "family": "OM",
+	  "series": "OM-5",
+	  "releaseYear": 2022,
+	  "cameraType": "mirrorless",
+	  "mountID": "micro-four-thirds",
+	  "sensorFormat": "four-thirds",
+	  "cropFactor": 2.0,
+	  "megapixels": 20.4,
+	  "hasIBIS": true,
+	  "weatherSealed": true,
+	  "fixedLens": null
+	}
+  ]
+}

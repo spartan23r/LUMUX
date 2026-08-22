@@ -1,0 +1,13 @@
+//
+//  GearKind.swift
+//  LUXUM
+//
+//  Created by Ryan Rook on 18/08/2026.
+//
+
+import Foundation
+
+enum GearKind: String, Codable {
+	case camera
+	case lens
+}

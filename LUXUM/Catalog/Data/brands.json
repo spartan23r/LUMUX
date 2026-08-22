@@ -1,0 +1,52 @@
+{
+  "brands": [
+	{
+	  "id": "sony",
+	  "name": "Sony"
+	},
+	{
+	  "id": "canon",
+	  "name": "Canon"
+	},
+	{
+	  "id": "nikon",
+	  "name": "Nikon"
+	},
+	{
+	  "id": "fujifilm",
+	  "name": "Fujifilm"
+	},
+	{
+	  "id": "panasonic",
+	  "name": "Lumix"
+	},
+	{
+	  "id": "om-system",
+	  "name": "OM System"
+	},
+	{
+	  "id": "olympus",
+	  "name": "Olympus"
+	},
+	{
+	  "id": "leica",
+	  "name": "Leica"
+	},
+	{
+	  "id": "ricoh",
+	  "name": "Ricoh"
+	},
+	{
+	  "id": "pentax",
+	  "name": "Pentax"
+	},
+	{
+	  "id": "hasselblad",
+	  "name": "Hasselblad"
+	},
+	{
+	  "id": "sigma",
+	  "name": "Sigma"
+	}
+  ]
+}

@@ -1,0 +1,1434 @@
+{
+  "topics": [
+    {
+      "id": "exposure-triangle",
+      "categoryID": "exposure",
+      "title": "Exposure Triangle",
+      "subtitle": "Balance aperture, shutter speed and ISO",
+      "systemImage": "triangle",
+      "summary": "Exposure is controlled by three settings: aperture, shutter speed and ISO. Changing one affects either the amount of light, the appearance of the image, or both.",
+      "sections": [
+        {
+          "id": "exposure-triangle-basics",
+          "title": "The Three Controls",
+          "content": [
+            {
+              "id": "exposure-triangle-controls",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "aperture",
+                  "value": "Aperture",
+                  "description": "Controls how much light enters the lens and affects depth of field."
+                },
+                {
+                  "id": "shutter-speed",
+                  "value": "Shutter Speed",
+                  "description": "Controls how long the sensor is exposed to light and affects motion."
+                },
+                {
+                  "id": "iso",
+                  "value": "ISO",
+                  "description": "Controls the camera's sensitivity setting and affects image noise."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "exposure-triangle-balance",
+          "title": "Balancing Exposure",
+          "content": [
+            {
+              "id": "exposure-triangle-balance-text",
+              "type": "text",
+              "text": "If you change one exposure setting, you may need to compensate with another to maintain the same overall exposure. For example, using a faster shutter speed can be balanced by opening the aperture or increasing ISO.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "exposure-triangle-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "exposure-triangle-tip-text",
+              "type": "tip",
+              "text": "Choose the setting that matters most for your subject first, then use the other settings to achieve the exposure you want.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aperture",
+      "categoryID": "exposure",
+      "title": "Aperture",
+      "subtitle": "Control light and depth of field",
+      "systemImage": "camera.aperture",
+      "summary": "Aperture controls the size of the opening inside the lens. It affects both the amount of light reaching the sensor and how much of the scene appears in focus.",
+      "sections": [
+        {
+          "id": "aperture-basics",
+          "title": "How It Works",
+          "content": [
+            {
+              "id": "aperture-basics-text",
+              "type": "text",
+              "text": "Aperture is expressed as an f-number such as F1.4, F2.8 or F8. A lower f-number represents a wider aperture, while a higher f-number represents a narrower aperture.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "aperture-values",
+          "title": "Quick Guide",
+          "content": [
+            {
+              "id": "aperture-values-list",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "f1-4",
+                  "value": "F1.4",
+                  "description": "Very shallow depth of field and excellent for low light."
+                },
+                {
+                  "id": "f2-8",
+                  "value": "F2.8",
+                  "description": "Shallow depth of field for portraits, events and low light."
+                },
+                {
+                  "id": "f4",
+                  "value": "F4",
+                  "description": "A useful balance between light and depth of field."
+                },
+                {
+                  "id": "f5-6",
+                  "value": "F5.6",
+                  "description": "Good general-purpose setting with more of the scene in focus."
+                },
+                {
+                  "id": "f8",
+                  "value": "F8",
+                  "description": "Often useful for landscapes and scenes requiring greater depth of field."
+                },
+                {
+                  "id": "f11",
+                  "value": "F11",
+                  "description": "Provides deep depth of field but allows less light to reach the sensor."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "aperture-depth-of-field",
+          "title": "Depth of Field",
+          "content": [
+            {
+              "id": "aperture-depth-of-field-text",
+              "type": "text",
+              "text": "Wide apertures can help separate a subject from the background. Narrow apertures generally increase the range of distances that appear acceptably sharp.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "aperture-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "aperture-tip-text",
+              "type": "tip",
+              "text": "For portraits, start with a wider aperture. For landscapes, try F8 as a starting point and adjust for the depth of field you need.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shutter-speed",
+      "categoryID": "exposure",
+      "title": "Shutter Speed",
+      "subtitle": "Freeze or emphasize motion",
+      "systemImage": "timer",
+      "summary": "Shutter speed controls how long the camera sensor is exposed to light. Fast shutter speeds can freeze movement, while slow shutter speeds can create intentional motion blur.",
+      "sections": [
+        {
+          "id": "shutter-speed-basics",
+          "title": "How It Works",
+          "content": [
+            {
+              "id": "shutter-speed-basics-text",
+              "type": "text",
+              "text": "Shutter speed is usually expressed in seconds or fractions of a second. A setting such as 1/2000 s exposes the sensor for a very short time, while 1 s keeps the exposure running much longer.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "shutter-speed-values",
+          "title": "Quick Guide",
+          "content": [
+            {
+              "id": "shutter-speed-values-list",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "1-2000",
+                  "value": "1/2000 s",
+                  "description": "Fast action, wildlife and birds in flight."
+                },
+                {
+                  "id": "1-1000",
+                  "value": "1/1000 s",
+                  "description": "Moving animals, sports and other fast subjects."
+                },
+                {
+                  "id": "1-500",
+                  "value": "1/500 s",
+                  "description": "Moderate action and moving subjects."
+                },
+                {
+                  "id": "1-125",
+                  "value": "1/125 s",
+                  "description": "General handheld photography with relatively still subjects."
+                },
+                {
+                  "id": "1-30",
+                  "value": "1/30 s",
+                  "description": "Slow handheld shooting where camera shake becomes more likely."
+                },
+                {
+                  "id": "1-second",
+                  "value": "1 s",
+                  "description": "Motion blur, flowing water and creative long exposures."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "shutter-speed-motion",
+          "title": "Motion",
+          "content": [
+            {
+              "id": "shutter-speed-motion-text",
+              "type": "text",
+              "text": "Your ideal shutter speed depends on how quickly the subject moves, how much motion you want to show and how steady the camera is.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "shutter-speed-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "shutter-speed-tip-text",
+              "type": "tip",
+              "text": "Use a tripod when shutter speeds become too slow to reliably handhold, especially for intentional long exposures.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iso",
+      "categoryID": "exposure",
+      "title": "ISO",
+      "subtitle": "Balance brightness and image quality",
+      "systemImage": "circle.lefthalf.filled",
+      "summary": "ISO controls how strongly the camera amplifies the sensor signal when creating an image. Raising ISO can help you use faster shutter speeds or smaller apertures, but generally increases visible noise.",
+      "sections": [
+        {
+          "id": "iso-basics",
+          "title": "How It Works",
+          "content": [
+            {
+              "id": "iso-basics-text",
+              "type": "text",
+              "text": "A low ISO generally provides the cleanest image quality. Increasing ISO makes it easier to photograph in lower light or maintain a faster shutter speed, at the cost of increasing noise and potentially reducing dynamic range.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "iso-values",
+          "title": "Quick Guide",
+          "content": [
+            {
+              "id": "iso-values-list",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "iso-100",
+                  "value": "ISO 100",
+                  "description": "Bright conditions and maximum image quality."
+                },
+                {
+                  "id": "iso-400",
+                  "value": "ISO 400",
+                  "description": "Useful when light starts to decrease or a faster shutter speed is needed."
+                },
+                {
+                  "id": "iso-800",
+                  "value": "ISO 800",
+                  "description": "Indoor photography, overcast conditions and faster action."
+                },
+                {
+                  "id": "iso-1600",
+                  "value": "ISO 1600",
+                  "description": "Low-light situations where maintaining shutter speed is important."
+                },
+                {
+                  "id": "iso-3200",
+                  "value": "ISO 3200",
+                  "description": "Dark environments when capturing the shot matters more than minimizing noise."
+                },
+                {
+                  "id": "iso-6400",
+                  "value": "ISO 6400+",
+                  "description": "Very low light when lower ISO settings cannot provide the required exposure."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "iso-auto",
+          "title": "Auto ISO",
+          "content": [
+            {
+              "id": "iso-auto-text",
+              "type": "text",
+              "text": "Auto ISO lets the camera adjust ISO as lighting changes. It can be especially useful when aperture and shutter speed are more important for the photograph than keeping ISO fixed.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "iso-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "iso-tip-text",
+              "type": "tip",
+              "text": "Do not be afraid to raise ISO when necessary. A sharp photograph with some noise is often more useful than a blurry photograph taken at a lower ISO.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exposure-compensation",
+      "categoryID": "exposure",
+      "title": "Exposure Compensation",
+      "subtitle": "Quickly make images brighter or darker",
+      "systemImage": "plusminus",
+      "summary": "Exposure compensation lets you tell the camera to make an automatically metered exposure brighter or darker without switching completely to manual exposure.",
+      "sections": [
+        {
+          "id": "exposure-compensation-basics",
+          "title": "How It Works",
+          "content": [
+            {
+              "id": "exposure-compensation-basics-text",
+              "type": "text",
+              "text": "Positive exposure compensation makes the image brighter, while negative exposure compensation makes it darker. The camera adjusts available exposure settings according to the shooting mode you are using.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "exposure-compensation-values",
+          "title": "Quick Guide",
+          "content": [
+            {
+              "id": "exposure-compensation-values-list",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "minus-2-ev",
+                  "value": "-2 EV",
+                  "description": "Significantly darker than the camera's metered exposure."
+                },
+                {
+                  "id": "minus-1-ev",
+                  "value": "-1 EV",
+                  "description": "Useful when the camera is making the scene noticeably too bright."
+                },
+                {
+                  "id": "zero-ev",
+                  "value": "0 EV",
+                  "description": "Uses the camera's metered exposure without compensation."
+                },
+                {
+                  "id": "plus-1-ev",
+                  "value": "+1 EV",
+                  "description": "Useful when the camera is making a bright subject or scene too dark."
+                },
+                {
+                  "id": "plus-2-ev",
+                  "value": "+2 EV",
+                  "description": "Significantly brighter than the camera's metered exposure."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "exposure-compensation-when",
+          "title": "When to Use It",
+          "content": [
+            {
+              "id": "exposure-compensation-when-text",
+              "type": "text",
+              "text": "Exposure compensation is useful when the camera's meter is being influenced by unusually bright or dark parts of a scene, such as snow, backlighting or dark backgrounds.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "exposure-compensation-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "exposure-compensation-tip-text",
+              "type": "tip",
+              "text": "Use the histogram or image preview to judge the result rather than relying only on the meter.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "manual-mode",
+      "categoryID": "camera",
+      "title": "Manual Mode",
+      "subtitle": "Take full control of exposure",
+      "systemImage": "m.square",
+      "summary": "Manual mode lets you choose aperture, shutter speed and ISO yourself, giving you direct control over exposure and the visual result.",
+      "sections": [
+        {
+          "id": "manual-mode-basics",
+          "title": "What You Control",
+          "content": [
+            {
+              "id": "manual-mode-controls",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "manual-aperture",
+                  "value": "Aperture",
+                  "description": "Controls depth of field and how much light enters the lens."
+                },
+                {
+                  "id": "manual-shutter",
+                  "value": "Shutter Speed",
+                  "description": "Controls motion and exposure time."
+                },
+                {
+                  "id": "manual-iso",
+                  "value": "ISO",
+                  "description": "Controls how strongly the camera amplifies the sensor signal."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "manual-mode-when",
+          "title": "When to Use It",
+          "content": [
+            {
+              "id": "manual-mode-when-text",
+              "type": "text",
+              "text": "Manual mode is useful when lighting is consistent, when you want repeatable exposures, or when both motion and depth of field need to stay exactly where you set them.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "manual-mode-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "manual-mode-tip-text",
+              "type": "tip",
+              "text": "Manual mode with Auto ISO can be a flexible combination when you want fixed aperture and shutter speed while letting the camera adapt to changing light.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aperture-priority",
+      "categoryID": "camera",
+      "title": "Aperture Priority",
+      "subtitle": "Choose depth of field, let the camera handle shutter speed",
+      "systemImage": "a.square",
+      "summary": "Aperture Priority lets you choose the aperture while the camera selects a shutter speed to achieve the metered exposure.",
+      "sections": [
+        {
+          "id": "aperture-priority-basics",
+          "title": "How It Works",
+          "content": [
+            {
+              "id": "aperture-priority-basics-text",
+              "type": "text",
+              "text": "You choose the aperture based on the depth of field you want. The camera then changes shutter speed as the light changes. ISO can be fixed or left on Auto ISO.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "aperture-priority-use",
+          "title": "Good For",
+          "content": [
+            {
+              "id": "aperture-priority-use-values",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "ap-portraits",
+                  "value": "Portraits",
+                  "description": "Choose a wide aperture for subject separation."
+                },
+                {
+                  "id": "ap-landscapes",
+                  "value": "Landscapes",
+                  "description": "Choose a smaller aperture for more depth of field."
+                },
+                {
+                  "id": "ap-travel",
+                  "value": "Travel",
+                  "description": "React quickly while keeping control over depth of field."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "aperture-priority-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "aperture-priority-tip-text",
+              "type": "tip",
+              "text": "Keep an eye on shutter speed. In low light, the camera may choose a speed that is too slow for handheld shooting or moving subjects.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shutter-priority",
+      "categoryID": "camera",
+      "title": "Shutter Priority",
+      "subtitle": "Choose motion rendering, let the camera handle aperture",
+      "systemImage": "s.square",
+      "summary": "Shutter Priority lets you choose the shutter speed while the camera selects an aperture to achieve the metered exposure.",
+      "sections": [
+        {
+          "id": "shutter-priority-basics",
+          "title": "How It Works",
+          "content": [
+            {
+              "id": "shutter-priority-basics-text",
+              "type": "text",
+              "text": "You choose the shutter speed based on whether you want to freeze or blur motion. The camera then adjusts aperture as light changes. ISO can also be fixed or automatic.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "shutter-priority-use",
+          "title": "Good For",
+          "content": [
+            {
+              "id": "shutter-priority-use-values",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "sp-sports",
+                  "value": "Sports",
+                  "description": "Use a fast shutter speed to freeze movement."
+                },
+                {
+                  "id": "sp-wildlife",
+                  "value": "Wildlife",
+                  "description": "Maintain a speed appropriate for moving animals."
+                },
+                {
+                  "id": "sp-panning",
+                  "value": "Panning",
+                  "description": "Use a slower shutter speed to show motion while following the subject."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "shutter-priority-warning",
+          "title": null,
+          "content": [
+            {
+              "id": "shutter-priority-warning-text",
+              "type": "warning",
+              "text": "If the lens cannot open wide enough for the selected shutter speed, the image may be underexposed unless ISO is increased.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "program-mode",
+      "categoryID": "camera",
+      "title": "Program Mode",
+      "subtitle": "Let the camera choose exposure while you stay flexible",
+      "systemImage": "p.square",
+      "summary": "Program mode automatically chooses aperture and shutter speed while still giving you control over settings such as ISO, exposure compensation and white balance.",
+      "sections": [
+        {
+          "id": "program-mode-basics",
+          "title": "How It Works",
+          "content": [
+            {
+              "id": "program-mode-basics-text",
+              "type": "text",
+              "text": "The camera selects a balanced combination of aperture and shutter speed. Many cameras also let you shift between equivalent combinations without changing the overall exposure.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "program-mode-use",
+          "title": "When to Use It",
+          "content": [
+            {
+              "id": "program-mode-use-text",
+              "type": "text",
+              "text": "Program mode is useful for general photography when you want more control than full Auto but do not need to prioritize aperture or shutter speed.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "program-mode-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "program-mode-tip-text",
+              "type": "tip",
+              "text": "Program mode is a good fallback when the moment matters more than choosing every exposure setting yourself.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "metering",
+      "categoryID": "camera",
+      "title": "Metering",
+      "subtitle": "Understand how the camera measures light",
+      "systemImage": "circle.grid.cross",
+      "summary": "Metering determines how the camera evaluates brightness in the scene when calculating an automatic exposure.",
+      "sections": [
+        {
+          "id": "metering-modes",
+          "title": "Common Metering Modes",
+          "content": [
+            {
+              "id": "metering-modes-values",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "metering-multi",
+                  "value": "Multi / Evaluative",
+                  "description": "Considers a large part of the frame and works well for general photography."
+                },
+                {
+                  "id": "metering-center",
+                  "value": "Center-Weighted",
+                  "description": "Prioritizes the central area while still considering the surrounding frame."
+                },
+                {
+                  "id": "metering-spot",
+                  "value": "Spot",
+                  "description": "Measures a small area for precise exposure control."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "metering-use",
+          "title": "When It Matters",
+          "content": [
+            {
+              "id": "metering-use-text",
+              "type": "text",
+              "text": "Metering becomes especially important when the scene contains very bright and very dark areas, such as backlit portraits, stage lighting or snow.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "metering-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "metering-tip-text",
+              "type": "tip",
+              "text": "For most situations, start with the camera's multi or evaluative metering mode and use exposure compensation when the result is too bright or too dark.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "white-balance",
+      "categoryID": "camera",
+      "title": "White Balance",
+      "subtitle": "Keep colors neutral or use color creatively",
+      "systemImage": "thermometer.medium",
+      "summary": "White balance adjusts the color response of the image so that neutral objects appear neutral under different types of light.",
+      "sections": [
+        {
+          "id": "white-balance-basics",
+          "title": "How It Works",
+          "content": [
+            {
+              "id": "white-balance-basics-text",
+              "type": "text",
+              "text": "Different light sources have different color temperatures. White balance compensates for these differences or can intentionally preserve a warm or cool look.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "white-balance-values",
+          "title": "Typical Settings",
+          "content": [
+            {
+              "id": "white-balance-values-list",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "wb-auto",
+                  "value": "Auto",
+                  "description": "Lets the camera estimate a neutral result and works well for many situations."
+                },
+                {
+                  "id": "wb-daylight",
+                  "value": "Daylight",
+                  "description": "Useful in direct daylight and keeps color consistent between shots."
+                },
+                {
+                  "id": "wb-cloudy",
+                  "value": "Cloudy",
+                  "description": "Adds warmth compared with a daylight setting."
+                },
+                {
+                  "id": "wb-tungsten",
+                  "value": "Tungsten",
+                  "description": "Compensates for warm indoor lighting."
+                },
+                {
+                  "id": "wb-kelvin",
+                  "value": "Kelvin",
+                  "description": "Lets you set the color temperature manually for precise control."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "white-balance-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "white-balance-tip-text",
+              "type": "tip",
+              "text": "When shooting RAW, white balance can be adjusted extensively during editing, but choosing a good setting in-camera still helps with judging the image on location.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "single-autofocus",
+      "categoryID": "focus",
+      "title": "Single Autofocus",
+      "subtitle": "Focus once on stationary subjects",
+      "systemImage": "scope",
+      "summary": "Single autofocus acquires focus and then holds that focus while the focus command remains active.",
+      "sections": [
+        {
+          "id": "single-autofocus-use",
+          "title": "Best For",
+          "content": [
+            {
+              "id": "single-autofocus-use-values",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "single-landscape",
+                  "value": "Landscapes",
+                  "description": "The scene is usually stationary, so continuous refocusing is unnecessary."
+                },
+                {
+                  "id": "single-product",
+                  "value": "Products",
+                  "description": "Useful when the subject and camera position remain fixed."
+                },
+                {
+                  "id": "single-architecture",
+                  "value": "Architecture",
+                  "description": "Focus can be acquired once and held."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "single-autofocus-behavior",
+          "title": "How It Behaves",
+          "content": [
+            {
+              "id": "single-autofocus-behavior-text",
+              "type": "text",
+              "text": "Once focus is acquired, the camera does not continually adjust for subject movement. If the subject changes distance, focus again before taking the photograph.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "single-autofocus-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "single-autofocus-tip-text",
+              "type": "tip",
+              "text": "Use a small or precise focus area when you need to choose exactly which part of a stationary subject should be sharp.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "continuous-autofocus",
+      "categoryID": "focus",
+      "title": "Continuous Autofocus",
+      "subtitle": "Track subjects as their distance changes",
+      "systemImage": "scope",
+      "summary": "Continuous autofocus keeps adjusting focus while the focus command remains active, making it suitable for moving subjects.",
+      "sections": [
+        {
+          "id": "continuous-autofocus-use",
+          "title": "Best For",
+          "content": [
+            {
+              "id": "continuous-autofocus-use-values",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "continuous-sports",
+                  "value": "Sports",
+                  "description": "Maintains focus while athletes move through the frame."
+                },
+                {
+                  "id": "continuous-wildlife",
+                  "value": "Wildlife",
+                  "description": "Useful for animals moving toward, away from or across the camera."
+                },
+                {
+                  "id": "continuous-pets",
+                  "value": "Pets",
+                  "description": "Helpful for unpredictable movement at changing distances."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "continuous-autofocus-tracking",
+          "title": "Tracking",
+          "content": [
+            {
+              "id": "continuous-autofocus-tracking-text",
+              "type": "text",
+              "text": "Modern cameras may combine continuous autofocus with subject recognition or tracking to keep the selected subject in focus as it moves around the frame.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "continuous-autofocus-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "continuous-autofocus-tip-text",
+              "type": "tip",
+              "text": "Pair continuous autofocus with a shutter speed fast enough for the subject. Correct focus cannot prevent motion blur caused by a shutter speed that is too slow.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "focus-areas",
+      "categoryID": "focus",
+      "title": "Focus Areas",
+      "subtitle": "Control where the camera looks for focus",
+      "systemImage": "viewfinder",
+      "summary": "Focus area settings determine which part of the frame the autofocus system can use to find and track a subject.",
+      "sections": [
+        {
+          "id": "focus-areas-types",
+          "title": "Common Choices",
+          "content": [
+            {
+              "id": "focus-areas-types-values",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "focus-wide",
+                  "value": "Wide",
+                  "description": "Lets the camera choose from a large part of the frame."
+                },
+                {
+                  "id": "focus-zone",
+                  "value": "Zone",
+                  "description": "Limits autofocus to a larger selected region."
+                },
+                {
+                  "id": "focus-spot",
+                  "value": "Spot",
+                  "description": "Gives precise control over a small focus point."
+                },
+                {
+                  "id": "focus-tracking",
+                  "value": "Tracking",
+                  "description": "Follows a selected subject as it moves through the frame."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "focus-areas-choice",
+          "title": "Choosing an Area",
+          "content": [
+            {
+              "id": "focus-areas-choice-text",
+              "type": "text",
+              "text": "Use a larger area when the subject is difficult to keep under a small point. Use a smaller area when foreground objects or nearby details could distract the autofocus system.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "focus-areas-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "focus-areas-tip-text",
+              "type": "tip",
+              "text": "Subject detection can be very effective, but keep a conventional focus area available for situations where the camera does not recognize the subject reliably.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "manual-focus",
+      "categoryID": "focus",
+      "title": "Manual Focus",
+      "subtitle": "Set focus yourself for precise control",
+      "systemImage": "slider.horizontal.3",
+      "summary": "Manual focus lets you choose the focus distance directly instead of relying on the camera's autofocus system.",
+      "sections": [
+        {
+          "id": "manual-focus-use",
+          "title": "Useful For",
+          "content": [
+            {
+              "id": "manual-focus-use-values",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "mf-macro",
+                  "value": "Macro",
+                  "description": "Small changes in focus distance can strongly affect the result."
+                },
+                {
+                  "id": "mf-night",
+                  "value": "Night Photography",
+                  "description": "Autofocus may struggle when there is very little contrast or light."
+                },
+                {
+                  "id": "mf-tripod",
+                  "value": "Tripod Work",
+                  "description": "Focus can be set carefully and left unchanged between exposures."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "manual-focus-tools",
+          "title": "Helpful Tools",
+          "content": [
+            {
+              "id": "manual-focus-tools-values",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "mf-magnify",
+                  "value": "Focus Magnification",
+                  "description": "Enlarges part of the live view to judge fine detail."
+                },
+                {
+                  "id": "mf-peaking",
+                  "value": "Focus Peaking",
+                  "description": "Highlights high-contrast edges that are likely to be in focus."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "manual-focus-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "manual-focus-tip-text",
+              "type": "tip",
+              "text": "For critical focus, use magnification rather than relying only on focus peaking.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "back-button-focus",
+      "categoryID": "focus",
+      "title": "Back Button Focus",
+      "subtitle": "Separate autofocus from the shutter button",
+      "systemImage": "hand.point.up.left",
+      "summary": "Back button focus assigns autofocus to a rear button instead of activating it with a half-press of the shutter button.",
+      "sections": [
+        {
+          "id": "back-button-focus-benefits",
+          "title": "Why Use It",
+          "content": [
+            {
+              "id": "back-button-focus-benefits-values",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "bbf-separate",
+                  "value": "Separate Focus",
+                  "description": "Focus and shutter release become independent actions."
+                },
+                {
+                  "id": "bbf-recompose",
+                  "value": "Recompose",
+                  "description": "You can stop focusing and take multiple frames without the camera refocusing."
+                },
+                {
+                  "id": "bbf-action",
+                  "value": "Action",
+                  "description": "Continuous autofocus can remain available whenever the rear focus button is held."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "back-button-focus-adjustment",
+          "title": "Getting Used to It",
+          "content": [
+            {
+              "id": "back-button-focus-adjustment-text",
+              "type": "text",
+              "text": "Back button focus changes the way you operate the camera and can feel unfamiliar at first. It is a workflow preference rather than a requirement for better autofocus.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "back-button-focus-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "back-button-focus-tip-text",
+              "type": "tip",
+              "text": "If you enable back button focus, make sure autofocus is disabled from the shutter button so the camera does not refocus when you take the photo.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "focal-length",
+      "categoryID": "lenses-optics",
+      "title": "Focal Length",
+      "subtitle": "Understand angle of view and framing",
+      "systemImage": "arrow.left.and.right",
+      "summary": "Focal length influences how wide or narrow the field of view appears and how large a subject appears in the frame from a given camera position.",
+      "sections": [
+        {
+          "id": "focal-length-values",
+          "title": "Quick Guide",
+          "content": [
+            {
+              "id": "focal-length-values-list",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "fl-16",
+                  "value": "16–24 mm",
+                  "description": "Ultra-wide to wide views for landscapes, architecture and interiors."
+                },
+                {
+                  "id": "fl-35",
+                  "value": "28–35 mm",
+                  "description": "Natural wide-angle perspective for travel, street and environmental portraits."
+                },
+                {
+                  "id": "fl-50",
+                  "value": "50 mm",
+                  "description": "A versatile normal focal length on full-frame cameras."
+                },
+                {
+                  "id": "fl-85",
+                  "value": "85–135 mm",
+                  "description": "Common portrait and short-telephoto range."
+                },
+                {
+                  "id": "fl-200",
+                  "value": "200 mm+",
+                  "description": "Telephoto range for distant subjects, sports and wildlife."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "focal-length-position",
+          "title": "Camera Position Matters",
+          "content": [
+            {
+              "id": "focal-length-position-text",
+              "type": "text",
+              "text": "Focal length changes framing from the same position. Perspective itself changes when you move the camera closer to or farther from the subject.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "focal-length-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "focal-length-tip-text",
+              "type": "tip",
+              "text": "Choose your shooting position for the perspective you want first, then select a focal length that gives you the framing you need.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crop-factor",
+      "categoryID": "lenses-optics",
+      "title": "Crop Factor",
+      "subtitle": "Compare fields of view across sensor formats",
+      "systemImage": "rectangle.on.rectangle",
+      "summary": "Crop factor describes how a sensor format changes the field of view compared with a full-frame reference when using the same focal length.",
+      "sections": [
+        {
+          "id": "crop-factor-values",
+          "title": "Common Formats",
+          "content": [
+            {
+              "id": "crop-factor-values-list",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "crop-ff",
+                  "value": "1x",
+                  "description": "Full frame reference."
+                },
+                {
+                  "id": "crop-aps-c",
+                  "value": "1.5x",
+                  "description": "Common APS-C crop factor."
+                },
+                {
+                  "id": "crop-canon",
+                  "value": "1.6x",
+                  "description": "Common Canon APS-C crop factor."
+                },
+                {
+                  "id": "crop-mft",
+                  "value": "2x",
+                  "description": "Micro Four Thirds crop factor."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "crop-factor-example",
+          "title": "Example",
+          "content": [
+            {
+              "id": "crop-factor-example-text",
+              "type": "text",
+              "text": "A 35 mm lens on a 1.5x APS-C camera gives a field of view similar to about 52.5 mm on full frame. The physical focal length of the lens remains 35 mm.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "crop-factor-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "crop-factor-tip-text",
+              "type": "tip",
+              "text": "Use equivalent focal length when comparing framing between different sensor sizes, but remember that it does not change the actual focal length printed on the lens.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "depth-of-field",
+      "categoryID": "lenses-optics",
+      "title": "Depth of Field",
+      "subtitle": "Control how much of the image appears sharp",
+      "systemImage": "square.stack.3d.down.right",
+      "summary": "Depth of field is the range of distances in a photograph that appear acceptably sharp around the point of focus.",
+      "sections": [
+        {
+          "id": "depth-of-field-factors",
+          "title": "What Affects It",
+          "content": [
+            {
+              "id": "depth-of-field-factors-values",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "dof-aperture",
+                  "value": "Aperture",
+                  "description": "Wider apertures generally produce shallower depth of field."
+                },
+                {
+                  "id": "dof-distance",
+                  "value": "Subject Distance",
+                  "description": "Focusing closer generally reduces depth of field."
+                },
+                {
+                  "id": "dof-framing",
+                  "value": "Focal Length & Framing",
+                  "description": "Longer focal lengths and tighter framing can make background separation easier to achieve."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "depth-of-field-use",
+          "title": "Creative Use",
+          "content": [
+            {
+              "id": "depth-of-field-use-text",
+              "type": "text",
+              "text": "Shallow depth of field can isolate a subject from the background. Greater depth of field can keep multiple parts of a landscape, group or scene acceptably sharp.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "depth-of-field-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "depth-of-field-tip-text",
+              "type": "tip",
+              "text": "Do not automatically use the smallest aperture for maximum sharpness. Very small apertures can introduce diffraction and may require a slower shutter speed or higher ISO.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lens-compression",
+      "categoryID": "lenses-optics",
+      "title": "Lens Compression",
+      "subtitle": "Understand the compressed look of distant viewpoints",
+      "systemImage": "arrow.left.and.right.square",
+      "summary": "The compressed look often associated with telephoto lenses mainly comes from shooting farther away, which makes distances between foreground and background appear less pronounced.",
+      "sections": [
+        {
+          "id": "lens-compression-basics",
+          "title": "What Causes It",
+          "content": [
+            {
+              "id": "lens-compression-basics-text",
+              "type": "text",
+              "text": "Perspective is determined by camera position. A longer focal length often leads you to stand farther away for the same subject framing, and that greater distance creates the compressed appearance.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "lens-compression-effect",
+          "title": "Visual Effect",
+          "content": [
+            {
+              "id": "lens-compression-effect-values",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "compression-background",
+                  "value": "Background",
+                  "description": "Distant background elements can appear larger relative to the subject."
+                },
+                {
+                  "id": "compression-spacing",
+                  "value": "Spacing",
+                  "description": "Objects at different distances can appear visually closer together."
+                },
+                {
+                  "id": "compression-portraits",
+                  "value": "Portraits",
+                  "description": "Greater shooting distance can produce a flattering perspective for faces."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lens-compression-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "lens-compression-tip-text",
+              "type": "tip",
+              "text": "Think about camera position first. Changing focal length without moving the camera changes framing, but not the perspective relationships within the scene.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "image-stabilization",
+      "categoryID": "lenses-optics",
+      "title": "Image Stabilization",
+      "subtitle": "Reduce blur caused by camera movement",
+      "systemImage": "hand.raised",
+      "summary": "Image stabilization helps compensate for small camera movements so you can often use slower shutter speeds when photographing stationary subjects.",
+      "sections": [
+        {
+          "id": "image-stabilization-types",
+          "title": "Common Types",
+          "content": [
+            {
+              "id": "image-stabilization-types-values",
+              "type": "values",
+              "text": null,
+              "values": [
+                {
+                  "id": "stabilization-lens",
+                  "value": "Lens Stabilization",
+                  "description": "Stabilization is built into the lens."
+                },
+                {
+                  "id": "stabilization-ibis",
+                  "value": "IBIS",
+                  "description": "The camera stabilizes the image by moving the sensor."
+                },
+                {
+                  "id": "stabilization-combined",
+                  "value": "Combined",
+                  "description": "Some camera and lens combinations coordinate both systems."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "image-stabilization-limits",
+          "title": "What It Cannot Do",
+          "content": [
+            {
+              "id": "image-stabilization-limits-text",
+              "type": "text",
+              "text": "Stabilization reduces blur from camera movement, but it does not freeze a moving subject. A fast-moving subject may still require a fast shutter speed.",
+              "values": null
+            }
+          ]
+        },
+        {
+          "id": "image-stabilization-tip",
+          "title": null,
+          "content": [
+            {
+              "id": "image-stabilization-tip-text",
+              "type": "tip",
+              "text": "Use stabilization as extra support rather than as a guaranteed number of stops. Your technique, focal length, camera and subject all affect the result.",
+              "values": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

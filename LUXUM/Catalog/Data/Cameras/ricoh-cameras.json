@@ -1,0 +1,200 @@
+{
+  "cameras": [
+	{
+	  "id": "ricoh-gr-iv",
+	  "brandID": "ricoh",
+	  "name": "GR IV",
+	  "family": "GR",
+	  "series": "GR",
+	  "releaseYear": 2025,
+	  "cameraType": "compact",
+	  "mountID": null,
+	  "sensorFormat": "aps-c",
+	  "cropFactor": 1.5,
+	  "megapixels": 25.74,
+	  "hasIBIS": true,
+	  "weatherSealed": false,
+	  "fixedLens": {
+		"focalLengthMin": 18.3,
+		"focalLengthMax": 18.3,
+		"equivalentFocalLengthMin": 28.0,
+		"equivalentFocalLengthMax": 28.0,
+		"maxApertureWide": 2.8,
+		"maxApertureTele": 2.8,
+		"filterDiameter": null
+	  }
+	},
+
+	{
+	  "id": "ricoh-gr-iii",
+	  "brandID": "ricoh",
+	  "name": "GR III",
+	  "family": "GR",
+	  "series": "GR",
+	  "releaseYear": 2019,
+	  "cameraType": "compact",
+	  "mountID": null,
+	  "sensorFormat": "aps-c",
+	  "cropFactor": 1.5,
+	  "megapixels": 24.24,
+	  "hasIBIS": true,
+	  "weatherSealed": false,
+	  "fixedLens": {
+		"focalLengthMin": 18.3,
+		"focalLengthMax": 18.3,
+		"equivalentFocalLengthMin": 28.0,
+		"equivalentFocalLengthMax": 28.0,
+		"maxApertureWide": 2.8,
+		"maxApertureTele": 2.8,
+		"filterDiameter": null
+	  }
+	},
+	{
+	  "id": "ricoh-gr-iii-hdf",
+	  "brandID": "ricoh",
+	  "name": "GR III HDF",
+	  "family": "GR",
+	  "series": "GR",
+	  "releaseYear": 2024,
+	  "cameraType": "compact",
+	  "mountID": null,
+	  "sensorFormat": "aps-c",
+	  "cropFactor": 1.5,
+	  "megapixels": 24.24,
+	  "hasIBIS": true,
+	  "weatherSealed": false,
+	  "fixedLens": {
+		"focalLengthMin": 18.3,
+		"focalLengthMax": 18.3,
+		"equivalentFocalLengthMin": 28.0,
+		"equivalentFocalLengthMax": 28.0,
+		"maxApertureWide": 2.8,
+		"maxApertureTele": 2.8,
+		"filterDiameter": null
+	  }
+	},
+
+	{
+	  "id": "ricoh-gr-iiix",
+	  "brandID": "ricoh",
+	  "name": "GR IIIx",
+	  "family": "GR",
+	  "series": "GR",
+	  "releaseYear": 2021,
+	  "cameraType": "compact",
+	  "mountID": null,
+	  "sensorFormat": "aps-c",
+	  "cropFactor": 1.5,
+	  "megapixels": 24.24,
+	  "hasIBIS": true,
+	  "weatherSealed": false,
+	  "fixedLens": {
+		"focalLengthMin": 26.1,
+		"focalLengthMax": 26.1,
+		"equivalentFocalLengthMin": 40.0,
+		"equivalentFocalLengthMax": 40.0,
+		"maxApertureWide": 2.8,
+		"maxApertureTele": 2.8,
+		"filterDiameter": null
+	  }
+	},
+	{
+	  "id": "ricoh-gr-iiix-hdf",
+	  "brandID": "ricoh",
+	  "name": "GR IIIx HDF",
+	  "family": "GR",
+	  "series": "GR",
+	  "releaseYear": 2024,
+	  "cameraType": "compact",
+	  "mountID": null,
+	  "sensorFormat": "aps-c",
+	  "cropFactor": 1.5,
+	  "megapixels": 24.24,
+	  "hasIBIS": true,
+	  "weatherSealed": false,
+	  "fixedLens": {
+		"focalLengthMin": 26.1,
+		"focalLengthMax": 26.1,
+		"equivalentFocalLengthMin": 40.0,
+		"equivalentFocalLengthMax": 40.0,
+		"maxApertureWide": 2.8,
+		"maxApertureTele": 2.8,
+		"filterDiameter": null
+	  }
+	},
+
+	{
+	  "id": "ricoh-gr-ii",
+	  "brandID": "ricoh",
+	  "name": "GR II",
+	  "family": "GR",
+	  "series": "GR",
+	  "releaseYear": 2015,
+	  "cameraType": "compact",
+	  "mountID": null,
+	  "sensorFormat": "aps-c",
+	  "cropFactor": 1.5,
+	  "megapixels": 16.2,
+	  "hasIBIS": false,
+	  "weatherSealed": false,
+	  "fixedLens": {
+		"focalLengthMin": 18.3,
+		"focalLengthMax": 18.3,
+		"equivalentFocalLengthMin": 28.0,
+		"equivalentFocalLengthMax": 28.0,
+		"maxApertureWide": 2.8,
+		"maxApertureTele": 2.8,
+		"filterDiameter": null
+	  }
+	},
+
+	{
+	  "id": "ricoh-wg-6",
+	  "brandID": "ricoh",
+	  "name": "WG-6",
+	  "family": "WG",
+	  "series": "WG",
+	  "releaseYear": 2019,
+	  "cameraType": "compact",
+	  "mountID": null,
+	  "sensorFormat": "smaller",
+	  "cropFactor": 5.6,
+	  "megapixels": 20.0,
+	  "hasIBIS": false,
+	  "weatherSealed": true,
+	  "fixedLens": {
+		"focalLengthMin": 5.0,
+		"focalLengthMax": 25.0,
+		"equivalentFocalLengthMin": 28.0,
+		"equivalentFocalLengthMax": 140.0,
+		"maxApertureWide": 3.5,
+		"maxApertureTele": 5.5,
+		"filterDiameter": null
+	  }
+	},
+	{
+	  "id": "ricoh-wg-80",
+	  "brandID": "ricoh",
+	  "name": "WG-80",
+	  "family": "WG",
+	  "series": "WG",
+	  "releaseYear": 2022,
+	  "cameraType": "compact",
+	  "mountID": null,
+	  "sensorFormat": "smaller",
+	  "cropFactor": 5.6,
+	  "megapixels": 16.0,
+	  "hasIBIS": false,
+	  "weatherSealed": true,
+	  "fixedLens": {
+		"focalLengthMin": 5.0,
+		"focalLengthMax": 25.0,
+		"equivalentFocalLengthMin": 28.0,
+		"equivalentFocalLengthMax": 140.0,
+		"maxApertureWide": 3.5,
+		"maxApertureTele": 5.5,
+		"filterDiameter": null
+	  }
+	}
+  ]
+}

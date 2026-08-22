@@ -1,0 +1,3514 @@
+{
+  "recipes": [
+    {
+      "id": "waterfalls",
+      "categoryID": "landscape",
+      "title": "Waterfalls",
+      "subtitle": "Create smooth, flowing water",
+      "systemImage": "water.waves",
+      "summary": "Use a slow shutter speed to blur moving water while keeping the surrounding landscape sharp.",
+      "settings": [
+        {
+          "id": "waterfalls-mode",
+          "label": "Mode",
+          "value": "Manual",
+          "note": null
+        },
+        {
+          "id": "waterfalls-aperture",
+          "label": "Aperture",
+          "value": "F8–F11",
+          "note": null
+        },
+        {
+          "id": "waterfalls-shutter",
+          "label": "Shutter Speed",
+          "value": "1/2–2 s",
+          "note": "Adjust for the speed of the water and the amount of blur you want."
+        },
+        {
+          "id": "waterfalls-iso",
+          "label": "ISO",
+          "value": "100",
+          "note": null
+        },
+        {
+          "id": "waterfalls-focus",
+          "label": "Focus",
+          "value": "Single AF / Manual",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "waterfalls-focal",
+          "type": "focalLength",
+          "title": "16–35 mm",
+          "detail": "A wide to standard-wide focal length works well for environmental compositions."
+        },
+        {
+          "id": "waterfalls-tripod",
+          "type": "tripod",
+          "title": "Tripod",
+          "detail": "Required for reliably sharp surroundings at the recommended slow shutter speeds."
+        },
+        {
+          "id": "waterfalls-nd",
+          "type": "ndFilter",
+          "title": "ND Filter",
+          "detail": "Useful in daylight when the scene is too bright for a long exposure."
+        },
+        {
+          "id": "waterfalls-cpl",
+          "type": "cplFilter",
+          "title": "CPL Filter",
+          "detail": "Optional for reducing reflections on wet rocks and foliage."
+        }
+      ],
+      "tips": [
+        {
+          "id": "waterfalls-tip-1",
+          "title": "Start Around 1 Second",
+          "text": "Begin around 1 second and adjust until the water has the amount of texture or smoothness you want."
+        },
+        {
+          "id": "waterfalls-tip-2",
+          "title": "Watch the Highlights",
+          "text": "White water can overexpose easily, so check that bright areas retain detail."
+        },
+        {
+          "id": "waterfalls-tip-3",
+          "title": "Protect the Lens",
+          "text": "Mist and spray can quickly cover the front element, so check and wipe it between compositions."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 16,
+        "focalLengthMax": 35,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": true,
+        "recommendsNDFilter": true,
+        "idealFocalLengthMin": 16,
+        "idealFocalLengthMax": 24,
+        "apertureImportance": 0.0,
+        "recommendsCPLFilter": true,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "shutter-speed",
+        "aperture",
+        "iso",
+        "image-stabilization"
+      ]
+    },
+    {
+      "id": "sunrise-sunset",
+      "categoryID": "landscape",
+      "title": "Sunrise & Sunset",
+      "subtitle": "Capture color and dynamic light",
+      "systemImage": "sun.horizon",
+      "summary": "Sunrise and sunset combine dramatic color with rapidly changing light. Prioritize highlight detail and adjust your exposure as conditions change.",
+      "settings": [
+        {
+          "id": "sunrise-sunset-mode",
+          "label": "Mode",
+          "value": "Aperture Priority",
+          "note": null
+        },
+        {
+          "id": "sunrise-sunset-aperture",
+          "label": "Aperture",
+          "value": "F8–F11",
+          "note": null
+        },
+        {
+          "id": "sunrise-sunset-iso",
+          "label": "ISO",
+          "value": "100–400",
+          "note": null
+        },
+        {
+          "id": "sunrise-sunset-ev",
+          "label": "Exposure Compensation",
+          "value": "0 to -1 EV",
+          "note": "Use negative compensation when the brightest parts of the sky are clipping."
+        },
+        {
+          "id": "sunrise-sunset-wb",
+          "label": "White Balance",
+          "value": "Daylight",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "sunrise-sunset-focal",
+          "type": "focalLength",
+          "title": "16–70 mm",
+          "detail": "Wide focal lengths show the environment; longer focal lengths isolate layers and the sun."
+        },
+        {
+          "id": "sunrise-sunset-tripod",
+          "type": "tripod",
+          "title": "Tripod",
+          "detail": "Optional, but useful as light levels fall."
+        },
+        {
+          "id": "sunrise-sunset-cpl",
+          "type": "cplFilter",
+          "title": "CPL Filter",
+          "detail": "Optional for controlling reflections. Use carefully on wide skies because polarization can become uneven."
+        }
+      ],
+      "tips": [
+        {
+          "id": "sunrise-sunset-tip-1",
+          "title": "Arrive Early",
+          "text": "Set up before the best light arrives so you have time to find a strong composition."
+        },
+        {
+          "id": "sunrise-sunset-tip-2",
+          "title": "Stay Longer",
+          "text": "Some of the richest color can appear before sunrise or after sunset."
+        },
+        {
+          "id": "sunrise-sunset-tip-3",
+          "title": "Bracket Difficult Light",
+          "text": "When the sky is much brighter than the foreground, capture a short exposure bracket so you have more options later."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 16,
+        "focalLengthMax": 70,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 16,
+        "idealFocalLengthMax": 35,
+        "apertureImportance": 0.0,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "aperture",
+        "exposure-compensation",
+        "metering",
+        "white-balance"
+      ]
+    },
+    {
+      "id": "forest",
+      "categoryID": "landscape",
+      "title": "Forest",
+      "subtitle": "Photograph detail in complex scenes",
+      "systemImage": "tree",
+      "summary": "Forest scenes can be visually busy and often contain large differences between light and shadow. Look for simple compositions, layers and directional light.",
+      "settings": [
+        {
+          "id": "forest-mode",
+          "label": "Mode",
+          "value": "Aperture Priority",
+          "note": null
+        },
+        {
+          "id": "forest-aperture",
+          "label": "Aperture",
+          "value": "F5.6–F11",
+          "note": null
+        },
+        {
+          "id": "forest-iso",
+          "label": "ISO",
+          "value": "100–800",
+          "note": null
+        },
+        {
+          "id": "forest-focus",
+          "label": "Focus",
+          "value": "Single AF",
+          "note": null
+        },
+        {
+          "id": "forest-metering",
+          "label": "Metering",
+          "value": "Multi",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "forest-focal",
+          "type": "focalLength",
+          "title": "24–100 mm",
+          "detail": "Wide views capture the environment while short telephoto focal lengths help isolate details."
+        },
+        {
+          "id": "forest-cpl",
+          "type": "cplFilter",
+          "title": "CPL Filter",
+          "detail": "Useful for reducing reflections on leaves and wet foliage."
+        },
+        {
+          "id": "forest-tripod",
+          "type": "tripod",
+          "title": "Tripod",
+          "detail": "Optional in dim woodland when shutter speeds become too slow to handhold."
+        }
+      ],
+      "tips": [
+        {
+          "id": "forest-tip-1",
+          "title": "Simplify the Scene",
+          "text": "Use paths, individual trees, light or repeating patterns to create structure."
+        },
+        {
+          "id": "forest-tip-2",
+          "title": "Check the Edges",
+          "text": "Small branches and bright gaps near the frame edge can easily distract from the subject."
+        },
+        {
+          "id": "forest-tip-3",
+          "title": "Use Soft Light",
+          "text": "Overcast conditions often reduce harsh highlights and make woodland color and detail easier to control."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 24,
+        "focalLengthMax": 100,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 35,
+        "idealFocalLengthMax": 70,
+        "apertureImportance": 0.1,
+        "recommendsCPLFilter": true,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "aperture",
+        "iso",
+        "focus-areas",
+        "focal-length"
+      ]
+    },
+    {
+      "id": "mountains",
+      "categoryID": "landscape",
+      "title": "Mountains",
+      "subtitle": "Capture scale and layered landscapes",
+      "systemImage": "mountain.2",
+      "summary": "Mountain photography is about scale, depth and light. Use foreground elements and atmospheric layers to give large landscapes a sense of dimension.",
+      "settings": [
+        {
+          "id": "mountains-mode",
+          "label": "Mode",
+          "value": "Aperture Priority",
+          "note": null
+        },
+        {
+          "id": "mountains-aperture",
+          "label": "Aperture",
+          "value": "F8–F11",
+          "note": null
+        },
+        {
+          "id": "mountains-iso",
+          "label": "ISO",
+          "value": "100–400",
+          "note": null
+        },
+        {
+          "id": "mountains-focus",
+          "label": "Focus",
+          "value": "Single AF",
+          "note": null
+        },
+        {
+          "id": "mountains-metering",
+          "label": "Metering",
+          "value": "Multi",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "mountains-focal",
+          "type": "focalLength",
+          "title": "16–200 mm",
+          "detail": "Wide lenses emphasize scale; telephoto lenses isolate and compress mountain layers."
+        },
+        {
+          "id": "mountains-cpl",
+          "type": "cplFilter",
+          "title": "CPL Filter",
+          "detail": "Useful for reducing reflections and increasing contrast in suitable light; the effect depends strongly on the sun angle."
+        }
+      ],
+      "tips": [
+        {
+          "id": "mountains-tip-1",
+          "title": "Create Depth",
+          "text": "Include foreground, middle ground and distant peaks when the scene allows it."
+        },
+        {
+          "id": "mountains-tip-2",
+          "title": "Try a Telephoto",
+          "text": "Longer focal lengths can isolate mountain layers and make distant peaks feel visually closer."
+        },
+        {
+          "id": "mountains-tip-3",
+          "title": "Watch the Weather",
+          "text": "Clouds, haze and rapidly changing light can transform mountain layers, so keep reassessing the scene."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 16,
+        "focalLengthMax": 200,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 24,
+        "idealFocalLengthMax": 100,
+        "apertureImportance": 0.0,
+        "recommendsCPLFilter": true,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "aperture",
+        "focal-length",
+        "lens-compression",
+        "metering"
+      ]
+    },
+    {
+      "id": "long-exposure",
+      "categoryID": "landscape",
+      "title": "Long Exposure",
+      "subtitle": "Turn movement into smooth textures",
+      "systemImage": "timer",
+      "summary": "Long exposures record movement over time, allowing you to smooth water, stretch clouds or create light trails while stationary elements remain sharp.",
+      "settings": [
+        {
+          "id": "long-exposure-mode",
+          "label": "Mode",
+          "value": "Manual",
+          "note": null
+        },
+        {
+          "id": "long-exposure-aperture",
+          "label": "Aperture",
+          "value": "F8–F11",
+          "note": null
+        },
+        {
+          "id": "long-exposure-shutter",
+          "label": "Shutter Speed",
+          "value": "1–30 s",
+          "note": "Longer exposures create more pronounced movement."
+        },
+        {
+          "id": "long-exposure-iso",
+          "label": "ISO",
+          "value": "100",
+          "note": null
+        },
+        {
+          "id": "long-exposure-focus",
+          "label": "Focus",
+          "value": "Single AF / Manual",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "long-exposure-focal",
+          "type": "focalLength",
+          "title": "16–70 mm",
+          "detail": "A versatile range for landscapes, architecture and moving water."
+        },
+        {
+          "id": "long-exposure-tripod",
+          "type": "tripod",
+          "title": "Tripod",
+          "detail": "Strongly recommended for exposures lasting several seconds."
+        },
+        {
+          "id": "long-exposure-nd",
+          "type": "ndFilter",
+          "title": "ND Filter",
+          "detail": "Often needed for multi-second exposures in daylight."
+        }
+      ],
+      "tips": [
+        {
+          "id": "long-exposure-tip-1",
+          "title": "Use a Timer",
+          "text": "A short self-timer can prevent movement caused by pressing the shutter button."
+        },
+        {
+          "id": "long-exposure-tip-2",
+          "title": "Experiment",
+          "text": "Compare several shutter speeds rather than assuming the longest exposure will look best."
+        },
+        {
+          "id": "long-exposure-tip-3",
+          "title": "Check for Movement",
+          "text": "Inspect the frame for wind-blown foliage, people or other elements that may blur in a distracting way."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 16,
+        "focalLengthMax": 70,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": true,
+        "recommendsNDFilter": true,
+        "idealFocalLengthMin": 16,
+        "idealFocalLengthMax": 35,
+        "apertureImportance": 0.0,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "shutter-speed",
+        "aperture",
+        "iso",
+        "manual-mode"
+      ]
+    },
+    {
+      "id": "outdoor-portrait",
+      "categoryID": "people",
+      "title": "Outdoor Portrait",
+      "subtitle": "Create natural portraits outdoors",
+      "systemImage": "person.crop.rectangle",
+      "summary": "Outdoor portraits combine subject placement, background control and natural light. Use a wider aperture and suitable camera position to separate your subject from the environment.",
+      "settings": [
+        {
+          "id": "outdoor-portrait-mode",
+          "label": "Mode",
+          "value": "Aperture Priority",
+          "note": null
+        },
+        {
+          "id": "outdoor-portrait-aperture",
+          "label": "Aperture",
+          "value": "F1.8–F4",
+          "note": null
+        },
+        {
+          "id": "outdoor-portrait-shutter",
+          "label": "Shutter Speed",
+          "value": "1/250 s or faster",
+          "note": null
+        },
+        {
+          "id": "outdoor-portrait-iso",
+          "label": "ISO",
+          "value": "Auto",
+          "note": null
+        },
+        {
+          "id": "outdoor-portrait-focus",
+          "label": "Focus",
+          "value": "Continuous AF / Eye AF",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "outdoor-portrait-focal",
+          "type": "focalLength",
+          "title": "35–135 mm",
+          "detail": "Normal to short-telephoto focal lengths are versatile for individual portraits."
+        },
+        {
+          "id": "outdoor-portrait-aperture",
+          "type": "aperture",
+          "title": "F4 or faster",
+          "detail": "A wider maximum aperture makes background separation easier."
+        }
+      ],
+      "tips": [
+        {
+          "id": "outdoor-portrait-tip-1",
+          "title": "Focus on the Eyes",
+          "text": "Use eye detection when available, or place the focus point on the nearest eye."
+        },
+        {
+          "id": "outdoor-portrait-tip-2",
+          "title": "Check the Background",
+          "text": "Move slightly if distracting objects intersect with the subject."
+        },
+        {
+          "id": "outdoor-portrait-tip-3",
+          "title": "Keep Shutter Speed Up",
+          "text": "Even with a wide aperture, make sure shutter speed stays high enough to avoid subject movement."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 35,
+        "focalLengthMax": 135,
+        "preferredCoverage": null,
+        "minimumMaxAperture": 4.0,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 50,
+        "idealFocalLengthMax": 85,
+        "apertureImportance": 1.0,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "aperture",
+        "depth-of-field",
+        "focal-length",
+        "continuous-autofocus"
+      ]
+    },
+    {
+      "id": "golden-hour-portrait",
+      "categoryID": "people",
+      "title": "Golden Hour Portrait",
+      "subtitle": "Use warm, soft evening light",
+      "systemImage": "sun.horizon",
+      "summary": "Golden hour provides warm, directional light that can flatter skin tones and create atmospheric backgrounds.",
+      "settings": [
+        {
+          "id": "golden-hour-portrait-mode",
+          "label": "Mode",
+          "value": "Aperture Priority",
+          "note": null
+        },
+        {
+          "id": "golden-hour-portrait-aperture",
+          "label": "Aperture",
+          "value": "F1.8–F4",
+          "note": null
+        },
+        {
+          "id": "golden-hour-portrait-shutter",
+          "label": "Shutter Speed",
+          "value": "1/250 s or faster",
+          "note": null
+        },
+        {
+          "id": "golden-hour-portrait-iso",
+          "label": "ISO",
+          "value": "Auto",
+          "note": null
+        },
+        {
+          "id": "golden-hour-portrait-focus",
+          "label": "Focus",
+          "value": "Continuous AF / Eye AF",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "golden-hour-portrait-focal",
+          "type": "focalLength",
+          "title": "35–135 mm",
+          "detail": "A versatile range for portraits with flattering working distance."
+        },
+        {
+          "id": "golden-hour-portrait-aperture",
+          "type": "aperture",
+          "title": "F4 or faster",
+          "detail": "Useful for subject separation as the light level falls."
+        }
+      ],
+      "tips": [
+        {
+          "id": "golden-hour-portrait-tip-1",
+          "title": "Try Backlighting",
+          "text": "Placing the sun behind the subject can create a warm rim light around hair and clothing."
+        },
+        {
+          "id": "golden-hour-portrait-tip-2",
+          "title": "Watch for Flare",
+          "text": "Lens flare can be creative, but reposition slightly if it reduces contrast too much."
+        },
+        {
+          "id": "golden-hour-portrait-tip-3",
+          "title": "Expose for Skin",
+          "text": "Check the subject's face rather than judging exposure only from the bright sky behind them."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 35,
+        "focalLengthMax": 135,
+        "preferredCoverage": null,
+        "minimumMaxAperture": 4.0,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 50,
+        "idealFocalLengthMax": 85,
+        "apertureImportance": 1.0,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "aperture",
+        "exposure-compensation",
+        "white-balance",
+        "depth-of-field"
+      ]
+    },
+    {
+      "id": "indoor-portrait",
+      "categoryID": "people",
+      "title": "Indoor Portrait",
+      "subtitle": "Make the most of available light",
+      "systemImage": "person.crop.square",
+      "summary": "Indoor portraits often require balancing limited light with enough shutter speed to keep your subject sharp.",
+      "settings": [
+        {
+          "id": "indoor-portrait-mode",
+          "label": "Mode",
+          "value": "Aperture Priority",
+          "note": null
+        },
+        {
+          "id": "indoor-portrait-aperture",
+          "label": "Aperture",
+          "value": "F1.4–F2.8",
+          "note": null
+        },
+        {
+          "id": "indoor-portrait-shutter",
+          "label": "Shutter Speed",
+          "value": "1/125 s or faster",
+          "note": null
+        },
+        {
+          "id": "indoor-portrait-iso",
+          "label": "ISO",
+          "value": "Auto",
+          "note": null
+        },
+        {
+          "id": "indoor-portrait-focus",
+          "label": "Focus",
+          "value": "Continuous AF / Eye AF",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "indoor-portrait-focal",
+          "type": "focalLength",
+          "title": "35–85 mm",
+          "detail": "Useful for portraits when working space is limited."
+        },
+        {
+          "id": "indoor-portrait-aperture",
+          "type": "aperture",
+          "title": "F2.8 or faster",
+          "detail": "Helps gather light indoors and isolate the subject."
+        }
+      ],
+      "tips": [
+        {
+          "id": "indoor-portrait-tip-1",
+          "title": "Find Window Light",
+          "text": "Position the subject near a window for a large, soft and directional light source."
+        },
+        {
+          "id": "indoor-portrait-tip-2",
+          "title": "Accept Higher ISO",
+          "text": "A sharp portrait with some noise is often preferable to a blurred image at lower ISO."
+        },
+        {
+          "id": "indoor-portrait-tip-3",
+          "title": "Mind Mixed Lighting",
+          "text": "Different indoor light sources can create conflicting color casts, so simplify the lighting when possible."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 35,
+        "focalLengthMax": 85,
+        "preferredCoverage": null,
+        "minimumMaxAperture": 2.8,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 35,
+        "idealFocalLengthMax": 56,
+        "apertureImportance": 1.5,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "aperture",
+        "iso",
+        "white-balance",
+        "depth-of-field"
+      ]
+    },
+    {
+      "id": "group-photo",
+      "categoryID": "people",
+      "title": "Group Photo",
+      "subtitle": "Keep multiple people sharp",
+      "systemImage": "person.3",
+      "summary": "Group photos require more depth of field than individual portraits. Keep people on a similar focus plane and avoid using an aperture that is too wide.",
+      "settings": [
+        {
+          "id": "group-photo-mode",
+          "label": "Mode",
+          "value": "Aperture Priority",
+          "note": null
+        },
+        {
+          "id": "group-photo-aperture",
+          "label": "Aperture",
+          "value": "F4–F8",
+          "note": null
+        },
+        {
+          "id": "group-photo-shutter",
+          "label": "Shutter Speed",
+          "value": "1/125 s or faster",
+          "note": null
+        },
+        {
+          "id": "group-photo-iso",
+          "label": "ISO",
+          "value": "Auto",
+          "note": null
+        },
+        {
+          "id": "group-photo-focus",
+          "label": "Focus",
+          "value": "Single AF / Face Detection",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "group-photo-focal",
+          "type": "focalLength",
+          "title": "28–70 mm",
+          "detail": "Moderate wide to normal focal lengths are practical for groups without extreme edge distortion."
+        }
+      ],
+      "tips": [
+        {
+          "id": "group-photo-tip-1",
+          "title": "Keep People Aligned",
+          "text": "Arrange people at roughly the same distance from the camera when possible."
+        },
+        {
+          "id": "group-photo-tip-2",
+          "title": "Take Several Frames",
+          "text": "Multiple frames reduce the chance of someone blinking or looking away."
+        },
+        {
+          "id": "group-photo-tip-3",
+          "title": "Focus Into the Group",
+          "text": "For deeper rows, focus slightly behind the front row rather than on the person nearest the camera."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 28,
+        "focalLengthMax": 70,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 35,
+        "idealFocalLengthMax": 50,
+        "apertureImportance": 0.2,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "aperture",
+        "depth-of-field",
+        "single-autofocus",
+        "focal-length"
+      ]
+    },
+    {
+      "id": "stars",
+      "categoryID": "night",
+      "title": "Stars",
+      "subtitle": "Capture a clear star-filled sky",
+      "systemImage": "sparkles",
+      "summary": "Photographing stars requires gathering plenty of light while keeping the shutter speed short enough to prevent obvious star trails.",
+      "settings": [
+        {
+          "id": "stars-mode",
+          "label": "Mode",
+          "value": "Manual",
+          "note": null
+        },
+        {
+          "id": "stars-aperture",
+          "label": "Aperture",
+          "value": "F1.4–F2.8",
+          "note": null
+        },
+        {
+          "id": "stars-shutter",
+          "label": "Shutter Speed",
+          "value": "5–15 s",
+          "note": "Shorten the exposure if stars begin to appear stretched."
+        },
+        {
+          "id": "stars-iso",
+          "label": "ISO",
+          "value": "1600–6400",
+          "note": null
+        },
+        {
+          "id": "stars-focus",
+          "label": "Focus",
+          "value": "Manual",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "stars-focal",
+          "type": "focalLength",
+          "title": "14–24 mm",
+          "detail": "Wide focal lengths make it easier to include more sky and use longer exposures before trails become obvious."
+        },
+        {
+          "id": "stars-aperture",
+          "type": "aperture",
+          "title": "F2.8 or faster",
+          "detail": "A fast lens helps collect more light during a short exposure."
+        },
+        {
+          "id": "stars-tripod",
+          "type": "tripod",
+          "title": "Tripod",
+          "detail": "Required for stable multi-second exposures."
+        }
+      ],
+      "tips": [
+        {
+          "id": "stars-tip-1",
+          "title": "Focus Carefully",
+          "text": "Use magnified live view on a bright star and adjust focus until it appears as small and sharp as possible."
+        },
+        {
+          "id": "stars-tip-2",
+          "title": "Find Dark Skies",
+          "text": "Moving away from strong artificial lighting can reveal significantly more stars."
+        },
+        {
+          "id": "stars-tip-3",
+          "title": "Turn Off Stabilization on a Tripod",
+          "text": "When the camera is firmly mounted, disable stabilization if your camera or lens recommends doing so."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 14,
+        "focalLengthMax": 24,
+        "preferredCoverage": null,
+        "minimumMaxAperture": 2.8,
+        "requiresTripod": true,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 14,
+        "idealFocalLengthMax": 20,
+        "apertureImportance": 1.5,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "manual-mode",
+        "manual-focus",
+        "shutter-speed",
+        "iso"
+      ]
+    },
+    {
+      "id": "milky-way",
+      "categoryID": "night",
+      "title": "Milky Way",
+      "subtitle": "Reveal detail in the night sky",
+      "systemImage": "moon.stars",
+      "summary": "Milky Way photography combines a dark location, a fast lens and careful exposure to reveal structure that is difficult to see with the naked eye.",
+      "settings": [
+        {
+          "id": "milky-way-mode",
+          "label": "Mode",
+          "value": "Manual",
+          "note": null
+        },
+        {
+          "id": "milky-way-aperture",
+          "label": "Aperture",
+          "value": "F1.4–F2.8",
+          "note": null
+        },
+        {
+          "id": "milky-way-shutter",
+          "label": "Shutter Speed",
+          "value": "5–15 s",
+          "note": null
+        },
+        {
+          "id": "milky-way-iso",
+          "label": "ISO",
+          "value": "3200–6400",
+          "note": null
+        },
+        {
+          "id": "milky-way-focus",
+          "label": "Focus",
+          "value": "Manual",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "milky-way-focal",
+          "type": "focalLength",
+          "title": "14–24 mm",
+          "detail": "A wide focal length captures more of the sky and foreground."
+        },
+        {
+          "id": "milky-way-aperture",
+          "type": "aperture",
+          "title": "F2.8 or faster",
+          "detail": "A fast maximum aperture helps collect more starlight."
+        },
+        {
+          "id": "milky-way-tripod",
+          "type": "tripod",
+          "title": "Tripod",
+          "detail": "Required for stable multi-second exposures."
+        }
+      ],
+      "tips": [
+        {
+          "id": "milky-way-tip-1",
+          "title": "Plan the Composition",
+          "text": "The Milky Way changes position through the night and year, so planning helps place it where you want."
+        },
+        {
+          "id": "milky-way-tip-2",
+          "title": "Shoot RAW",
+          "text": "RAW files preserve more flexibility for adjusting shadows, white balance and noise."
+        },
+        {
+          "id": "milky-way-tip-3",
+          "title": "Check the Histogram",
+          "text": "A dark-looking preview can be misleading at night, so use the histogram to confirm that important tones are recorded."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 14,
+        "focalLengthMax": 24,
+        "preferredCoverage": null,
+        "minimumMaxAperture": 2.8,
+        "requiresTripod": true,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 14,
+        "idealFocalLengthMax": 20,
+        "apertureImportance": 1.75,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "manual-mode",
+        "manual-focus",
+        "shutter-speed",
+        "iso"
+      ]
+    },
+    {
+      "id": "blue-hour",
+      "categoryID": "night",
+      "title": "Blue Hour",
+      "subtitle": "Capture the transition into night",
+      "systemImage": "moon.haze",
+      "summary": "Blue hour occurs around twilight when the sky takes on a deep blue tone while enough ambient light remains to balance naturally with artificial lighting.",
+      "settings": [
+        {
+          "id": "blue-hour-mode",
+          "label": "Mode",
+          "value": "Aperture Priority",
+          "note": null
+        },
+        {
+          "id": "blue-hour-aperture",
+          "label": "Aperture",
+          "value": "F5.6–F11",
+          "note": null
+        },
+        {
+          "id": "blue-hour-shutter",
+          "label": "Shutter Speed",
+          "value": "1/4–5 s",
+          "note": "A practical tripod-based range; handheld shooting requires a faster shutter speed and usually a higher ISO."
+        },
+        {
+          "id": "blue-hour-iso",
+          "label": "ISO",
+          "value": "100–400",
+          "note": null
+        },
+        {
+          "id": "blue-hour-wb",
+          "label": "White Balance",
+          "value": "Auto",
+          "note": null
+        },
+        {
+          "id": "blue-hour-focus",
+          "label": "Focus",
+          "value": "Single AF",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "blue-hour-focal",
+          "type": "focalLength",
+          "title": "16–70 mm",
+          "detail": "Versatile for cityscapes, architecture and landscapes."
+        },
+        {
+          "id": "blue-hour-tripod",
+          "type": "tripod",
+          "title": "Tripod",
+          "detail": "Recommended as ambient light fades, especially when you want low ISO and deeper depth of field."
+        }
+      ],
+      "tips": [
+        {
+          "id": "blue-hour-tip-1",
+          "title": "Be Ready Early",
+          "text": "The best balance between sky brightness and artificial lighting can last only a short time."
+        },
+        {
+          "id": "blue-hour-tip-2",
+          "title": "Try Reflections",
+          "text": "Water and wet surfaces can reflect blue-hour color and city lights."
+        },
+        {
+          "id": "blue-hour-tip-3",
+          "title": "Keep Shooting",
+          "text": "Light levels and color balance change quickly, so capture several variations as the sky darkens."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 16,
+        "focalLengthMax": 70,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 16,
+        "idealFocalLengthMax": 35,
+        "apertureImportance": 0.0,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "aperture",
+        "white-balance",
+        "metering",
+        "single-autofocus"
+      ]
+    },
+    {
+      "id": "city-at-night",
+      "categoryID": "night",
+      "title": "City at Night",
+      "subtitle": "Capture lights, streets and architecture",
+      "systemImage": "building.2",
+      "summary": "Night cities combine bright artificial lights with deep shadows. Stabilize the camera when possible and expose carefully to preserve illuminated details.",
+      "settings": [
+        {
+          "id": "city-at-night-mode",
+          "label": "Mode",
+          "value": "Manual",
+          "note": null
+        },
+        {
+          "id": "city-at-night-aperture",
+          "label": "Aperture",
+          "value": "F5.6–F11",
+          "note": null
+        },
+        {
+          "id": "city-at-night-iso",
+          "label": "ISO",
+          "value": "100–800",
+          "note": null
+        },
+        {
+          "id": "city-at-night-shutter",
+          "label": "Shutter Speed",
+          "value": "1/2–30 s",
+          "note": "Use this range when the camera is supported. Handheld shooting requires a faster shutter speed and usually a higher ISO."
+        },
+        {
+          "id": "city-at-night-focus",
+          "label": "Focus",
+          "value": "Single AF",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "city-at-night-focal",
+          "type": "focalLength",
+          "title": "16–70 mm",
+          "detail": "Useful for wide cityscapes through tighter architectural details."
+        },
+        {
+          "id": "city-at-night-tripod",
+          "type": "tripod",
+          "title": "Tripod",
+          "detail": "Recommended for lower ISO, smaller apertures and longer exposures; handheld shooting is also possible with faster shutter speeds."
+        }
+      ],
+      "tips": [
+        {
+          "id": "city-at-night-tip-1",
+          "title": "Protect Bright Lights",
+          "text": "Avoid overexposing important signs, windows and streetlights where you want detail."
+        },
+        {
+          "id": "city-at-night-tip-2",
+          "title": "Use Movement Creatively",
+          "text": "Longer shutter speeds can turn moving cars into light trails while buildings remain sharp."
+        },
+        {
+          "id": "city-at-night-tip-3",
+          "title": "Use a Hood",
+          "text": "A lens hood can help reduce flare from streetlights and other bright sources just outside the frame."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 16,
+        "focalLengthMax": 70,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 24,
+        "idealFocalLengthMax": 50,
+        "apertureImportance": 0.2,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "manual-mode",
+        "metering",
+        "white-balance",
+        "shutter-speed"
+      ]
+    },
+    {
+      "id": "pets",
+      "categoryID": "action-wildlife",
+      "title": "Pets",
+      "subtitle": "Capture sharp, expressive moments",
+      "systemImage": "pawprint",
+      "summary": "Pets can move unpredictably, so use continuous autofocus and a fast shutter speed while paying close attention to the eyes and expression.",
+      "settings": [
+        {
+          "id": "pets-mode",
+          "label": "Mode",
+          "value": "Shutter Priority",
+          "note": null
+        },
+        {
+          "id": "pets-shutter",
+          "label": "Shutter Speed",
+          "value": "1/500–1/1000 s",
+          "note": null
+        },
+        {
+          "id": "pets-aperture",
+          "label": "Aperture",
+          "value": "F2–F5.6",
+          "note": null
+        },
+        {
+          "id": "pets-iso",
+          "label": "ISO",
+          "value": "Auto",
+          "note": null
+        },
+        {
+          "id": "pets-focus",
+          "label": "Focus",
+          "value": "Continuous AF / Animal Eye AF",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "pets-focal",
+          "type": "focalLength",
+          "title": "35–135 mm",
+          "detail": "Flexible for close portraits and action at moderate distances."
+        },
+        {
+          "id": "pets-aperture",
+          "type": "aperture",
+          "title": "F5.6 or faster",
+          "detail": "Useful for indoor light and background separation."
+        }
+      ],
+      "tips": [
+        {
+          "id": "pets-tip-1",
+          "title": "Get Low",
+          "text": "Photographing near the animal's eye level often creates a more engaging perspective."
+        },
+        {
+          "id": "pets-tip-2",
+          "title": "Use Short Bursts",
+          "text": "Short bursts improve your chance of capturing the best expression or moment."
+        },
+        {
+          "id": "pets-tip-3",
+          "title": "Use a Familiar Sound",
+          "text": "A quiet sound or cue can briefly direct the animal's attention toward the camera without forcing the pose."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 35,
+        "focalLengthMax": 135,
+        "preferredCoverage": null,
+        "minimumMaxAperture": 5.6,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 50,
+        "idealFocalLengthMax": 85,
+        "apertureImportance": 0.8,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "continuous-autofocus",
+        "focus-areas",
+        "shutter-speed",
+        "iso"
+      ]
+    },
+    {
+      "id": "wildlife",
+      "categoryID": "action-wildlife",
+      "title": "Wildlife",
+      "subtitle": "React quickly to unpredictable subjects",
+      "systemImage": "binoculars",
+      "summary": "Wildlife photography requires fast reactions, reliable autofocus and enough shutter speed to deal with unpredictable movement.",
+      "settings": [
+        {
+          "id": "wildlife-mode",
+          "label": "Mode",
+          "value": "Shutter Priority",
+          "note": null
+        },
+        {
+          "id": "wildlife-shutter",
+          "label": "Shutter Speed",
+          "value": "1/500–1/2000 s",
+          "note": null
+        },
+        {
+          "id": "wildlife-iso",
+          "label": "ISO",
+          "value": "Auto",
+          "note": null
+        },
+        {
+          "id": "wildlife-focus",
+          "label": "Focus",
+          "value": "Continuous AF",
+          "note": null
+        },
+        {
+          "id": "wildlife-drive",
+          "label": "Drive",
+          "value": "Continuous",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "wildlife-focal",
+          "type": "focalLength",
+          "title": "200–600 mm",
+          "detail": "Telephoto reach helps photograph distant wildlife without approaching too closely."
+        },
+        {
+          "id": "wildlife-stabilization",
+          "type": "stabilization",
+          "title": "Stabilization",
+          "detail": "Helpful when handholding long focal lengths, especially for relatively still subjects."
+        }
+      ],
+      "tips": [
+        {
+          "id": "wildlife-tip-1",
+          "title": "Prioritize Shutter Speed",
+          "text": "Use enough shutter speed for the subject rather than trying to keep ISO unnecessarily low."
+        },
+        {
+          "id": "wildlife-tip-2",
+          "title": "Leave Room to Move",
+          "text": "Avoid framing too tightly when an animal may suddenly change direction."
+        },
+        {
+          "id": "wildlife-tip-3",
+          "title": "Respect Distance",
+          "text": "Use focal length rather than moving too close, especially when an animal changes behavior because of your presence."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 200,
+        "focalLengthMax": 600,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 300,
+        "idealFocalLengthMax": 600,
+        "apertureImportance": 0.4,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "continuous-autofocus",
+        "focus-areas",
+        "shutter-speed",
+        "image-stabilization"
+      ]
+    },
+    {
+      "id": "birds-in-flight",
+      "categoryID": "action-wildlife",
+      "title": "Birds in Flight",
+      "subtitle": "Freeze fast movement in the air",
+      "systemImage": "bird",
+      "summary": "Birds in flight demand fast shutter speeds, continuous autofocus and enough space in the frame to follow unpredictable movement.",
+      "settings": [
+        {
+          "id": "birds-in-flight-mode",
+          "label": "Mode",
+          "value": "Shutter Priority",
+          "note": null
+        },
+        {
+          "id": "birds-in-flight-shutter",
+          "label": "Shutter Speed",
+          "value": "1/1600–1/3200 s",
+          "note": null
+        },
+        {
+          "id": "birds-in-flight-iso",
+          "label": "ISO",
+          "value": "Auto",
+          "note": null
+        },
+        {
+          "id": "birds-in-flight-focus",
+          "label": "Focus",
+          "value": "Continuous AF",
+          "note": null
+        },
+        {
+          "id": "birds-in-flight-drive",
+          "label": "Drive",
+          "value": "Continuous High",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "birds-in-flight-focal",
+          "type": "focalLength",
+          "title": "300–600 mm",
+          "detail": "Long telephoto reach is useful for small and distant birds."
+        },
+        {
+          "id": "birds-in-flight-stabilization",
+          "type": "stabilization",
+          "title": "Stabilization",
+          "detail": "Can help steady the viewfinder and reduce camera movement while tracking."
+        }
+      ],
+      "tips": [
+        {
+          "id": "birds-in-flight-tip-1",
+          "title": "Start Around 1/2000 s",
+          "text": "This is a practical starting point for freezing much of the wing and body movement."
+        },
+        {
+          "id": "birds-in-flight-tip-2",
+          "title": "Leave Space Ahead",
+          "text": "Give the bird room in the frame in the direction it is flying."
+        },
+        {
+          "id": "birds-in-flight-tip-3",
+          "title": "Track Before the Burst",
+          "text": "Acquire and follow the bird before pressing the shutter so autofocus has time to settle on the subject."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 300,
+        "focalLengthMax": 600,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 400,
+        "idealFocalLengthMax": 600,
+        "apertureImportance": 0.4,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "continuous-autofocus",
+        "focus-areas",
+        "shutter-speed",
+        "iso"
+      ]
+    },
+    {
+      "id": "sports",
+      "categoryID": "action-wildlife",
+      "title": "Sports",
+      "subtitle": "Freeze decisive action",
+      "systemImage": "figure.run",
+      "summary": "Sports photography is about anticipating action and keeping moving subjects sharp. A fast shutter speed and continuous autofocus are the priorities.",
+      "settings": [
+        {
+          "id": "sports-mode",
+          "label": "Mode",
+          "value": "Shutter Priority",
+          "note": null
+        },
+        {
+          "id": "sports-shutter",
+          "label": "Shutter Speed",
+          "value": "1/1000–1/2000 s",
+          "note": null
+        },
+        {
+          "id": "sports-iso",
+          "label": "ISO",
+          "value": "Auto",
+          "note": null
+        },
+        {
+          "id": "sports-focus",
+          "label": "Focus",
+          "value": "Continuous AF",
+          "note": null
+        },
+        {
+          "id": "sports-drive",
+          "label": "Drive",
+          "value": "Continuous High",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "sports-focal",
+          "type": "focalLength",
+          "title": "70–300 mm",
+          "detail": "A useful range for many field and court sports, depending on working distance."
+        },
+        {
+          "id": "sports-aperture",
+          "type": "aperture",
+          "title": "F5.6 or faster",
+          "detail": "A moderately fast lens helps maintain action-stopping shutter speeds and subject separation."
+        }
+      ],
+      "tips": [
+        {
+          "id": "sports-tip-1",
+          "title": "Anticipate the Action",
+          "text": "Watch the activity and prepare for moments before they happen rather than reacting afterward."
+        },
+        {
+          "id": "sports-tip-2",
+          "title": "Use Short Bursts",
+          "text": "Shoot around peak moments rather than holding the shutter continuously for long periods."
+        },
+        {
+          "id": "sports-tip-3",
+          "title": "Choose a Clean Background",
+          "text": "When possible, position yourself so the action is separated from spectators, signs and other distractions."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 70,
+        "focalLengthMax": 300,
+        "preferredCoverage": null,
+        "minimumMaxAperture": 5.6,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 100,
+        "idealFocalLengthMax": 200,
+        "apertureImportance": 0.5,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "shutter-priority",
+        "continuous-autofocus",
+        "focus-areas",
+        "shutter-speed"
+      ]
+    },
+    {
+      "id": "panning",
+      "categoryID": "action-wildlife",
+      "title": "Panning",
+      "subtitle": "Show speed with motion blur",
+      "systemImage": "arrow.left.and.right",
+      "summary": "Panning uses a slower shutter speed while following a moving subject, keeping the subject relatively sharp while turning the background into directional blur.",
+      "settings": [
+        {
+          "id": "panning-mode",
+          "label": "Mode",
+          "value": "Shutter Priority",
+          "note": null
+        },
+        {
+          "id": "panning-shutter",
+          "label": "Shutter Speed",
+          "value": "1/30–1/125 s",
+          "note": "Start around 1/60 s and adjust for subject speed."
+        },
+        {
+          "id": "panning-iso",
+          "label": "ISO",
+          "value": "Auto",
+          "note": null
+        },
+        {
+          "id": "panning-focus",
+          "label": "Focus",
+          "value": "Continuous AF",
+          "note": null
+        },
+        {
+          "id": "panning-drive",
+          "label": "Drive",
+          "value": "Continuous",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "panning-focal",
+          "type": "focalLength",
+          "title": "35–200 mm",
+          "detail": "Choose focal length based on subject distance and how tightly you want to frame it."
+        },
+        {
+          "id": "panning-stabilization",
+          "type": "stabilization",
+          "title": "Panning Stabilization",
+          "detail": "If your lens or camera has a panning-specific stabilization mode, it can be useful."
+        },
+        {
+          "id": "panning-nd",
+          "type": "ndFilter",
+          "title": "ND Filter",
+          "detail": "Optional in bright daylight when you cannot reach a slow enough shutter speed at the lowest ISO."
+        }
+      ],
+      "tips": [
+        {
+          "id": "panning-tip-1",
+          "title": "Follow Before Shooting",
+          "text": "Start tracking smoothly before pressing the shutter."
+        },
+        {
+          "id": "panning-tip-2",
+          "title": "Follow Through",
+          "text": "Continue the panning motion after the exposure instead of stopping abruptly."
+        },
+        {
+          "id": "panning-tip-3",
+          "title": "Practice at One Speed",
+          "text": "Repeat the same subject speed and shutter speed for several passes before making larger adjustments."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 35,
+        "focalLengthMax": 200,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": false,
+        "recommendsNDFilter": true,
+        "idealFocalLengthMin": 50,
+        "idealFocalLengthMax": 135,
+        "apertureImportance": 0.1,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "shutter-priority",
+        "continuous-autofocus",
+        "shutter-speed",
+        "image-stabilization"
+      ]
+    },
+    {
+      "id": "lakes-reflections",
+      "categoryID": "landscape",
+      "title": "Lakes & Reflections",
+      "subtitle": "Use calm water as part of the composition",
+      "systemImage": "water.waves",
+      "summary": "Still water can mirror skies, mountains and trees. Balance exposure carefully and decide whether you want to preserve or reduce reflections.",
+      "settings": [
+        {
+          "id": "lakes-reflections-mode",
+          "label": "Mode",
+          "value": "Aperture Priority",
+          "note": null
+        },
+        {
+          "id": "lakes-reflections-aperture",
+          "label": "Aperture",
+          "value": "F8–F11",
+          "note": null
+        },
+        {
+          "id": "lakes-reflections-iso",
+          "label": "ISO",
+          "value": "100–400",
+          "note": null
+        },
+        {
+          "id": "lakes-reflections-focus",
+          "label": "Focus",
+          "value": "Single AF",
+          "note": null
+        },
+        {
+          "id": "lakes-reflections-ev",
+          "label": "Exposure Compensation",
+          "value": "0 to -0.7 EV",
+          "note": "Use slight negative compensation if bright sky reflections are clipping."
+        }
+      ],
+      "requirements": [
+        {
+          "id": "lakes-reflections-focal",
+          "type": "focalLength",
+          "title": "16–70 mm",
+          "detail": "Wide to normal focal lengths work well for symmetrical scenes and environmental context."
+        },
+        {
+          "id": "lakes-reflections-tripod",
+          "type": "tripod",
+          "title": "Tripod",
+          "detail": "Recommended when light is low or when you want precise framing."
+        },
+        {
+          "id": "lakes-reflections-cpl",
+          "type": "cplFilter",
+          "title": "CPL Filter",
+          "detail": "Optional. A polarizer can reduce glare, but it can also weaken the reflection you are trying to photograph."
+        }
+      ],
+      "tips": [
+        {
+          "id": "lakes-reflections-tip-1",
+          "title": "Look for Calm Conditions",
+          "text": "Early mornings and sheltered water often produce cleaner reflections."
+        },
+        {
+          "id": "lakes-reflections-tip-2",
+          "title": "Try Symmetry",
+          "text": "Place the shoreline near the center when the reflection is a major part of the image."
+        },
+        {
+          "id": "lakes-reflections-tip-3",
+          "title": "Rotate the CPL Slowly",
+          "text": "Watch the reflection while rotating the polarizer and stop before the effect becomes too strong."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 16,
+        "focalLengthMax": 70,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 24,
+        "idealFocalLengthMax": 50,
+        "apertureImportance": 0.0,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "aperture",
+        "exposure-compensation",
+        "metering",
+        "focal-length"
+      ]
+    },
+    {
+      "id": "seascapes",
+      "categoryID": "landscape",
+      "title": "Seascapes",
+      "subtitle": "Shape waves, coastlines and moving water",
+      "systemImage": "water.waves",
+      "summary": "Seascapes combine moving water with strong horizons and foreground detail. Shutter speed determines whether waves look crisp, textured or smooth.",
+      "settings": [
+        {
+          "id": "seascapes-mode",
+          "label": "Mode",
+          "value": "Manual",
+          "note": null
+        },
+        {
+          "id": "seascapes-aperture",
+          "label": "Aperture",
+          "value": "F8–F11",
+          "note": null
+        },
+        {
+          "id": "seascapes-shutter",
+          "label": "Shutter Speed",
+          "value": "1/4–2 s",
+          "note": "Shorter exposures retain wave texture; longer exposures create smoother movement."
+        },
+        {
+          "id": "seascapes-iso",
+          "label": "ISO",
+          "value": "100",
+          "note": null
+        },
+        {
+          "id": "seascapes-focus",
+          "label": "Focus",
+          "value": "Single AF / Manual",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "seascapes-focal",
+          "type": "focalLength",
+          "title": "16–50 mm",
+          "detail": "Wide focal lengths help include foreground rocks, coastline and sky."
+        },
+        {
+          "id": "seascapes-tripod",
+          "type": "tripod",
+          "title": "Tripod",
+          "detail": "Required for consistent sharpness at the recommended slow shutter speeds."
+        },
+        {
+          "id": "seascapes-nd",
+          "type": "ndFilter",
+          "title": "ND Filter",
+          "detail": "Useful in daylight when you want slower shutter speeds."
+        },
+        {
+          "id": "seascapes-cpl",
+          "type": "cplFilter",
+          "title": "CPL Filter",
+          "detail": "Optional for controlling glare on rocks and shallow water."
+        }
+      ],
+      "tips": [
+        {
+          "id": "seascapes-tip-1",
+          "title": "Time the Waves",
+          "text": "Release the shutter as water moves through the composition rather than shooting randomly."
+        },
+        {
+          "id": "seascapes-tip-2",
+          "title": "Keep the Horizon Level",
+          "text": "Small horizon errors are especially obvious in open seascapes."
+        },
+        {
+          "id": "seascapes-tip-3",
+          "title": "Protect Your Gear",
+          "text": "Salt spray can build up quickly, so clean the front element and avoid changing lenses in heavy spray."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 16,
+        "focalLengthMax": 50,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": true,
+        "recommendsNDFilter": true,
+        "idealFocalLengthMin": 16,
+        "idealFocalLengthMax": 35,
+        "apertureImportance": 0.0,
+        "recommendsCPLFilter": true,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "shutter-speed",
+        "manual-mode",
+        "aperture",
+        "image-stabilization"
+      ]
+    },
+    {
+      "id": "rivers-streams",
+      "categoryID": "landscape",
+      "title": "Rivers & Streams",
+      "subtitle": "Use flowing water to lead through the frame",
+      "systemImage": "water.waves",
+      "summary": "Rivers and streams can become strong leading elements. Use shutter speed to control texture while keeping surrounding details sharp.",
+      "settings": [
+        {
+          "id": "rivers-streams-mode",
+          "label": "Mode",
+          "value": "Manual",
+          "note": null
+        },
+        {
+          "id": "rivers-streams-aperture",
+          "label": "Aperture",
+          "value": "F8–F11",
+          "note": null
+        },
+        {
+          "id": "rivers-streams-shutter",
+          "label": "Shutter Speed",
+          "value": "1/4–1 s",
+          "note": "Adjust to preserve some texture in the moving water."
+        },
+        {
+          "id": "rivers-streams-iso",
+          "label": "ISO",
+          "value": "100",
+          "note": null
+        },
+        {
+          "id": "rivers-streams-focus",
+          "label": "Focus",
+          "value": "Single AF / Manual",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "rivers-streams-focal",
+          "type": "focalLength",
+          "title": "16–70 mm",
+          "detail": "Wide to normal focal lengths cover both environmental views and tighter stream details."
+        },
+        {
+          "id": "rivers-streams-tripod",
+          "type": "tripod",
+          "title": "Tripod",
+          "detail": "Required for consistent sharpness at the recommended slow shutter speeds."
+        },
+        {
+          "id": "rivers-streams-nd",
+          "type": "ndFilter",
+          "title": "ND Filter",
+          "detail": "Useful when ambient light is too bright for the shutter speed you want."
+        },
+        {
+          "id": "rivers-streams-cpl",
+          "type": "cplFilter",
+          "title": "CPL Filter",
+          "detail": "Useful for reducing glare on wet rocks and seeing through shallow water."
+        }
+      ],
+      "tips": [
+        {
+          "id": "rivers-streams-tip-1",
+          "title": "Use the Water as a Leading Line",
+          "text": "Position bends and channels so they guide the eye into the scene."
+        },
+        {
+          "id": "rivers-streams-tip-2",
+          "title": "Keep Some Texture",
+          "text": "Extremely long exposures can remove all character from smaller streams."
+        },
+        {
+          "id": "rivers-streams-tip-3",
+          "title": "Watch Wet Highlights",
+          "text": "Reflective rocks and white water can clip before the rest of the scene."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 16,
+        "focalLengthMax": 70,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": true,
+        "recommendsNDFilter": true,
+        "idealFocalLengthMin": 24,
+        "idealFocalLengthMax": 50,
+        "apertureImportance": 0.0,
+        "recommendsCPLFilter": true,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "shutter-speed",
+        "aperture",
+        "metering",
+        "focal-length"
+      ]
+    },
+    {
+      "id": "fog-mist",
+      "categoryID": "landscape",
+      "title": "Fog & Mist",
+      "subtitle": "Create simple, atmospheric landscapes",
+      "systemImage": "cloud.fog",
+      "summary": "Fog reduces contrast, hides distant detail and simplifies complex scenes. Use that separation to build layered, minimal compositions.",
+      "settings": [
+        {
+          "id": "fog-mist-mode",
+          "label": "Mode",
+          "value": "Aperture Priority",
+          "note": null
+        },
+        {
+          "id": "fog-mist-aperture",
+          "label": "Aperture",
+          "value": "F5.6–F11",
+          "note": null
+        },
+        {
+          "id": "fog-mist-iso",
+          "label": "ISO",
+          "value": "100–800",
+          "note": null
+        },
+        {
+          "id": "fog-mist-ev",
+          "label": "Exposure Compensation",
+          "value": "+0.3 to +1 EV",
+          "note": "Bright fog can cause the meter to render the scene darker than expected."
+        },
+        {
+          "id": "fog-mist-focus",
+          "label": "Focus",
+          "value": "Single AF",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "fog-mist-focal",
+          "type": "focalLength",
+          "title": "24–200 mm",
+          "detail": "Normal and telephoto focal lengths are especially useful for isolating layers in fog."
+        }
+      ],
+      "tips": [
+        {
+          "id": "fog-mist-tip-1",
+          "title": "Look for Layers",
+          "text": "Trees, hills or buildings at different distances become naturally separated by haze."
+        },
+        {
+          "id": "fog-mist-tip-2",
+          "title": "Expose the Fog Brightly",
+          "text": "Check the histogram and avoid letting white fog become dull gray unless that is intentional."
+        },
+        {
+          "id": "fog-mist-tip-3",
+          "title": "Simplify Aggressively",
+          "text": "Fog is most effective when the frame contains only a few strong shapes."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 24,
+        "focalLengthMax": 200,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 50,
+        "idealFocalLengthMax": 135,
+        "apertureImportance": 0.0,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "exposure-compensation",
+        "metering",
+        "focal-length",
+        "single-autofocus"
+      ]
+    },
+    {
+      "id": "snow-landscapes",
+      "categoryID": "landscape",
+      "title": "Snow Landscapes",
+      "subtitle": "Keep bright snow clean and detailed",
+      "systemImage": "snowflake",
+      "summary": "Snow can fool camera meters into underexposing the scene. Add exposure when needed while preserving texture in the brightest areas.",
+      "settings": [
+        {
+          "id": "snow-landscapes-mode",
+          "label": "Mode",
+          "value": "Aperture Priority",
+          "note": null
+        },
+        {
+          "id": "snow-landscapes-aperture",
+          "label": "Aperture",
+          "value": "F8–F11",
+          "note": null
+        },
+        {
+          "id": "snow-landscapes-iso",
+          "label": "ISO",
+          "value": "100–400",
+          "note": null
+        },
+        {
+          "id": "snow-landscapes-ev",
+          "label": "Exposure Compensation",
+          "value": "+0.7 to +1.7 EV",
+          "note": "Adjust while watching highlights; the exact amount depends on how much snow fills the frame."
+        },
+        {
+          "id": "snow-landscapes-wb",
+          "label": "White Balance",
+          "value": "Daylight / Auto",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "snow-landscapes-focal",
+          "type": "focalLength",
+          "title": "16–200 mm",
+          "detail": "Wide lenses show the environment while telephoto lenses isolate snowy details and layers."
+        },
+        {
+          "id": "snow-landscapes-cpl",
+          "type": "cplFilter",
+          "title": "CPL Filter",
+          "detail": "Optional for reducing glare and deepening contrast in suitable light."
+        }
+      ],
+      "tips": [
+        {
+          "id": "snow-landscapes-tip-1",
+          "title": "Watch the Histogram",
+          "text": "Aim for bright snow without pushing important highlights off the right edge."
+        },
+        {
+          "id": "snow-landscapes-tip-2",
+          "title": "Protect Batteries",
+          "text": "Cold temperatures can reduce battery performance, so keep a spare warm when possible."
+        },
+        {
+          "id": "snow-landscapes-tip-3",
+          "title": "Check White Balance",
+          "text": "Snow can pick up strong blue casts in shade; decide whether to keep or neutralize them."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 16,
+        "focalLengthMax": 200,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 24,
+        "idealFocalLengthMax": 100,
+        "apertureImportance": 0.0,
+        "recommendsCPLFilter": true,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "exposure-compensation",
+        "metering",
+        "white-balance",
+        "aperture"
+      ]
+    },
+    {
+      "id": "environmental-portrait",
+      "categoryID": "people",
+      "title": "Environmental Portrait",
+      "subtitle": "Show the person and the place together",
+      "systemImage": "person.crop.rectangle",
+      "summary": "Environmental portraits use surroundings to add context. Keep enough depth of field for the location to remain recognizable without letting it overpower the subject.",
+      "settings": [
+        {
+          "id": "environmental-portrait-mode",
+          "label": "Mode",
+          "value": "Aperture Priority",
+          "note": null
+        },
+        {
+          "id": "environmental-portrait-aperture",
+          "label": "Aperture",
+          "value": "F2.8–F5.6",
+          "note": null
+        },
+        {
+          "id": "environmental-portrait-shutter",
+          "label": "Shutter Speed",
+          "value": "1/250 s or faster",
+          "note": null
+        },
+        {
+          "id": "environmental-portrait-iso",
+          "label": "ISO",
+          "value": "Auto",
+          "note": null
+        },
+        {
+          "id": "environmental-portrait-focus",
+          "label": "Focus",
+          "value": "Continuous AF / Eye AF",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "environmental-portrait-focal",
+          "type": "focalLength",
+          "title": "24–70 mm",
+          "detail": "Wide-normal focal lengths include context while keeping perspective manageable when you avoid placing faces near the frame edges."
+        },
+        {
+          "id": "environmental-portrait-aperture",
+          "type": "aperture",
+          "title": "F5.6 or faster",
+          "detail": "A moderately fast lens gives flexibility between context and separation."
+        }
+      ],
+      "tips": [
+        {
+          "id": "environmental-portrait-tip-1",
+          "title": "Let the Background Explain Something",
+          "text": "Include details that add information about the subject rather than random clutter."
+        },
+        {
+          "id": "environmental-portrait-tip-2",
+          "title": "Avoid Edge Distortion",
+          "text": "Keep faces away from the extreme edges when using wider focal lengths."
+        },
+        {
+          "id": "environmental-portrait-tip-3",
+          "title": "Balance Subject and Scene",
+          "text": "Move yourself before reaching for a wider aperture; composition should do most of the work."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 24,
+        "focalLengthMax": 70,
+        "preferredCoverage": null,
+        "minimumMaxAperture": 5.6,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 35,
+        "idealFocalLengthMax": 50,
+        "apertureImportance": 0.5,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "aperture",
+        "depth-of-field",
+        "focal-length",
+        "continuous-autofocus"
+      ]
+    },
+    {
+      "id": "backlit-portrait",
+      "categoryID": "people",
+      "title": "Backlit Portrait",
+      "subtitle": "Control bright light behind your subject",
+      "systemImage": "sun.max",
+      "summary": "Backlighting can create rim light and atmosphere, but the subject's face can become too dark. Meter carefully and add fill light when needed.",
+      "settings": [
+        {
+          "id": "backlit-portrait-mode",
+          "label": "Mode",
+          "value": "Aperture Priority",
+          "note": null
+        },
+        {
+          "id": "backlit-portrait-aperture",
+          "label": "Aperture",
+          "value": "F1.8–F4",
+          "note": null
+        },
+        {
+          "id": "backlit-portrait-shutter",
+          "label": "Shutter Speed",
+          "value": "1/250 s or faster",
+          "note": null
+        },
+        {
+          "id": "backlit-portrait-ev",
+          "label": "Exposure Compensation",
+          "value": "+0.3 to +1 EV",
+          "note": "Increase exposure when the face is too dark, while checking bright background highlights."
+        },
+        {
+          "id": "backlit-portrait-focus",
+          "label": "Focus",
+          "value": "Continuous AF / Eye AF",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "backlit-portrait-focal",
+          "type": "focalLength",
+          "title": "35–135 mm",
+          "detail": "Normal to short telephoto focal lengths work well for subject separation."
+        },
+        {
+          "id": "backlit-portrait-aperture",
+          "type": "aperture",
+          "title": "F4 or faster",
+          "detail": "A wider aperture helps isolate the subject and soften a bright background."
+        },
+        {
+          "id": "backlit-portrait-flash",
+          "type": "flash",
+          "title": "Flash",
+          "detail": "Optional fill flash can lift the face when the background is much brighter than the subject."
+        }
+      ],
+      "tips": [
+        {
+          "id": "backlit-portrait-tip-1",
+          "title": "Shade the Lens",
+          "text": "Use a hood or your hand outside the frame to reduce unwanted flare."
+        },
+        {
+          "id": "backlit-portrait-tip-2",
+          "title": "Expose for the Face",
+          "text": "Evaluate skin tones separately from the brightness of the background."
+        },
+        {
+          "id": "backlit-portrait-tip-3",
+          "title": "Use the Rim Light",
+          "text": "Position the subject so the backlight outlines hair or shoulders instead of disappearing directly behind them."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 35,
+        "focalLengthMax": 135,
+        "preferredCoverage": null,
+        "minimumMaxAperture": 4.0,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 50,
+        "idealFocalLengthMax": 85,
+        "apertureImportance": 1.0,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": true
+      },
+      "relatedReferenceIDs": [
+        "exposure-compensation",
+        "metering",
+        "aperture",
+        "depth-of-field"
+      ]
+    },
+    {
+      "id": "couples",
+      "categoryID": "people",
+      "title": "Couples",
+      "subtitle": "Keep two people connected and sharp",
+      "systemImage": "person.2",
+      "summary": "Couple portraits need enough depth of field for both faces while still separating them from the background. Pose them close to the same focus plane when possible.",
+      "settings": [
+        {
+          "id": "couples-mode",
+          "label": "Mode",
+          "value": "Aperture Priority",
+          "note": null
+        },
+        {
+          "id": "couples-aperture",
+          "label": "Aperture",
+          "value": "F2.8–F5.6",
+          "note": null
+        },
+        {
+          "id": "couples-shutter",
+          "label": "Shutter Speed",
+          "value": "1/250 s or faster",
+          "note": null
+        },
+        {
+          "id": "couples-iso",
+          "label": "ISO",
+          "value": "Auto",
+          "note": null
+        },
+        {
+          "id": "couples-focus",
+          "label": "Focus",
+          "value": "Continuous AF / Eye AF",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "couples-focal",
+          "type": "focalLength",
+          "title": "35–135 mm",
+          "detail": "Normal to short telephoto focal lengths give comfortable working distance and flattering perspective."
+        },
+        {
+          "id": "couples-aperture",
+          "type": "aperture",
+          "title": "F5.6 or faster",
+          "detail": "Useful for separation while keeping both people sharp."
+        }
+      ],
+      "tips": [
+        {
+          "id": "couples-tip-1",
+          "title": "Keep Faces on a Similar Plane",
+          "text": "Depth of field is easier to manage when both subjects are similar distances from the camera."
+        },
+        {
+          "id": "couples-tip-2",
+          "title": "Create Interaction",
+          "text": "Small actions and eye contact often look more natural than two people simply facing the camera."
+        },
+        {
+          "id": "couples-tip-3",
+          "title": "Check Both Faces",
+          "text": "Zoom in after a few frames to confirm that both sets of eyes are sharp."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 35,
+        "focalLengthMax": 135,
+        "preferredCoverage": null,
+        "minimumMaxAperture": 5.6,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 50,
+        "idealFocalLengthMax": 85,
+        "apertureImportance": 0.7,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "depth-of-field",
+        "aperture",
+        "continuous-autofocus",
+        "focal-length"
+      ]
+    },
+    {
+      "id": "children",
+      "categoryID": "people",
+      "title": "Children",
+      "subtitle": "React quickly to natural movement",
+      "systemImage": "figure.run",
+      "summary": "Children rarely stay still for long. Prioritize shutter speed and continuous autofocus, then let moments happen rather than over-directing them.",
+      "settings": [
+        {
+          "id": "children-mode",
+          "label": "Mode",
+          "value": "Shutter Priority",
+          "note": null
+        },
+        {
+          "id": "children-shutter",
+          "label": "Shutter Speed",
+          "value": "1/500–1/1000 s",
+          "note": null
+        },
+        {
+          "id": "children-aperture",
+          "label": "Aperture",
+          "value": "F2.8–F5.6",
+          "note": null
+        },
+        {
+          "id": "children-iso",
+          "label": "ISO",
+          "value": "Auto",
+          "note": null
+        },
+        {
+          "id": "children-focus",
+          "label": "Focus",
+          "value": "Continuous AF / Eye AF",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "children-focal",
+          "type": "focalLength",
+          "title": "35–135 mm",
+          "detail": "A flexible range lets you work nearby or give the subject more space."
+        },
+        {
+          "id": "children-aperture",
+          "type": "aperture",
+          "title": "F5.6 or faster",
+          "detail": "Helpful for maintaining faster shutter speeds in lower light."
+        }
+      ],
+      "tips": [
+        {
+          "id": "children-tip-1",
+          "title": "Stay Ready",
+          "text": "Keep the camera awake and settings prepared because good moments often happen between posed frames."
+        },
+        {
+          "id": "children-tip-2",
+          "title": "Use Short Bursts",
+          "text": "A few frames around peak movement usually work better than long uncontrolled bursts."
+        },
+        {
+          "id": "children-tip-3",
+          "title": "Photograph at Their Level",
+          "text": "Lower camera positions often create more direct and engaging images."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 35,
+        "focalLengthMax": 135,
+        "preferredCoverage": null,
+        "minimumMaxAperture": 5.6,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 50,
+        "idealFocalLengthMax": 85,
+        "apertureImportance": 0.7,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "shutter-priority",
+        "continuous-autofocus",
+        "focus-areas",
+        "shutter-speed"
+      ]
+    },
+    {
+      "id": "street-portrait",
+      "categoryID": "people",
+      "title": "Street Portrait",
+      "subtitle": "Work quickly in real-world surroundings",
+      "systemImage": "person.crop.rectangle",
+      "summary": "Street portraits combine people with uncontrolled backgrounds and changing light. Use a compact setup and settings that let you react quickly.",
+      "settings": [
+        {
+          "id": "street-portrait-mode",
+          "label": "Mode",
+          "value": "Aperture Priority",
+          "note": null
+        },
+        {
+          "id": "street-portrait-aperture",
+          "label": "Aperture",
+          "value": "F2–F4",
+          "note": null
+        },
+        {
+          "id": "street-portrait-shutter",
+          "label": "Shutter Speed",
+          "value": "1/250 s or faster",
+          "note": null
+        },
+        {
+          "id": "street-portrait-iso",
+          "label": "ISO",
+          "value": "Auto",
+          "note": null
+        },
+        {
+          "id": "street-portrait-focus",
+          "label": "Focus",
+          "value": "Continuous AF / Eye AF",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "street-portrait-focal",
+          "type": "focalLength",
+          "title": "35–85 mm",
+          "detail": "Normal focal lengths balance context, working distance and subject separation."
+        },
+        {
+          "id": "street-portrait-aperture",
+          "type": "aperture",
+          "title": "F4 or faster",
+          "detail": "Useful when moving between shade, indoor spaces and evening light."
+        }
+      ],
+      "tips": [
+        {
+          "id": "street-portrait-tip-1",
+          "title": "Choose the Background First",
+          "text": "Find clean light or a strong backdrop, then place the subject within it."
+        },
+        {
+          "id": "street-portrait-tip-2",
+          "title": "Keep the Setup Simple",
+          "text": "Avoid changing too many settings when the light and subject can change quickly."
+        },
+        {
+          "id": "street-portrait-tip-3",
+          "title": "Respect the Subject",
+          "text": "For directed portraits, communicate clearly and work efficiently once someone agrees to be photographed."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 35,
+        "focalLengthMax": 85,
+        "preferredCoverage": null,
+        "minimumMaxAperture": 4.0,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 35,
+        "idealFocalLengthMax": 56,
+        "apertureImportance": 0.9,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "aperture",
+        "continuous-autofocus",
+        "iso",
+        "focal-length"
+      ]
+    },
+    {
+      "id": "moon",
+      "categoryID": "night",
+      "title": "Moon",
+      "subtitle": "Reveal detail on the lunar surface",
+      "systemImage": "moon",
+      "summary": "The moon is much brighter than the night sky. Use a telephoto lens, low ISO and a relatively fast shutter speed to preserve surface detail.",
+      "settings": [
+        {
+          "id": "moon-mode",
+          "label": "Mode",
+          "value": "Manual",
+          "note": null
+        },
+        {
+          "id": "moon-aperture",
+          "label": "Aperture",
+          "value": "F5.6–F8",
+          "note": null
+        },
+        {
+          "id": "moon-shutter",
+          "label": "Shutter Speed",
+          "value": "1/125–1/500 s",
+          "note": null
+        },
+        {
+          "id": "moon-iso",
+          "label": "ISO",
+          "value": "100–400",
+          "note": null
+        },
+        {
+          "id": "moon-focus",
+          "label": "Focus",
+          "value": "Single AF / Manual",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "moon-focal",
+          "type": "focalLength",
+          "title": "200–600 mm",
+          "detail": "Long focal lengths make the moon large enough in the frame to show surface detail."
+        },
+        {
+          "id": "moon-tripod",
+          "type": "tripod",
+          "title": "Tripod",
+          "detail": "Optional but useful for precise framing at very long focal lengths."
+        }
+      ],
+      "tips": [
+        {
+          "id": "moon-tip-1",
+          "title": "Do Not Expose for the Sky",
+          "text": "The surrounding sky can be almost black while the moon itself remains correctly exposed."
+        },
+        {
+          "id": "moon-tip-2",
+          "title": "Use Magnified View",
+          "text": "Check critical focus on the moon's edge or surface features."
+        },
+        {
+          "id": "moon-tip-3",
+          "title": "Try Different Phases",
+          "text": "Side lighting around quarter phases reveals more crater relief than a flat full moon."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 200,
+        "focalLengthMax": 600,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 300,
+        "idealFocalLengthMax": 600,
+        "apertureImportance": 0.2,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "manual-mode",
+        "metering",
+        "shutter-speed",
+        "manual-focus"
+      ]
+    },
+    {
+      "id": "light-trails",
+      "categoryID": "night",
+      "title": "Light Trails",
+      "subtitle": "Turn moving lights into lines of motion",
+      "systemImage": "car.side",
+      "summary": "Long exposures can transform moving vehicle lights into continuous trails while buildings and streets remain sharp.",
+      "settings": [
+        {
+          "id": "light-trails-mode",
+          "label": "Mode",
+          "value": "Manual",
+          "note": null
+        },
+        {
+          "id": "light-trails-aperture",
+          "label": "Aperture",
+          "value": "F8–F11",
+          "note": null
+        },
+        {
+          "id": "light-trails-shutter",
+          "label": "Shutter Speed",
+          "value": "5–30 s",
+          "note": "Adjust for traffic speed and how far you want the trails to travel through the frame."
+        },
+        {
+          "id": "light-trails-iso",
+          "label": "ISO",
+          "value": "100–400",
+          "note": null
+        },
+        {
+          "id": "light-trails-focus",
+          "label": "Focus",
+          "value": "Single AF / Manual",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "light-trails-focal",
+          "type": "focalLength",
+          "title": "16–70 mm",
+          "detail": "Wide to normal focal lengths work for roads, intersections and city context."
+        },
+        {
+          "id": "light-trails-tripod",
+          "type": "tripod",
+          "title": "Tripod",
+          "detail": "Required for sharp stationary elements during multi-second exposures."
+        }
+      ],
+      "tips": [
+        {
+          "id": "light-trails-tip-1",
+          "title": "Build the Composition First",
+          "text": "Treat roads and buildings as the composition; the light trails should support it."
+        },
+        {
+          "id": "light-trails-tip-2",
+          "title": "Wait for Enough Traffic",
+          "text": "A longer exposure is not useful if too few lights pass through the frame."
+        },
+        {
+          "id": "light-trails-tip-3",
+          "title": "Protect Highlights",
+          "text": "Bright headlights and signs can clip quickly, so check the brightest parts of the image."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 16,
+        "focalLengthMax": 70,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": true,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 24,
+        "idealFocalLengthMax": 50,
+        "apertureImportance": 0.0,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "manual-mode",
+        "shutter-speed",
+        "aperture",
+        "metering"
+      ]
+    },
+    {
+      "id": "star-trails",
+      "categoryID": "night",
+      "title": "Star Trails",
+      "subtitle": "Record the apparent movement of the night sky",
+      "systemImage": "sparkles",
+      "summary": "Star trails show Earth's rotation by combining long total exposure time with a fixed composition. Stacking multiple shorter frames is often more flexible than one extremely long exposure.",
+      "settings": [
+        {
+          "id": "star-trails-mode",
+          "label": "Mode",
+          "value": "Manual",
+          "note": null
+        },
+        {
+          "id": "star-trails-aperture",
+          "label": "Aperture",
+          "value": "F2–F4",
+          "note": null
+        },
+        {
+          "id": "star-trails-shutter",
+          "label": "Shutter Speed",
+          "value": "15–30 s per frame",
+          "note": "Capture many frames and stack them for longer trails."
+        },
+        {
+          "id": "star-trails-iso",
+          "label": "ISO",
+          "value": "800–3200",
+          "note": null
+        },
+        {
+          "id": "star-trails-focus",
+          "label": "Focus",
+          "value": "Manual",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "star-trails-focal",
+          "type": "focalLength",
+          "title": "14–35 mm",
+          "detail": "Wide focal lengths make it easier to include both sky movement and foreground context."
+        },
+        {
+          "id": "star-trails-aperture",
+          "type": "aperture",
+          "title": "F4 or faster",
+          "detail": "A fast lens helps record more stars in each exposure."
+        },
+        {
+          "id": "star-trails-tripod",
+          "type": "tripod",
+          "title": "Tripod",
+          "detail": "Required so every frame aligns precisely."
+        }
+      ],
+      "tips": [
+        {
+          "id": "star-trails-tip-1",
+          "title": "Keep Everything Consistent",
+          "text": "Do not move the tripod or change focus once the sequence begins."
+        },
+        {
+          "id": "star-trails-tip-2",
+          "title": "Use an Interval Timer",
+          "text": "Small gaps between frames can create breaks in stacked trails."
+        },
+        {
+          "id": "star-trails-tip-3",
+          "title": "Plan the Direction",
+          "text": "The look of the trails changes depending on where the camera points in the sky."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 14,
+        "focalLengthMax": 35,
+        "preferredCoverage": null,
+        "minimumMaxAperture": 4.0,
+        "requiresTripod": true,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 14,
+        "idealFocalLengthMax": 24,
+        "apertureImportance": 1.2,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "manual-mode",
+        "manual-focus",
+        "shutter-speed",
+        "iso"
+      ]
+    },
+    {
+      "id": "night-portrait",
+      "categoryID": "night",
+      "title": "Night Portrait",
+      "subtitle": "Balance a person with low ambient light",
+      "systemImage": "person.crop.square",
+      "summary": "Night portraits need enough shutter speed for the subject while preserving some ambient light. A fast lens and optional flash make the balance easier.",
+      "settings": [
+        {
+          "id": "night-portrait-mode",
+          "label": "Mode",
+          "value": "Manual / Aperture Priority",
+          "note": null
+        },
+        {
+          "id": "night-portrait-aperture",
+          "label": "Aperture",
+          "value": "F1.4–F2.8",
+          "note": null
+        },
+        {
+          "id": "night-portrait-shutter",
+          "label": "Shutter Speed",
+          "value": "1/125–1/250 s",
+          "note": null
+        },
+        {
+          "id": "night-portrait-iso",
+          "label": "ISO",
+          "value": "800–6400",
+          "note": null
+        },
+        {
+          "id": "night-portrait-focus",
+          "label": "Focus",
+          "value": "Continuous AF / Eye AF",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "night-portrait-focal",
+          "type": "focalLength",
+          "title": "35–85 mm",
+          "detail": "Normal focal lengths work well in tight nighttime environments."
+        },
+        {
+          "id": "night-portrait-aperture",
+          "type": "aperture",
+          "title": "F2.8 or faster",
+          "detail": "A fast lens helps keep ISO and shutter speed under control."
+        },
+        {
+          "id": "night-portrait-flash",
+          "type": "flash",
+          "title": "Flash",
+          "detail": "Recommended when you need consistent light on the subject while preserving ambient light in the background."
+        }
+      ],
+      "tips": [
+        {
+          "id": "night-portrait-tip-1",
+          "title": "Expose the Background First",
+          "text": "Set ambient exposure to the level you want, then add light to the subject if needed."
+        },
+        {
+          "id": "night-portrait-tip-2",
+          "title": "Use Available Light",
+          "text": "Shop windows, signs and streetlights can become useful directional light sources."
+        },
+        {
+          "id": "night-portrait-tip-3",
+          "title": "Check Face Sharpness",
+          "text": "Low light can reduce autofocus reliability, so inspect the eyes after important frames."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 35,
+        "focalLengthMax": 85,
+        "preferredCoverage": null,
+        "minimumMaxAperture": 2.8,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 35,
+        "idealFocalLengthMax": 56,
+        "apertureImportance": 1.6,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": true
+      },
+      "relatedReferenceIDs": [
+        "aperture",
+        "iso",
+        "white-balance",
+        "continuous-autofocus"
+      ]
+    },
+    {
+      "id": "fireworks",
+      "categoryID": "night",
+      "title": "Fireworks",
+      "subtitle": "Capture bright bursts and light trails",
+      "systemImage": "sparkles",
+      "summary": "Fireworks are bright but brief. Use a tripod and multi-second exposures to record complete bursts while keeping the surrounding scene sharp.",
+      "settings": [
+        {
+          "id": "fireworks-mode",
+          "label": "Mode",
+          "value": "Manual",
+          "note": null
+        },
+        {
+          "id": "fireworks-aperture",
+          "label": "Aperture",
+          "value": "F8–F11",
+          "note": null
+        },
+        {
+          "id": "fireworks-shutter",
+          "label": "Shutter Speed",
+          "value": "2–6 s",
+          "note": "Open the shutter as a burst begins and shorten the exposure if multiple bursts overlap too heavily."
+        },
+        {
+          "id": "fireworks-iso",
+          "label": "ISO",
+          "value": "100–200",
+          "note": null
+        },
+        {
+          "id": "fireworks-focus",
+          "label": "Focus",
+          "value": "Manual",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "fireworks-focal",
+          "type": "focalLength",
+          "title": "24–100 mm",
+          "detail": "Choose focal length based on your distance and whether you want to include the environment."
+        },
+        {
+          "id": "fireworks-tripod",
+          "type": "tripod",
+          "title": "Tripod",
+          "detail": "Required for sharp multi-second exposures."
+        }
+      ],
+      "tips": [
+        {
+          "id": "fireworks-tip-1",
+          "title": "Frame Wider Than You Think",
+          "text": "Firework bursts can spread beyond the area where they first appear."
+        },
+        {
+          "id": "fireworks-tip-2",
+          "title": "Avoid Overlapping Too Many Bursts",
+          "text": "Too many explosions in one exposure can create a bright, cluttered frame."
+        },
+        {
+          "id": "fireworks-tip-3",
+          "title": "Set Focus Before the Show",
+          "text": "Once focus is established on a distant object, switch to manual so it does not hunt in the dark."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 24,
+        "focalLengthMax": 100,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": true,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 35,
+        "idealFocalLengthMax": 70,
+        "apertureImportance": 0.0,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "manual-mode",
+        "manual-focus",
+        "shutter-speed",
+        "aperture"
+      ]
+    },
+    {
+      "id": "wildlife-portrait",
+      "categoryID": "action-wildlife",
+      "title": "Wildlife Portrait",
+      "subtitle": "Isolate a relatively still animal",
+      "systemImage": "binoculars",
+      "summary": "Wildlife portraits emphasize expression, eye contact and background separation. Use enough shutter speed for small movements while letting the lens isolate the subject.",
+      "settings": [
+        {
+          "id": "wildlife-portrait-mode",
+          "label": "Mode",
+          "value": "Aperture Priority",
+          "note": null
+        },
+        {
+          "id": "wildlife-portrait-aperture",
+          "label": "Aperture",
+          "value": "F4–F6.3",
+          "note": null
+        },
+        {
+          "id": "wildlife-portrait-shutter",
+          "label": "Shutter Speed",
+          "value": "1/500 s or faster",
+          "note": null
+        },
+        {
+          "id": "wildlife-portrait-iso",
+          "label": "ISO",
+          "value": "Auto",
+          "note": null
+        },
+        {
+          "id": "wildlife-portrait-focus",
+          "label": "Focus",
+          "value": "Continuous AF / Animal Eye AF",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "wildlife-portrait-focal",
+          "type": "focalLength",
+          "title": "200–600 mm",
+          "detail": "Telephoto reach lets you isolate animals without approaching too closely."
+        },
+        {
+          "id": "wildlife-portrait-stabilization",
+          "type": "stabilization",
+          "title": "Stabilization",
+          "detail": "Helpful for steady framing when handholding long focal lengths."
+        }
+      ],
+      "tips": [
+        {
+          "id": "wildlife-portrait-tip-1",
+          "title": "Focus on the Eye",
+          "text": "The nearest visible eye is usually the most important sharp detail."
+        },
+        {
+          "id": "wildlife-portrait-tip-2",
+          "title": "Watch the Background",
+          "text": "Small changes in your position can remove branches or bright patches behind the animal."
+        },
+        {
+          "id": "wildlife-portrait-tip-3",
+          "title": "Wait for Expression",
+          "text": "Ears, head angle and eye direction can change the feeling of the portrait."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 200,
+        "focalLengthMax": 600,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 300,
+        "idealFocalLengthMax": 600,
+        "apertureImportance": 0.5,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "continuous-autofocus",
+        "depth-of-field",
+        "focal-length",
+        "image-stabilization"
+      ]
+    },
+    {
+      "id": "birds-perched",
+      "categoryID": "action-wildlife",
+      "title": "Birds Perched",
+      "subtitle": "Capture detail in relatively still birds",
+      "systemImage": "bird",
+      "summary": "Perched birds allow more careful composition than birds in flight. Prioritize eye sharpness, clean backgrounds and enough shutter speed for subtle movement.",
+      "settings": [
+        {
+          "id": "birds-perched-mode",
+          "label": "Mode",
+          "value": "Aperture Priority",
+          "note": null
+        },
+        {
+          "id": "birds-perched-aperture",
+          "label": "Aperture",
+          "value": "F4–F8",
+          "note": null
+        },
+        {
+          "id": "birds-perched-shutter",
+          "label": "Shutter Speed",
+          "value": "1/500–1/1000 s",
+          "note": null
+        },
+        {
+          "id": "birds-perched-iso",
+          "label": "ISO",
+          "value": "Auto",
+          "note": null
+        },
+        {
+          "id": "birds-perched-focus",
+          "label": "Focus",
+          "value": "Continuous AF / Bird Eye AF",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "birds-perched-focal",
+          "type": "focalLength",
+          "title": "200–600 mm",
+          "detail": "Long focal lengths help fill the frame without disturbing the bird."
+        },
+        {
+          "id": "birds-perched-stabilization",
+          "type": "stabilization",
+          "title": "Stabilization",
+          "detail": "Helpful when handholding and framing small subjects at long focal lengths."
+        }
+      ],
+      "tips": [
+        {
+          "id": "birds-perched-tip-1",
+          "title": "Keep the Eye Sharp",
+          "text": "Even a mostly still bird can move its head suddenly, so maintain active autofocus."
+        },
+        {
+          "id": "birds-perched-tip-2",
+          "title": "Use the Perch",
+          "text": "Branches, reeds and posts can become part of the composition rather than just a place for the bird to sit."
+        },
+        {
+          "id": "birds-perched-tip-3",
+          "title": "Leave Looking Room",
+          "text": "Give the bird extra space in the direction it is facing."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 200,
+        "focalLengthMax": 600,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 300,
+        "idealFocalLengthMax": 600,
+        "apertureImportance": 0.5,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "continuous-autofocus",
+        "focus-areas",
+        "shutter-speed",
+        "focal-length"
+      ]
+    },
+    {
+      "id": "running-pets",
+      "categoryID": "action-wildlife",
+      "title": "Running Pets",
+      "subtitle": "Freeze fast movement close to you",
+      "systemImage": "pawprint",
+      "summary": "Running pets require faster shutter speeds than relaxed portraits. Continuous autofocus, short bursts and enough framing space improve your chances of a sharp peak-action image.",
+      "settings": [
+        {
+          "id": "running-pets-mode",
+          "label": "Mode",
+          "value": "Shutter Priority",
+          "note": null
+        },
+        {
+          "id": "running-pets-shutter",
+          "label": "Shutter Speed",
+          "value": "1/1000–1/2000 s",
+          "note": null
+        },
+        {
+          "id": "running-pets-aperture",
+          "label": "Aperture",
+          "value": "F2.8–F5.6",
+          "note": null
+        },
+        {
+          "id": "running-pets-iso",
+          "label": "ISO",
+          "value": "Auto",
+          "note": null
+        },
+        {
+          "id": "running-pets-focus",
+          "label": "Focus",
+          "value": "Continuous AF / Animal Eye AF",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "running-pets-focal",
+          "type": "focalLength",
+          "title": "50–200 mm",
+          "detail": "A short telephoto range gives useful working distance while keeping the pet large in the frame."
+        },
+        {
+          "id": "running-pets-aperture",
+          "type": "aperture",
+          "title": "F5.6 or faster",
+          "detail": "Useful for maintaining action-stopping shutter speeds."
+        }
+      ],
+      "tips": [
+        {
+          "id": "running-pets-tip-1",
+          "title": "Pre-Focus the Action Area",
+          "text": "If the pet runs through a predictable zone, begin tracking before it reaches the best position."
+        },
+        {
+          "id": "running-pets-tip-2",
+          "title": "Leave Framing Space",
+          "text": "Fast subjects are easier to keep in frame when you do not compose too tightly."
+        },
+        {
+          "id": "running-pets-tip-3",
+          "title": "Shoot at Peak Motion",
+          "text": "Look for moments when paws leave the ground or the body reaches a strong, readable position."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 50,
+        "focalLengthMax": 200,
+        "preferredCoverage": null,
+        "minimumMaxAperture": 5.6,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 70,
+        "idealFocalLengthMax": 135,
+        "apertureImportance": 0.8,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "shutter-priority",
+        "continuous-autofocus",
+        "focus-areas",
+        "shutter-speed"
+      ]
+    },
+    {
+      "id": "indoor-sports",
+      "categoryID": "action-wildlife",
+      "title": "Indoor Sports",
+      "subtitle": "Freeze action in difficult indoor light",
+      "systemImage": "figure.run",
+      "summary": "Indoor sports combine fast movement with limited light. Prioritize shutter speed, use a fast lens and accept higher ISO rather than allowing motion blur.",
+      "settings": [
+        {
+          "id": "indoor-sports-mode",
+          "label": "Mode",
+          "value": "Manual + Auto ISO",
+          "note": null
+        },
+        {
+          "id": "indoor-sports-shutter",
+          "label": "Shutter Speed",
+          "value": "1/800–1/1600 s",
+          "note": null
+        },
+        {
+          "id": "indoor-sports-aperture",
+          "label": "Aperture",
+          "value": "F2–F4",
+          "note": null
+        },
+        {
+          "id": "indoor-sports-iso",
+          "label": "ISO",
+          "value": "Auto",
+          "note": "High ISO values are normal indoors; prioritize the shutter speed needed to stop action."
+        },
+        {
+          "id": "indoor-sports-focus",
+          "label": "Focus",
+          "value": "Continuous AF",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "indoor-sports-focal",
+          "type": "focalLength",
+          "title": "50–200 mm",
+          "detail": "Useful for courts, halls and closer indoor action."
+        },
+        {
+          "id": "indoor-sports-aperture",
+          "type": "aperture",
+          "title": "F4 or faster",
+          "detail": "A fast lens is especially valuable under dim venue lighting."
+        }
+      ],
+      "tips": [
+        {
+          "id": "indoor-sports-tip-1",
+          "title": "Accept High ISO",
+          "text": "Noise is easier to manage than motion blur from a shutter speed that is too slow."
+        },
+        {
+          "id": "indoor-sports-tip-2",
+          "title": "Watch Light Flicker",
+          "text": "Some artificial lights vary through the power cycle and can cause inconsistent exposure or color."
+        },
+        {
+          "id": "indoor-sports-tip-3",
+          "title": "Anticipate Peak Action",
+          "text": "Prefocus your attention on likely moments such as jumps, shots, tackles or reactions."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 50,
+        "focalLengthMax": 200,
+        "preferredCoverage": null,
+        "minimumMaxAperture": 4.0,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 70,
+        "idealFocalLengthMax": 135,
+        "apertureImportance": 1.5,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "shutter-priority",
+        "iso",
+        "continuous-autofocus",
+        "white-balance"
+      ]
+    },
+    {
+      "id": "motorsport",
+      "categoryID": "action-wildlife",
+      "title": "Motorsport",
+      "subtitle": "Freeze speed or emphasize motion",
+      "systemImage": "car.side",
+      "summary": "Motorsport can be photographed with very fast shutter speeds for frozen detail or slower panning speeds for a stronger sense of motion.",
+      "settings": [
+        {
+          "id": "motorsport-mode",
+          "label": "Mode",
+          "value": "Shutter Priority",
+          "note": null
+        },
+        {
+          "id": "motorsport-shutter",
+          "label": "Shutter Speed",
+          "value": "1/1000–1/2000 s",
+          "note": "For panning, experiment around 1/60–1/250 s instead."
+        },
+        {
+          "id": "motorsport-iso",
+          "label": "ISO",
+          "value": "Auto",
+          "note": null
+        },
+        {
+          "id": "motorsport-focus",
+          "label": "Focus",
+          "value": "Continuous AF",
+          "note": null
+        },
+        {
+          "id": "motorsport-drive",
+          "label": "Drive",
+          "value": "Continuous High",
+          "note": null
+        }
+      ],
+      "requirements": [
+        {
+          "id": "motorsport-focal",
+          "type": "focalLength",
+          "title": "70–300 mm",
+          "detail": "Telephoto focal lengths are useful when working from spectator areas or trackside positions."
+        },
+        {
+          "id": "motorsport-stabilization",
+          "type": "stabilization",
+          "title": "Stabilization",
+          "detail": "A panning mode can help when deliberately using slower shutter speeds."
+        }
+      ],
+      "tips": [
+        {
+          "id": "motorsport-tip-1",
+          "title": "Choose Freeze or Motion",
+          "text": "Decide whether the image should show sharp mechanical detail or a blurred sense of speed."
+        },
+        {
+          "id": "motorsport-tip-2",
+          "title": "Track Before Shooting",
+          "text": "Follow the vehicle smoothly before starting a burst."
+        },
+        {
+          "id": "motorsport-tip-3",
+          "title": "Use Safe Positions",
+          "text": "Photograph only from designated areas and never trade safety for a better angle."
+        }
+      ],
+      "gearProfile": {
+        "focalLengthMin": 70,
+        "focalLengthMax": 300,
+        "preferredCoverage": null,
+        "minimumMaxAperture": null,
+        "requiresTripod": false,
+        "recommendsNDFilter": false,
+        "idealFocalLengthMin": 100,
+        "idealFocalLengthMax": 200,
+        "apertureImportance": 0.4,
+        "recommendsCPLFilter": false,
+        "recommendsFlash": false
+      },
+      "relatedReferenceIDs": [
+        "shutter-priority",
+        "continuous-autofocus",
+        "shutter-speed",
+        "image-stabilization"
+      ]
+    }
+  ]
+}

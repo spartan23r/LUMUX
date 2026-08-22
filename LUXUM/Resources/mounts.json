@@ -1,0 +1,102 @@
+{
+  "mounts": [
+	{
+	  "id": "sony-e",
+	  "name": "Sony E",
+	  "brandIDs": ["sony"]
+	},
+	{
+	  "id": "sony-a",
+	  "name": "Sony A",
+	  "brandIDs": ["sony"]
+	},
+
+	{
+	  "id": "canon-rf",
+	  "name": "Canon RF",
+	  "brandIDs": ["canon"]
+	},
+	{
+	  "id": "canon-ef",
+	  "name": "Canon EF",
+	  "brandIDs": ["canon"]
+	},
+	{
+	  "id": "canon-ef-m",
+	  "name": "Canon EF-M",
+	  "brandIDs": ["canon"]
+	},
+
+	{
+	  "id": "nikon-z",
+	  "name": "Nikon Z",
+	  "brandIDs": ["nikon"]
+	},
+	{
+	  "id": "nikon-f",
+	  "name": "Nikon F",
+	  "brandIDs": ["nikon"]
+	},
+
+	{
+	  "id": "fujifilm-x",
+	  "name": "Fujifilm X",
+	  "brandIDs": ["fujifilm"]
+	},
+	{
+	  "id": "fujifilm-g",
+	  "name": "Fujifilm G",
+	  "brandIDs": ["fujifilm"]
+	},
+
+	{
+	  "id": "micro-four-thirds",
+	  "name": "Micro Four Thirds",
+	  "brandIDs": ["panasonic", "om-system", "olympus"]
+	},
+	{
+	  "id": "four-thirds",
+	  "name": "Four Thirds",
+	  "brandIDs": ["panasonic", "olympus"]
+	},
+
+	{
+	  "id": "leica-l",
+	  "name": "L-Mount",
+	  "brandIDs": ["leica", "panasonic", "sigma"]
+	},
+	{
+	  "id": "leica-m",
+	  "name": "Leica M",
+	  "brandIDs": ["leica"]
+	},
+	{
+	  "id": "leica-slr",
+	  "name": "Leica R",
+	  "brandIDs": ["leica"]
+	},
+
+	{
+	  "id": "ricoh-k",
+	  "name": "Pentax K",
+	  "brandIDs": ["pentax", "ricoh"]
+	},
+
+	{
+	  "id": "hasselblad-x",
+	  "name": "Hasselblad X",
+	  "brandIDs": ["hasselblad"]
+	},
+	{
+	  "id": "hasselblad-h",
+	  "name": "Hasselblad H",
+	  "brandIDs": ["hasselblad"]
+	},
+
+	{
+	  "id": "sigma-sa",
+	  "name": "Sigma SA",
+	  "brandIDs": ["sigma"]
+	}
+  ]
+}
