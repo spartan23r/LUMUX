@@ -1,13 +1,14 @@
 {
   "fill" : {
-    "automatic-gradient" : "extended-srgb:0.00000,0.53333,1.00000,1.00000"
+    "automatic-gradient" : "display-p3:0.96863,0.96863,0.96863,1.00000"
   },
   "groups" : [
     {
       "layers" : [
         {
+          "blend-mode" : "normal",
           "fill" : "automatic",
-          "glass" : true,
+          "glass" : false,
           "hidden" : false,
           "image-name" : "lumux-icon-light-transparant.png",
           "name" : "lumux-icon-light-transparant",
@@ -15,13 +16,9 @@
             "scale" : 1,
             "translation-in-points" : [
               3.5,
-              -16.5
+              3.65625
             ]
           }
-        },
-        {
-          "image-name" : "lumux-background-light.png",
-          "name" : "lumux-background-light"
         }
       ],
       "shadow" : {

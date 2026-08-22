@@ -14,4 +14,26 @@ enum FilterKind: String, Codable, CaseIterable {
 	case uv
 	case protector
 	case mist
+	case other
+}
+
+extension FilterKind {
+	var title: String {
+		switch self {
+		case .nd:
+			"ND Filter"
+		case .variableND:
+			"Variable ND"
+		case .cpl:
+			"CPL Filter"
+		case .uv:
+			"UV Filter"
+		case .protector:
+			"Protector"
+		case .mist:
+			"Mist Filter"
+		case .other:
+			"Other"
+		}
+	}
 }

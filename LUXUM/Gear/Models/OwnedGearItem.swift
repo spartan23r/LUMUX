@@ -17,6 +17,7 @@ final class OwnedGearItem {
 	var kind: GearKind
 	var dateAdded: Date
 	var nickname: String?
+	var paidPrice: Double?
 	var notes: String?
 	
 	init(
@@ -24,12 +25,14 @@ final class OwnedGearItem {
 		kind: GearKind,
 		dateAdded: Date = .now,
 		nickname: String? = nil,
+		paidPrice: Double? = nil,
 		notes: String? = nil
 	) {
 		self.catalogID = catalogID
 		self.kind = kind
 		self.dateAdded = dateAdded
 		self.nickname = nickname
+		self.paidPrice = paidPrice
 		self.notes = notes
 	}
 }

@@ -10,23 +10,23 @@ import SwiftData
 
 @main
 struct LUXUMApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+	
+	// MARK: - properties
+	@State private var settingsStore = SettingsStore()
+	@State private var gearCatalog = GearCatalog()
+	@State private var quickReferenceCatalog = QuickReferenceCatalog()
+	@State private var recipeCatalog = RecipeCatalog()
 
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-
+	// MARK: - body
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			RootView()
+				.environment(settingsStore)
+				.environment(gearCatalog)
+				.environment(quickReferenceCatalog)
+				.environment(recipeCatalog)
+				.preferredColorScheme(settingsStore.appearanceMode.colorScheme)
         }
-        .modelContainer(sharedModelContainer)
+		.modelContainer(SharedModelContainer.container)
     }
 }

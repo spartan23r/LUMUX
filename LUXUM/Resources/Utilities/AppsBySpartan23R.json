@@ -47,5 +47,12 @@
 		"subtext": "Questions Game",
 		"link": "apps.apple.com/app/id6752701576",
 		"image": "icon-icebreaker"
-	}
+	},
+	{
+		"id": 7,
+		"text": "Booboo Bites",
+		"subtext": "Recipe Organizer",
+		"link": "apps.apple.com/app/id6760919337",
+		"image": "icon-booboobites"
+	},
 ]

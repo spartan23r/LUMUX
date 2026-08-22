@@ -35,8 +35,13 @@ struct HomeScreen: View {
 	
 	private let gearMatcher = RecipeGearMatcher()
 	
+	@State private var isShowingSettings = false
 	
 	// MARK: - computed properties
+
+	private var allGearCount: Int {
+		cameraCount + lensCount + filterCount + accessoryCount
+	}
 	
 	private var cameraCount: Int {
 		ownedGear.filter {
@@ -86,11 +91,7 @@ struct HomeScreen: View {
 			// MARK: Your Gear
 			
 			Section {
-				if hasGear {
-					gearOverview
-				} else {
-					emptyGearView
-				}
+				gearOverview(hasGear: hasGear)
 			}
 			
 			
@@ -167,6 +168,18 @@ struct HomeScreen: View {
 		}
 		.navigationTitle("Home")
 		.toolbarTitleDisplayMode(.inlineLarge)
+		.toolbar {
+			ToolbarItem(placement: .topBarTrailing) {
+				Button {
+					isShowingSettings = true
+				} label: {
+					Image(systemName: "gear")
+				}
+			}
+		}
+		.sheet(isPresented: $isShowingSettings) {
+			SettingsScreen(isPresented: $isShowingSettings)
+		}
 		.onAppear {
 			loadHomeContent()
 		}
@@ -288,7 +301,22 @@ private extension HomeScreen {
 
 private extension HomeScreen {
 	
-	var gearOverview: some View {
+	private var totalSpent: Double {
+		let gearTotal = ownedGear.compactMap(\.paidPrice).reduce(0, +)
+		let filterTotal = ownedFilters.compactMap(\.paidPrice).reduce(0, +)
+		let accessoryTotal = ownedAccessories.compactMap(\.paidPrice).reduce(0, +)
+		
+		return gearTotal + filterTotal + accessoryTotal
+	}
+	
+	private var hasPaidPrices: Bool {
+		ownedGear.contains { $0.paidPrice != nil } ||
+		ownedFilters.contains { $0.paidPrice != nil } ||
+		ownedAccessories.contains { $0.paidPrice != nil }
+	}
+	
+	@ViewBuilder
+	func gearOverview(hasGear: Bool = false) -> some View {
 		VStack(
 			alignment: .leading,
 			spacing: 16
@@ -299,19 +327,21 @@ private extension HomeScreen {
 			) {
 				Image(systemName: "backpack")
 					.font(.title)
-					.foregroundStyle(.tint)
+					.foregroundStyle(Color("backpackColor"))
 				
 				VStack(
 					alignment: .leading,
 					spacing: 2
 				) {
-					Text("My Gear")
+					Text(hasGear ?
+						 "My Gear" : "No Gear Yet")
 						.font(.title3)
 						.fontWeight(.semibold)
 					
-					Text("Your photography kit")
-						.font(.subheadline)
-						.foregroundStyle(.secondary)
+					Text(hasGear ?
+						 "Your photography kit" : "Add gear to get personalized recommendations")
+					.font(.subheadline)
+					.foregroundStyle(.secondary)
 				}
 			}
 			
@@ -350,34 +380,41 @@ private extension HomeScreen {
 						: "Accessories"
 				)
 			}
+			
+			if hasGear {
+
+				Divider()
+				
+				HStack {
+					Text("Total Spent")
+						.font(.subheadline)
+						.foregroundStyle(.secondary)
+					
+					Spacer()
+					
+					if hasPaidPrices {
+						Text(
+							totalSpent,
+							format: .currency(
+								code: Locale.current.currency?.identifier ?? "EUR"
+							)
+						)
+						.font(.subheadline)
+						.fontWeight(.semibold)
+						.fixedSize(horizontal: true, vertical: false)
+						.layoutPriority(1)
+					} else {
+						Text("—")
+							.font(.subheadline)
+							.fontWeight(.semibold)
+							.foregroundStyle(.secondary)
+					}
+				}
+
+			}
+			
 		}
 		.padding(.vertical, 8)
-	}
-	
-	var emptyGearView: some View {
-		HStack(
-			alignment: .center,
-			spacing: 12
-		) {
-			Image(systemName: "backpack")
-				.font(.title2)
-				.foregroundStyle(.tint.secondary)
-			
-			VStack(
-				alignment: .leading,
-				spacing: 2
-			) {
-				Text("No Gear Yet")
-					.fontWeight(.medium)
-				
-				Text(
-					"Add your gear to get personalized recommendations"
-				)
-				.font(.caption)
-				.foregroundStyle(.secondary)
-			}
-		}
-		.padding(.vertical, 4)
 	}
 	
 	func gearCount(
@@ -401,10 +438,7 @@ private extension HomeScreen {
 	func learningTopicRow(
 		_ topic: QuickReferenceTopic
 	) -> some View {
-		VStack(
-			alignment: .leading,
-			spacing: 4
-		) {
+		VStack(alignment: .leading) {
 			HStack(
 				alignment: .center,
 				spacing: 10
@@ -420,16 +454,12 @@ private extension HomeScreen {
 				.font(.caption)
 				.foregroundStyle(.secondary)
 		}
-		.padding(.vertical, 2)
 	}
 	
 	func favoriteRecipeRow(
 		_ recipe: Recipe
 	) -> some View {
-		VStack(
-			alignment: .leading,
-			spacing: 4
-		) {
+		VStack(alignment: .leading) {
 			HStack(
 				alignment: .center,
 				spacing: 10
@@ -445,7 +475,6 @@ private extension HomeScreen {
 				.font(.caption)
 				.foregroundStyle(.secondary)
 		}
-		.padding(.vertical, 2)
 	}
 
 
@@ -477,7 +506,6 @@ private extension HomeScreen {
 					.foregroundStyle(.tint)
 			}
 		}
-		.padding(.vertical, 2)
 	}
 }
 
@@ -488,15 +516,6 @@ private extension HomeScreen {
 	NavigationStack {
 		HomeScreen()
 	}
-	.environment(
-		QuickReferenceCatalog()
-	)
-	.environment(
-		RecipeCatalog()
-	)
-	.environment(
-		GearCatalog()
-	)
 	.modelContainer(
 		for: [
 			OwnedGearItem.self,
@@ -506,4 +525,7 @@ private extension HomeScreen {
 		],
 		inMemory: true
 	)
+	.environment(QuickReferenceCatalog())
+	.environment(RecipeCatalog())
+	.environment(GearCatalog())
 }

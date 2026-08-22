@@ -1,8 +1,53 @@
-//
-//  quick-reference-categories.json
-//  LUXUM
-//
-//  Created by Ryan Rook on 19/08/2026.
-//
-
-import Foundation
+{
+  "categories": [
+	{
+	  "id": "exposure",
+	  "name": "Exposure",
+	  "systemImage": "sun.max",
+	  "topicIDs": [
+		"exposure-triangle",
+		"aperture",
+		"shutter-speed",
+		"iso",
+		"exposure-compensation"
+	  ]
+	},
+	{
+	  "id": "camera",
+	  "name": "Camera",
+	  "systemImage": "camera",
+	  "topicIDs": [
+		"manual-mode",
+		"aperture-priority",
+		"shutter-priority",
+		"program-mode",
+		"metering",
+		"white-balance"
+	  ]
+	},
+	{
+	  "id": "focus",
+	  "name": "Focus",
+	  "systemImage": "scope",
+	  "topicIDs": [
+		"single-autofocus",
+		"continuous-autofocus",
+		"focus-areas",
+		"manual-focus",
+		"back-button-focus"
+	  ]
+	},
+	{
+	  "id": "lenses-optics",
+	  "name": "Lenses & Optics",
+	  "systemImage": "camera.aperture",
+	  "topicIDs": [
+		"focal-length",
+		"crop-factor",
+		"depth-of-field",
+		"lens-compression",
+		"image-stabilization"
+	  ]
+	}
+  ]
+}

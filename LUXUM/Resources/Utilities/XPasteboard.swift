@@ -5,14 +5,21 @@
 //  Created by Ryan Rook on 20/08/2026.
 //
 
-import SwiftUI
+#if os(macOS)
+import AppKit
+typealias XPasteboard = NSPasteboard
+#else
+import UIKit
+typealias XPasteboard = UIPasteboard
+#endif
 
-struct XPasteboard: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    XPasteboard()
+extension XPasteboard {
+	func copyText(_ text: String) {
+#if os(macOS)
+		self.clearContents()
+		self.setString(text, forType: .string)
+#else
+		self.string = text
+#endif
+	}
 }

@@ -16,6 +16,9 @@ struct QuickReferenceDetailView: View {
 
 	@Query private var favoriteTopics: [FavoriteQuickReference]
 
+	@Environment(QuickReferenceCatalog.self)
+	private var quickReferenceCatalog
+
 	@Environment(\.modelContext)
 	private var modelContext
 
@@ -58,6 +61,39 @@ struct QuickReferenceDetailView: View {
 					}
 				}
 			}
+
+			if !relatedTopics.isEmpty {
+				Section {
+					ForEach(relatedTopics) { relatedTopic in
+						NavigationLink {
+							QuickReferenceDetailView(
+								topic: relatedTopic
+							)
+						} label: {
+							VStack(alignment: .leading) {
+								HStack(
+									alignment: .center,
+									spacing: 10
+								) {
+									Image(
+										systemName: relatedTopic.systemImage
+									)
+									.foregroundStyle(.tint)
+
+									Text(relatedTopic.title)
+										.fontWeight(.medium)
+								}
+
+								Text(relatedTopic.subtitle)
+									.font(.caption)
+									.foregroundStyle(.secondary)
+							}
+						}
+					}
+				} header: {
+					Text("Related Topics")
+				}
+			}
 		}
 		.navigationTitle("Quick Reference")
 		.navigationSubtitle(topic.title)
@@ -68,6 +104,7 @@ struct QuickReferenceDetailView: View {
 			) {
 				Button {
 					toggleFavorite()
+					ReviewStore.requestReview()
 				} label: {
 					Image(
 						systemName: isFavorite
@@ -142,10 +179,7 @@ private extension QuickReferenceDetailView {
 	func valueRow(
 		_ value: QuickReferenceValue
 	) -> some View {
-		VStack(
-			alignment: .leading,
-			spacing: 4
-		) {
+		VStack(alignment: .leading) {
 			Text(value.value)
 				.fontWeight(.medium)
 
@@ -153,7 +187,35 @@ private extension QuickReferenceDetailView {
 				.font(.caption)
 				.foregroundStyle(.secondary)
 		}
-		.padding(.vertical, 2)
+	}
+}
+
+
+// MARK: - related topics
+private extension QuickReferenceDetailView {
+
+	var relatedTopics: [QuickReferenceTopic] {
+		var seenIDs = Set<String>()
+
+		return topic.relatedTopicIDs
+			.compactMap { id in
+				guard id != topic.id else {
+					return nil
+				}
+
+				guard !seenIDs.contains(id) else {
+					return nil
+				}
+
+				guard let relatedTopic = quickReferenceCatalog.topic(
+					for: id
+				) else {
+					return nil
+				}
+
+				seenIDs.insert(id)
+				return relatedTopic
+			}
 	}
 }
 
@@ -207,8 +269,16 @@ private extension QuickReferenceDetailView {
 				subtitle: "Freeze or emphasize motion",
 				systemImage: "timer",
 				summary: "Shutter speed controls how long the sensor is exposed to light.",
+				relatedTopicIDs: [
+					"shutter-priority",
+					"image-stabilization",
+					"continuous-autofocus"
+				],
 				sections: []
 			)
+		)
+		.environment(
+			QuickReferenceCatalog()
 		)
 	}
 	.modelContainer(

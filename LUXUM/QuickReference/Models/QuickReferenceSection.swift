@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct QuickReferenceSection: Codable, Identifiable, Hashable {
+	
+	let id: String
+	let title: String?
+	let content: [QuickReferenceContent]
+}

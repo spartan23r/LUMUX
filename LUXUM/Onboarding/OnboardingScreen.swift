@@ -25,27 +25,36 @@ struct OnboardingScreen: View {
 		self.onAddGear = onAddGear
 	}
 	
+	@State private var showNavigation: Bool = false
 	
 	// MARK: - body
 	
 	var body: some View {
-		VStack(spacing: 0) {
-			TabView(selection: $page) {
-				welcomePage
-					.tag(Page.welcome)
-				
-				learnPage
-					.tag(Page.learn)
-				
-				gearPage
-					.tag(Page.gear)
-			}
-			.tabViewStyle(.page(indexDisplayMode: .never))
+		TabView(selection: $page) {
+			welcomePage
+				.tag(Page.welcome)
 			
-			footer
+			learnPage
+				.tag(Page.learn)
+			
+			gearPage
+				.tag(Page.gear)
 		}
+		.tabViewStyle(.page(indexDisplayMode: .never))
 		.background(Color(.systemGroupedBackground))
-		.ignoresSafeArea(edges: .bottom)
+		.ignoresSafeArea()
+		.safeAreaInset(edge: .bottom) {
+			if showNavigation {
+				footer
+			}
+		}
+		.onAppear {
+			DispatchQueue.main.asyncAfter(deadline: .now() + 0.66) {
+				withAnimation {
+					showNavigation = true
+				}
+			}
+		}
 	}
 }
 
@@ -184,6 +193,19 @@ private extension OnboardingScreen {
 						title: "E 16-55mm F2.8 G",
 						subtitle: "Sony E"
 					)
+					
+					Divider()
+					
+					HStack {
+						Image(systemName: "checkmark")
+							.symbolVariant(.circle.fill)
+							.foregroundStyle(.white, .blue)
+						Text("Matches your gear")
+							.foregroundStyle(.tint)
+					}
+					.font(.headline)
+					.padding(.vertical, 16)
+					
 				}
 				.padding(.horizontal, 20)
 				.background(
@@ -194,14 +216,12 @@ private extension OnboardingScreen {
 					.fill(Color(.secondarySystemGroupedBackground))
 				)
 				
-				HStack {
-					Image(systemName: "checkmark")
-						.symbolVariant(.circle.fill)
-						.foregroundStyle(.white, .blue)
-					Text("Matches your gear")
-						.foregroundStyle(.tint)
-				}
-				.font(.headline)
+//				if page == .gear {
+//					Text("No account required. Your gear stays on your device.")
+//						.font(.caption)
+//						.foregroundStyle(.secondary)
+//						.multilineTextAlignment(.center)
+//				}
 				
 			}
 		}
@@ -215,50 +235,33 @@ private extension OnboardingScreen {
 	@ViewBuilder
 	var footer: some View {
 		VStack(spacing: 14) {
+			
 			pageIndicator
 			
-			if page == .gear {
-				Button {
+			Button {
+				if page == .gear {
 					withAnimation {
 						settingsStore.finishOnboarding()
 					}
 					onAddGear?()
-				} label: {
-					Text("Add My Gear")
-						.frame(maxWidth: .infinity)
-				}
-				.buttonStyle(.borderedProminent)
-				.controlSize(.large)
-				
-				Button("Skip for Now") {
-					withAnimation {
-						settingsStore.finishOnboarding()
-					}
-				}
-				.foregroundStyle(.secondary)
-				
-				Text("No account required. Your gear stays on your device.")
-					.font(.caption)
-					.foregroundStyle(.secondary)
-					.multilineTextAlignment(.center)
-			} else {
-				Button {
+				} else {
 					withAnimation {
 						page = page.next
 					}
-				} label: {
-					Text("Continue")
-						.frame(maxWidth: .infinity)
 				}
-				.buttonStyle(.borderedProminent)
-				.controlSize(.large)
+			} label: {
+				Text(page == .gear ? "Add My Gear" : "Continue")
+					.frame(maxWidth: .infinity)
 			}
+			.buttonStyle(.borderedProminent)
+			.controlSize(.large)
+			
 		}
-		.padding(.horizontal, 24)
-		.padding(.top, 12)
-		.padding(.bottom, 26)
-		.background(.ultraThinMaterial)
+		.padding(12)
+		.glassEffect(.regular)
+		.padding()
 		.animation(.easeInOut, value: page)
+		.transition(.push(from: .bottom))
 	}
 	
 	@ViewBuilder

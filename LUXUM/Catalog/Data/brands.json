@@ -47,6 +47,35 @@
 	{
 	  "id": "sigma",
 	  "name": "Sigma"
+	},
+
+	{
+	  "id": "tamron",
+	  "name": "Tamron"
+	},
+	{
+	  "id": "samyang",
+	  "name": "Samyang"
+	},
+	{
+	  "id": "tokina",
+	  "name": "Tokina"
+	},
+	{
+	  "id": "voigtlander",
+	  "name": "Voigtländer"
+	},
+	{
+	  "id": "laowa",
+	  "name": "Laowa"
+	},
+	{
+	  "id": "viltrox",
+	  "name": "Viltrox"
+	},
+	{
+	  "id": "zeiss",
+	  "name": "ZEISS"
 	}
   ]
 }

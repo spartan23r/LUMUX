@@ -64,6 +64,7 @@ struct RecipesScreen: View {
 		}
 		.navigationTitle("Recipes")
 		.toolbarTitleDisplayMode(.inlineLarge)
+		.scrollDismissesKeyboard(.interactively)
 		.searchable(
 			text: $searchText,
 			placement: .navigationBarDrawer(
@@ -97,11 +98,17 @@ private extension RecipesScreen {
 				recipe: recipe
 			)
 		} label: {
-			VStack(
-				alignment: .leading,
-				spacing: 4
-			) {
-				Text(recipe.title)
+			VStack(alignment: .leading) {
+				HStack(
+					alignment: .center,
+					spacing: 10
+				) {
+					Image(systemName: recipe.systemImage)
+						.foregroundStyle(.tint)
+
+					Text(recipe.title)
+						.fontWeight(.medium)
+				}
 
 				Text(recipe.subtitle)
 					.font(.caption)
@@ -210,10 +217,10 @@ private extension RecipesScreen {
 #Preview {
 	NavigationStack {
 		RecipesScreen()
-			.environment(RecipeCatalog())
 	}
 	.modelContainer(
 		for: FavoriteRecipe.self,
 		inMemory: true
 	)
+	.environment(RecipeCatalog())
 }

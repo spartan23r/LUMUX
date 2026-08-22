@@ -98,6 +98,7 @@ struct GearCatalogLensDetailView: View {
 			}
 		}
 		.navigationTitle("Lens")
+		.navigationSubtitle(catalog.brand(for: lens.brandID)?.name ?? "")
 		.toolbarTitleDisplayMode(.inline)
     }
 }

@@ -7,6 +7,11 @@
       "subtitle": "Balance aperture, shutter speed and ISO",
       "systemImage": "triangle",
       "summary": "Exposure is controlled by three settings: aperture, shutter speed and ISO. Changing one affects either the amount of light, the appearance of the image, or both.",
+      "relatedTopicIDs": [
+        "aperture",
+        "shutter-speed",
+        "iso"
+      ],
       "sections": [
         {
           "id": "exposure-triangle-basics",
@@ -69,6 +74,11 @@
       "subtitle": "Control light and depth of field",
       "systemImage": "camera.aperture",
       "summary": "Aperture controls the size of the opening inside the lens. It affects both the amount of light reaching the sensor and how much of the scene appears in focus.",
+      "relatedTopicIDs": [
+        "depth-of-field",
+        "aperture-priority",
+        "exposure-triangle"
+      ],
       "sections": [
         {
           "id": "aperture-basics",
@@ -158,6 +168,11 @@
       "subtitle": "Freeze or emphasize motion",
       "systemImage": "timer",
       "summary": "Shutter speed controls how long the camera sensor is exposed to light. Fast shutter speeds can freeze movement, while slow shutter speeds can create intentional motion blur.",
+      "relatedTopicIDs": [
+        "shutter-priority",
+        "image-stabilization",
+        "continuous-autofocus"
+      ],
       "sections": [
         {
           "id": "shutter-speed-basics",
@@ -247,6 +262,11 @@
       "subtitle": "Balance brightness and image quality",
       "systemImage": "circle.lefthalf.filled",
       "summary": "ISO controls how strongly the camera amplifies the sensor signal when creating an image. Raising ISO can help you use faster shutter speeds or smaller apertures, but generally increases visible noise.",
+      "relatedTopicIDs": [
+        "exposure-triangle",
+        "shutter-speed",
+        "manual-mode"
+      ],
       "sections": [
         {
           "id": "iso-basics",
@@ -336,6 +356,11 @@
       "subtitle": "Quickly make images brighter or darker",
       "systemImage": "plusminus",
       "summary": "Exposure compensation lets you tell the camera to make an automatically metered exposure brighter or darker without switching completely to manual exposure.",
+      "relatedTopicIDs": [
+        "metering",
+        "aperture-priority",
+        "shutter-priority"
+      ],
       "sections": [
         {
           "id": "exposure-compensation-basics",
@@ -420,6 +445,11 @@
       "subtitle": "Take full control of exposure",
       "systemImage": "m.square",
       "summary": "Manual mode lets you choose aperture, shutter speed and ISO yourself, giving you direct control over exposure and the visual result.",
+      "relatedTopicIDs": [
+        "exposure-triangle",
+        "iso",
+        "metering"
+      ],
       "sections": [
         {
           "id": "manual-mode-basics",
@@ -482,6 +512,11 @@
       "subtitle": "Choose depth of field, let the camera handle shutter speed",
       "systemImage": "a.square",
       "summary": "Aperture Priority lets you choose the aperture while the camera selects a shutter speed to achieve the metered exposure.",
+      "relatedTopicIDs": [
+        "aperture",
+        "depth-of-field",
+        "exposure-compensation"
+      ],
       "sections": [
         {
           "id": "aperture-priority-basics",
@@ -544,6 +579,11 @@
       "subtitle": "Choose motion rendering, let the camera handle aperture",
       "systemImage": "s.square",
       "summary": "Shutter Priority lets you choose the shutter speed while the camera selects an aperture to achieve the metered exposure.",
+      "relatedTopicIDs": [
+        "shutter-speed",
+        "continuous-autofocus",
+        "iso"
+      ],
       "sections": [
         {
           "id": "shutter-priority-basics",
@@ -606,6 +646,11 @@
       "subtitle": "Let the camera choose exposure while you stay flexible",
       "systemImage": "p.square",
       "summary": "Program mode automatically chooses aperture and shutter speed while still giving you control over settings such as ISO, exposure compensation and white balance.",
+      "relatedTopicIDs": [
+        "exposure-compensation",
+        "metering",
+        "white-balance"
+      ],
       "sections": [
         {
           "id": "program-mode-basics",
@@ -652,6 +697,11 @@
       "subtitle": "Understand how the camera measures light",
       "systemImage": "circle.grid.cross",
       "summary": "Metering determines how the camera evaluates brightness in the scene when calculating an automatic exposure.",
+      "relatedTopicIDs": [
+        "exposure-compensation",
+        "manual-mode",
+        "aperture-priority"
+      ],
       "sections": [
         {
           "id": "metering-modes",
@@ -714,6 +764,11 @@
       "subtitle": "Keep colors neutral or use color creatively",
       "systemImage": "thermometer.medium",
       "summary": "White balance adjusts the color response of the image so that neutral objects appear neutral under different types of light.",
+      "relatedTopicIDs": [
+        "manual-mode",
+        "program-mode",
+        "exposure-compensation"
+      ],
       "sections": [
         {
           "id": "white-balance-basics",
@@ -786,6 +841,11 @@
       "subtitle": "Focus once on stationary subjects",
       "systemImage": "scope",
       "summary": "Single autofocus acquires focus and then holds that focus while the focus command remains active.",
+      "relatedTopicIDs": [
+        "focus-areas",
+        "manual-focus",
+        "back-button-focus"
+      ],
       "sections": [
         {
           "id": "single-autofocus-use",
@@ -848,6 +908,11 @@
       "subtitle": "Track subjects as their distance changes",
       "systemImage": "scope",
       "summary": "Continuous autofocus keeps adjusting focus while the focus command remains active, making it suitable for moving subjects.",
+      "relatedTopicIDs": [
+        "focus-areas",
+        "back-button-focus",
+        "shutter-speed"
+      ],
       "sections": [
         {
           "id": "continuous-autofocus-use",
@@ -910,6 +975,11 @@
       "subtitle": "Control where the camera looks for focus",
       "systemImage": "viewfinder",
       "summary": "Focus area settings determine which part of the frame the autofocus system can use to find and track a subject.",
+      "relatedTopicIDs": [
+        "continuous-autofocus",
+        "single-autofocus",
+        "back-button-focus"
+      ],
       "sections": [
         {
           "id": "focus-areas-types",
@@ -977,6 +1047,11 @@
       "subtitle": "Set focus yourself for precise control",
       "systemImage": "slider.horizontal.3",
       "summary": "Manual focus lets you choose the focus distance directly instead of relying on the camera's autofocus system.",
+      "relatedTopicIDs": [
+        "focus-areas",
+        "single-autofocus",
+        "image-stabilization"
+      ],
       "sections": [
         {
           "id": "manual-focus-use",
@@ -1050,6 +1125,11 @@
       "subtitle": "Separate autofocus from the shutter button",
       "systemImage": "hand.point.up.left",
       "summary": "Back button focus assigns autofocus to a rear button instead of activating it with a half-press of the shutter button.",
+      "relatedTopicIDs": [
+        "continuous-autofocus",
+        "single-autofocus",
+        "focus-areas"
+      ],
       "sections": [
         {
           "id": "back-button-focus-benefits",
@@ -1112,6 +1192,11 @@
       "subtitle": "Understand angle of view and framing",
       "systemImage": "arrow.left.and.right",
       "summary": "Focal length influences how wide or narrow the field of view appears and how large a subject appears in the frame from a given camera position.",
+      "relatedTopicIDs": [
+        "crop-factor",
+        "lens-compression",
+        "depth-of-field"
+      ],
       "sections": [
         {
           "id": "focal-length-values",
@@ -1184,6 +1269,11 @@
       "subtitle": "Compare fields of view across sensor formats",
       "systemImage": "rectangle.on.rectangle",
       "summary": "Crop factor describes how a sensor format changes the field of view compared with a full-frame reference when using the same focal length.",
+      "relatedTopicIDs": [
+        "focal-length",
+        "depth-of-field",
+        "lens-compression"
+      ],
       "sections": [
         {
           "id": "crop-factor-values",
@@ -1251,6 +1341,11 @@
       "subtitle": "Control how much of the image appears sharp",
       "systemImage": "square.stack.3d.down.right",
       "summary": "Depth of field is the range of distances in a photograph that appear acceptably sharp around the point of focus.",
+      "relatedTopicIDs": [
+        "aperture",
+        "focal-length",
+        "lens-compression"
+      ],
       "sections": [
         {
           "id": "depth-of-field-factors",
@@ -1313,6 +1408,11 @@
       "subtitle": "Understand the compressed look of distant viewpoints",
       "systemImage": "arrow.left.and.right.square",
       "summary": "The compressed look often associated with telephoto lenses mainly comes from shooting farther away, which makes distances between foreground and background appear less pronounced.",
+      "relatedTopicIDs": [
+        "focal-length",
+        "depth-of-field",
+        "crop-factor"
+      ],
       "sections": [
         {
           "id": "lens-compression-basics",
@@ -1375,6 +1475,11 @@
       "subtitle": "Reduce blur caused by camera movement",
       "systemImage": "hand.raised",
       "summary": "Image stabilization helps compensate for small camera movements so you can often use slower shutter speeds when photographing stationary subjects.",
+      "relatedTopicIDs": [
+        "shutter-speed",
+        "focal-length",
+        "manual-focus"
+      ],
       "sections": [
         {
           "id": "image-stabilization-types",

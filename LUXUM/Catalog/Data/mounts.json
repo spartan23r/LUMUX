@@ -10,7 +10,6 @@
 	  "name": "Sony A",
 	  "brandIDs": ["sony"]
 	},
-
 	{
 	  "id": "canon-rf",
 	  "name": "Canon RF",
@@ -26,7 +25,6 @@
 	  "name": "Canon EF-M",
 	  "brandIDs": ["canon"]
 	},
-
 	{
 	  "id": "nikon-z",
 	  "name": "Nikon Z",
@@ -37,7 +35,6 @@
 	  "name": "Nikon F",
 	  "brandIDs": ["nikon"]
 	},
-
 	{
 	  "id": "fujifilm-x",
 	  "name": "Fujifilm X",
@@ -48,7 +45,6 @@
 	  "name": "Fujifilm G",
 	  "brandIDs": ["fujifilm"]
 	},
-
 	{
 	  "id": "micro-four-thirds",
 	  "name": "Micro Four Thirds",
@@ -59,7 +55,6 @@
 	  "name": "Four Thirds",
 	  "brandIDs": ["panasonic", "olympus"]
 	},
-
 	{
 	  "id": "leica-l",
 	  "name": "L-Mount",
@@ -75,13 +70,16 @@
 	  "name": "Leica R",
 	  "brandIDs": ["leica"]
 	},
-
 	{
-	  "id": "ricoh-k",
+	  "id": "pentax-k",
 	  "name": "Pentax K",
 	  "brandIDs": ["pentax", "ricoh"]
 	},
-
+	{
+	  "id": "pentax-645",
+	  "name": "Pentax 645",
+	  "brandIDs": ["pentax"]
+	},
 	{
 	  "id": "hasselblad-x",
 	  "name": "Hasselblad X",
@@ -92,7 +90,6 @@
 	  "name": "Hasselblad H",
 	  "brandIDs": ["hasselblad"]
 	},
-
 	{
 	  "id": "sigma-sa",
 	  "name": "Sigma SA",

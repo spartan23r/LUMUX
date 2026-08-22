@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct RecipeTip: Codable, Identifiable, Hashable {
+	
+	let id: String
+	let title: String?
+	let text: String
+}

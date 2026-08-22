@@ -5,14 +5,33 @@
 //  Created by Ryan Rook on 20/08/2026.
 //
 
-import SwiftUI
+import Foundation
 
-struct DeveloperApp: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct DeveloperApp: Identifiable, Codable {
+	let id: Int
+	let text: String
+	let subtext: String
+	let link: String
+	let image: String
 }
 
-#Preview {
-    DeveloperApp()
+extension Bundle {
+	
+	func decode<T: Decodable>(_ type: T.Type, from file: String) -> T {
+		guard let url = self.url(forResource: file, withExtension: nil) else {
+			fatalError("Failed to locate \(file) in bundle.")
+		}
+
+		guard let data = try? Data(contentsOf: url) else {
+			fatalError("Failed to locate \(file) in bundle.")
+		}
+
+		let decoder = JSONDecoder()
+
+		guard let loaded = try? decoder.decode(T.self, from: data) else {
+			fatalError("Failed to decode \(file) from bundle.")
+		}
+
+		return loaded
+	}
 }

@@ -25,7 +25,6 @@ struct RecipesDetailView: View {
 
 	private let gearMatcher = RecipeGearMatcher()
 
-
 	// MARK: - body
 
 	var body: some View {
@@ -37,10 +36,7 @@ struct RecipesDetailView: View {
 			if !recipe.settings.isEmpty {
 				Section("Recommended Settings") {
 					ForEach(recipe.settings) { setting in
-						VStack(
-							alignment: .leading,
-							spacing: 4
-						) {
+						VStack(alignment: .leading) {
 							LabeledContent(
 								setting.label,
 								value: setting.value
@@ -77,10 +73,7 @@ struct RecipesDetailView: View {
 								)
 							}
 						} label: {
-							VStack(
-								alignment: .leading,
-								spacing: 4
-							) {
+							VStack(alignment: .leading) {
 								Text("Other Matching Lenses")
 
 								Text(
@@ -149,10 +142,7 @@ struct RecipesDetailView: View {
 			if !recipe.requirements.isEmpty {
 				Section("Recommended Gear") {
 					ForEach(recipe.requirements) { requirement in
-						VStack(
-							alignment: .leading,
-							spacing: 4
-						) {
+						VStack(alignment: .leading) {
 							Text(requirement.title)
 								.fontWeight(.medium)
 
@@ -162,7 +152,6 @@ struct RecipesDetailView: View {
 									.foregroundStyle(.secondary)
 							}
 						}
-						.padding(.vertical, 2)
 					}
 				}
 			}
@@ -170,10 +159,7 @@ struct RecipesDetailView: View {
 			if !recipe.tips.isEmpty {
 				Section("Tips") {
 					ForEach(recipe.tips) { tip in
-						VStack(
-							alignment: .leading,
-							spacing: 4
-						) {
+						VStack(alignment: .leading) {
 							if let title = tip.title {
 								Text(title)
 									.fontWeight(.medium)
@@ -183,7 +169,6 @@ struct RecipesDetailView: View {
 								.font(.caption)
 								.foregroundStyle(.secondary)
 						}
-						.padding(.vertical, 2)
 					}
 				}
 			}
@@ -197,10 +182,7 @@ struct RecipesDetailView: View {
 								topic: topic
 							)
 						} label: {
-							VStack(
-								alignment: .leading,
-								spacing: 4
-							) {
+							VStack(alignment: .leading) {
 								HStack(
 									alignment: .center,
 									spacing: 10
@@ -218,7 +200,6 @@ struct RecipesDetailView: View {
 									.font(.caption)
 									.foregroundStyle(.secondary)
 							}
-							.padding(.vertical, 2)
 						}
 					}
 				} header: {
@@ -236,6 +217,7 @@ struct RecipesDetailView: View {
 			ToolbarItem(placement: .topBarTrailing) {
 				Button {
 					toggleFavorite()
+					ReviewStore.requestReview()
 				} label: {
 					Image(
 						systemName: isFavorite
@@ -291,10 +273,7 @@ private extension RecipesDetailView {
 		image: String? = nil,
 		showsReason: Bool = false
 	) -> some View {
-		VStack(
-			alignment: .leading,
-			spacing: 4
-		) {
+		VStack(alignment: .leading) {
 			HStack {
 				Text(match.lens.name)
 					.fontWeight(.medium)
@@ -312,7 +291,7 @@ private extension RecipesDetailView {
 				alignment: .leading
 			)
 			
-			Grid {
+			Grid(horizontalSpacing: 6) {
 				GridRow {
 					
 					if let brand = gearCatalog.brand(for: match.lens.brandID) {
@@ -329,6 +308,7 @@ private extension RecipesDetailView {
 			}
 			.font(.caption)
 			.foregroundStyle(.secondary)
+			.multilineTextAlignment(.leading)
 
 			Text(label)
 				.font(.caption)
@@ -341,7 +321,6 @@ private extension RecipesDetailView {
 					.padding(.top, 2)
 			}
 		}
-		.padding(.vertical, 2)
 	}
 
 //	func lensMetadata(
@@ -368,10 +347,7 @@ private extension RecipesDetailView {
 		_ filter: OwnedFilter,
 		label: String
 	) -> some View {
-		VStack(
-			alignment: .leading,
-			spacing: 4
-		) {
+		VStack(alignment: .leading) {
 			HStack {
 				Text(filter.name)
 					.fontWeight(.medium)
@@ -383,7 +359,7 @@ private extension RecipesDetailView {
 					.foregroundStyle(.white, .tint)
 			}
 			
-			Grid {
+			Grid(horizontalSpacing: 6) {
 				GridRow {
 					
 					if let brand = filter.brand {
@@ -407,22 +383,19 @@ private extension RecipesDetailView {
 			}
 			.font(.caption)
 			.foregroundStyle(.secondary)
+			.multilineTextAlignment(.leading)
 
 			Text(label)
 				.font(.caption)
 				.foregroundStyle(.tint)
 		}
-		.padding(.vertical, 2)
 	}
 
 	func ownedAccessoryRow(
 		_ accessory: OwnedAccessory,
 		label: String
 	) -> some View {
-		VStack(
-			alignment: .leading,
-			spacing: 4
-		) {
+		VStack(alignment: .leading) {
 			HStack {
 				Text(accessory.name)
 					.fontWeight(.medium)
@@ -434,7 +407,7 @@ private extension RecipesDetailView {
 					.foregroundStyle(.white, .tint)
 			}
 
-			Grid {
+			Grid(horizontalSpacing: 6) {
 				GridRow {
 					
 					if let brand = accessory.brand {
@@ -448,12 +421,12 @@ private extension RecipesDetailView {
 			}
 			.font(.caption)
 			.foregroundStyle(.secondary)
+			.multilineTextAlignment(.leading)
 
 			Text(label)
 				.font(.caption)
 				.foregroundStyle(.tint)
 		}
-		.padding(.vertical, 2)
 	}
 }
 

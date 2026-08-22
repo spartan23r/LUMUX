@@ -1,0 +1,70 @@
+{
+  "categories": [
+    {
+      "id": "landscape",
+      "name": "Landscape",
+      "systemImage": "mountain.2",
+      "recipeIDs": [
+        "waterfalls",
+        "sunrise-sunset",
+        "forest",
+        "mountains",
+        "long-exposure",
+        "lakes-reflections",
+        "seascapes",
+        "rivers-streams",
+        "fog-mist",
+        "snow-landscapes"
+      ]
+    },
+    {
+      "id": "people",
+      "name": "People",
+      "systemImage": "person.2",
+      "recipeIDs": [
+        "outdoor-portrait",
+        "golden-hour-portrait",
+        "indoor-portrait",
+        "group-photo",
+        "environmental-portrait",
+        "backlit-portrait",
+        "couples",
+        "children",
+        "street-portrait"
+      ]
+    },
+    {
+      "id": "night",
+      "name": "Night",
+      "systemImage": "moon.stars",
+      "recipeIDs": [
+        "stars",
+        "milky-way",
+        "blue-hour",
+        "city-at-night",
+        "moon",
+        "light-trails",
+        "star-trails",
+        "night-portrait",
+        "fireworks"
+      ]
+    },
+    {
+      "id": "action-wildlife",
+      "name": "Action & Wildlife",
+      "systemImage": "hare",
+      "recipeIDs": [
+        "pets",
+        "wildlife",
+        "birds-in-flight",
+        "sports",
+        "panning",
+        "wildlife-portrait",
+        "birds-perched",
+        "running-pets",
+        "indoor-sports",
+        "motorsport"
+      ]
+    }
+  ]
+}

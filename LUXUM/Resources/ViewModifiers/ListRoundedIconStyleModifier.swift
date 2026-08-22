@@ -7,12 +7,29 @@
 
 import SwiftUI
 
-struct ListRoundedIconStyleModifier: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+private protocol ListRoundedIconStyle {
+	
+	var bgc: Color { get }
+	var filledIconStyle: Bool { get }
 }
 
-#Preview {
-    ListRoundedIconStyleModifier()
+private struct ListRoundedIconStyleModifier: ViewModifier, ListRoundedIconStyle {
+	
+	var bgc: Color
+	var filledIconStyle: Bool
+	
+	func body(content: Content) -> some View {
+		content
+			.foregroundStyle(.white)
+			.symbolVariant(filledIconStyle ? .fill : .none)
+			.frame(width: 34, height: 34)
+			.glassEffectStyle(color: bgc, cornerRadius: 12)
+	}
+}
+
+extension View {
+	
+	func listRoundedIconStyle(bgc: Color = .accentColor, filledIconStyle: Bool = false) -> some View {
+		return modifier(ListRoundedIconStyleModifier(bgc: bgc, filledIconStyle: filledIconStyle))
+	}
 }
