@@ -527,7 +527,9 @@ private extension MyGearScreen {
 						}
 						
 						if let diameter = ownedFilter.diameter {
-							Text("·")
+							if let _ = ownedFilter.brand {
+								Text("·")
+							}
 							Text("\(diameter)" + " mm")
 						}
 						
@@ -564,9 +566,9 @@ private extension MyGearScreen {
 						
 						if let brand = ownedAccessory.brand {
 							Text(brand)
+							Text("·")
 						}
 						
-						Text("·")
 						Text(ownedAccessory.kind.title)
 						
 					}
@@ -712,16 +714,38 @@ private extension MyGearScreen {
 					brandResult,
 					ascending: cameraSortAscending
 				)
-            case .sensorFormat:
-                result = compare(
-                    lhs.camera(in: gearCatalog)?.sensorFormat.displayName ?? "",
-                    rhs.camera(in: gearCatalog)?.sensorFormat.displayName ?? ""
-                )
-            case .resolution:
-                result = compareOptionalNumbers(
-                    lhs.camera(in: gearCatalog)?.megapixels,
-                    rhs.camera(in: gearCatalog)?.megapixels
-                )
+			case .sensorFormat:
+				let sensorResult = compare(
+					lhs.camera(in: gearCatalog)?.sensorFormat.displayName ?? "",
+					rhs.camera(in: gearCatalog)?.sensorFormat.displayName ?? ""
+				)
+
+				if sensorResult == .orderedSame {
+					return compare(
+						lhs.camera(in: gearCatalog)?.name ?? "",
+						rhs.camera(in: gearCatalog)?.name ?? ""
+					) == .orderedAscending
+				}
+
+				return ordered(
+					sensorResult,
+					ascending: cameraSortAscending
+				)
+			case .resolution:
+				let resolutionResult = compareOptionalNumbersAlwaysLast(
+					lhs.camera(in: gearCatalog)?.megapixels,
+					rhs.camera(in: gearCatalog)?.megapixels,
+					ascending: cameraSortAscending
+				)
+
+				if resolutionResult == .orderedSame {
+					return compare(
+						lhs.camera(in: gearCatalog)?.name ?? "",
+						rhs.camera(in: gearCatalog)?.name ?? ""
+					) == .orderedAscending
+				}
+
+				return resolutionResult == .orderedAscending
             }
 
             return ordered(result, ascending: cameraSortAscending)
@@ -754,7 +778,6 @@ private extension MyGearScreen {
 					brandResult,
 					ascending: lensSortAscending
 				)
-
 			case .mount:
 				let mountResult = compare(
 					lensMountName(for: lhs),
@@ -789,9 +812,10 @@ private extension MyGearScreen {
             case .name:
                 result = compare(lhs.name, rhs.name)
 			case .brand:
-				let brandResult = compare(
-					lhs.brand ?? "",
-					rhs.brand ?? ""
+				let brandResult = compareOptionalStrings(
+					lhs.brand,
+					rhs.brand,
+					ascending: filterSortAscending
 				)
 
 				if brandResult == .orderedSame {
@@ -801,11 +825,7 @@ private extension MyGearScreen {
 					) == .orderedAscending
 				}
 
-				return ordered(
-					brandResult,
-					ascending: filterSortAscending
-				)
-
+				return brandResult == .orderedAscending
 			case .type:
 				let typeResult = compare(
 					lhs.kind.title,
@@ -824,9 +844,10 @@ private extension MyGearScreen {
 					ascending: filterSortAscending
 				)
 			case .diameter:
-				let diameterResult = compareOptionalNumbers(
+				let diameterResult = compareOptionalNumbersAlwaysLast(
 					lhs.diameter.map(Double.init),
-					rhs.diameter.map(Double.init)
+					rhs.diameter.map(Double.init),
+					ascending: filterSortAscending
 				)
 
 				if diameterResult == .orderedSame {
@@ -836,10 +857,7 @@ private extension MyGearScreen {
 					) == .orderedAscending
 				}
 
-				return ordered(
-					diameterResult,
-					ascending: filterSortAscending
-				)
+				return diameterResult == .orderedAscending
             }
 
             return ordered(result, ascending: filterSortAscending)
@@ -856,9 +874,10 @@ private extension MyGearScreen {
             case .name:
                 result = compare(lhs.name, rhs.name)
 			case .brand:
-				let brandResult = compare(
-					lhs.brand ?? "",
-					rhs.brand ?? ""
+				let brandResult = compareOptionalStrings(
+					lhs.brand,
+					rhs.brand,
+					ascending: accessorySortAscending
 				)
 
 				if brandResult == .orderedSame {
@@ -868,11 +887,7 @@ private extension MyGearScreen {
 					) == .orderedAscending
 				}
 
-				return ordered(
-					brandResult,
-					ascending: accessorySortAscending
-				)
-
+				return brandResult == .orderedAscending
 			case .type:
 				let typeResult = compare(
 					lhs.kind.title,
@@ -1000,20 +1015,76 @@ private extension MyGearScreen {
         lhs.localizedStandardCompare(rhs)
     }
 
-    func compareOptionalNumbers(_ lhs: Double?, _ rhs: Double?) -> ComparisonResult {
-        switch (lhs, rhs) {
-        case let (lhs?, rhs?):
-            if lhs < rhs { return .orderedAscending }
-            if lhs > rhs { return .orderedDescending }
-            return .orderedSame
-        case (nil, nil):
-            return .orderedSame
-        case (nil, _?):
-            return .orderedDescending
-        case (_?, nil):
-            return .orderedAscending
-        }
-    }
+//    func compareOptionalNumbers(_ lhs: Double?, _ rhs: Double?) -> ComparisonResult {
+//        switch (lhs, rhs) {
+//        case let (lhs?, rhs?):
+//            if lhs < rhs { return .orderedAscending }
+//            if lhs > rhs { return .orderedDescending }
+//            return .orderedSame
+//        case (nil, nil):
+//            return .orderedSame
+//        case (nil, _?):
+//            return .orderedDescending
+//        case (_?, nil):
+//            return .orderedAscending
+//        }
+//    }
+	
+	func compareOptionalNumbersAlwaysLast(_ lhs: Double?, _ rhs: Double?, ascending: Bool) -> ComparisonResult {
+		switch (lhs, rhs) {
+		case let (lhs?, rhs?):
+			if lhs == rhs {
+				return .orderedSame
+			}
+			
+			if ascending {
+				return lhs < rhs
+				? .orderedAscending
+				: .orderedDescending
+			} else {
+				return lhs > rhs
+				? .orderedAscending
+				: .orderedDescending
+			}
+			
+		case (nil, nil):
+			return .orderedSame
+			
+		case (nil, _?):
+			return .orderedDescending
+			
+		case (_?, nil):
+			return .orderedAscending
+		}
+	}
+	
+	func compareOptionalStrings(_ lhs: String?, _ rhs: String?, ascending: Bool) -> ComparisonResult {
+		switch (lhs, rhs) {
+		case let (lhs?, rhs?):
+			let result = compare(lhs, rhs)
+			
+			if result == .orderedSame {
+				return .orderedSame
+			}
+			
+			if ascending {
+				return result
+			}
+			
+			return result == .orderedAscending
+			? .orderedDescending
+			: .orderedAscending
+			
+		case (nil, nil):
+			return .orderedSame
+			
+		case (nil, _?):
+			return .orderedDescending
+			
+		case (_?, nil):
+			return .orderedAscending
+		}
+	}
 
     func cameraBrandName(for item: OwnedGearItem) -> String {
         guard let camera = item.camera(in: gearCatalog) else { return "" }
@@ -1038,7 +1109,7 @@ private extension MyGearScreen {
         if lhsLens.focalLengthMin > rhsLens.focalLengthMin { return .orderedDescending }
         if lhsLens.focalLengthMax < rhsLens.focalLengthMax { return .orderedAscending }
         if lhsLens.focalLengthMax > rhsLens.focalLengthMax { return .orderedDescending }
-        return .orderedSame
+		return compare(lhsLens.name, rhsLens.name)
     }
 
     func compareLensAperture(_ lhs: OwnedGearItem, _ rhs: OwnedGearItem) -> ComparisonResult {
@@ -1049,7 +1120,7 @@ private extension MyGearScreen {
         if lhsLens.maxApertureWide > rhsLens.maxApertureWide { return .orderedDescending }
         if lhsLens.maxApertureTele < rhsLens.maxApertureTele { return .orderedAscending }
         if lhsLens.maxApertureTele > rhsLens.maxApertureTele { return .orderedDescending }
-        return .orderedSame
+		return compareLensFocalLength(lhs, rhs)
     }
 }
 
