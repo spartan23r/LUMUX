@@ -823,11 +823,23 @@ private extension MyGearScreen {
 					typeResult,
 					ascending: filterSortAscending
 				)
-            case .diameter:
-                result = compareOptionalNumbers(
-                    lhs.diameter.map(Double.init),
-                    rhs.diameter.map(Double.init)
-                )
+			case .diameter:
+				let diameterResult = compareOptionalNumbers(
+					lhs.diameter.map(Double.init),
+					rhs.diameter.map(Double.init)
+				)
+
+				if diameterResult == .orderedSame {
+					return compare(
+						lhs.name,
+						rhs.name
+					) == .orderedAscending
+				}
+
+				return ordered(
+					diameterResult,
+					ascending: filterSortAscending
+				)
             }
 
             return ordered(result, ascending: filterSortAscending)
