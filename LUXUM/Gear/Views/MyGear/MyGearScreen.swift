@@ -695,11 +695,23 @@ private extension MyGearScreen {
                     lhs.camera(in: gearCatalog)?.name ?? "",
                     rhs.camera(in: gearCatalog)?.name ?? ""
                 )
-            case .brand:
-                result = compare(
-                    cameraBrandName(for: lhs),
-                    cameraBrandName(for: rhs)
-                )
+			case .brand:
+				let brandResult = compare(
+					cameraBrandName(for: lhs),
+					cameraBrandName(for: rhs)
+				)
+
+				if brandResult == .orderedSame {
+					return compare(
+						lhs.camera(in: gearCatalog)?.name ?? "",
+						rhs.camera(in: gearCatalog)?.name ?? ""
+					) == .orderedAscending
+				}
+
+				return ordered(
+					brandResult,
+					ascending: cameraSortAscending
+				)
             case .sensorFormat:
                 result = compare(
                     lhs.camera(in: gearCatalog)?.sensorFormat.displayName ?? "",
@@ -728,16 +740,35 @@ private extension MyGearScreen {
                     lhs.lens(in: gearCatalog)?.name ?? "",
                     rhs.lens(in: gearCatalog)?.name ?? ""
                 )
-            case .brand:
-                result = compare(
-                    lensBrandName(for: lhs),
-                    lensBrandName(for: rhs)
-                )
-            case .mount:
-                result = compare(
-                    lensMountName(for: lhs),
-                    lensMountName(for: rhs)
-                )
+			case .brand:
+				let brandResult = compare(
+					lensBrandName(for: lhs),
+					lensBrandName(for: rhs)
+				)
+
+				if brandResult == .orderedSame {
+					return compareLensFocalLength(lhs, rhs) == .orderedAscending
+				}
+
+				return ordered(
+					brandResult,
+					ascending: lensSortAscending
+				)
+
+			case .mount:
+				let mountResult = compare(
+					lensMountName(for: lhs),
+					lensMountName(for: rhs)
+				)
+
+				if mountResult == .orderedSame {
+					return compareLensFocalLength(lhs, rhs) == .orderedAscending
+				}
+
+				return ordered(
+					mountResult,
+					ascending: lensSortAscending
+				)
             case .focalLength:
                 result = compareLensFocalLength(lhs, rhs)
             case .aperture:
@@ -757,10 +788,41 @@ private extension MyGearScreen {
                 result = lhs.dateAdded.compare(rhs.dateAdded)
             case .name:
                 result = compare(lhs.name, rhs.name)
-            case .brand:
-                result = compare(lhs.brand ?? "", rhs.brand ?? "")
-            case .type:
-                result = compare(lhs.kind.title, rhs.kind.title)
+			case .brand:
+				let brandResult = compare(
+					lhs.brand ?? "",
+					rhs.brand ?? ""
+				)
+
+				if brandResult == .orderedSame {
+					return compare(
+						lhs.name,
+						rhs.name
+					) == .orderedAscending
+				}
+
+				return ordered(
+					brandResult,
+					ascending: filterSortAscending
+				)
+
+			case .type:
+				let typeResult = compare(
+					lhs.kind.title,
+					rhs.kind.title
+				)
+
+				if typeResult == .orderedSame {
+					return compare(
+						lhs.name,
+						rhs.name
+					) == .orderedAscending
+				}
+
+				return ordered(
+					typeResult,
+					ascending: filterSortAscending
+				)
             case .diameter:
                 result = compareOptionalNumbers(
                     lhs.diameter.map(Double.init),
@@ -781,10 +843,41 @@ private extension MyGearScreen {
                 result = lhs.dateAdded.compare(rhs.dateAdded)
             case .name:
                 result = compare(lhs.name, rhs.name)
-            case .brand:
-                result = compare(lhs.brand ?? "", rhs.brand ?? "")
-            case .type:
-                result = compare(lhs.kind.title, rhs.kind.title)
+			case .brand:
+				let brandResult = compare(
+					lhs.brand ?? "",
+					rhs.brand ?? ""
+				)
+
+				if brandResult == .orderedSame {
+					return compare(
+						lhs.name,
+						rhs.name
+					) == .orderedAscending
+				}
+
+				return ordered(
+					brandResult,
+					ascending: accessorySortAscending
+				)
+
+			case .type:
+				let typeResult = compare(
+					lhs.kind.title,
+					rhs.kind.title
+				)
+
+				if typeResult == .orderedSame {
+					return compare(
+						lhs.name,
+						rhs.name
+					) == .orderedAscending
+				}
+
+				return ordered(
+					typeResult,
+					ascending: accessorySortAscending
+				)
             }
 
             return ordered(result, ascending: accessorySortAscending)
@@ -947,47 +1040,6 @@ private extension MyGearScreen {
         return .orderedSame
     }
 }
-
-
-// MARK: - delete
-//private extension MyGearScreen {
-//	
-//	func deleteCameras(at offsets: IndexSet) {
-//		for index in offsets {
-//			modelContext.delete(
-//				sortedCameras[index]
-//			)
-//		}
-//		settingsStore.triggerHaptic(&hapticSaved)
-//	}
-//	
-//	func deleteLenses(at offsets: IndexSet) {
-//		for index in offsets {
-//			modelContext.delete(
-//				sortedLenses[index]
-//			)
-//		}
-//		settingsStore.triggerHaptic(&hapticSaved)
-//	}
-//	
-//	func deleteFilters(at offsets: IndexSet) {
-//		for index in offsets {
-//			modelContext.delete(
-//				sortedFilters[index]
-//			)
-//		}
-//		settingsStore.triggerHaptic(&hapticSaved)
-//	}
-//	
-//	func deleteAccessoires(at offsets: IndexSet) {
-//		for index in offsets {
-//			modelContext.delete(
-//				sortedAccessories[index]
-//			)
-//		}
-//		settingsStore.triggerHaptic(&hapticSaved)
-//	}
-//}
 
 // MARK: - formatters
 extension MyGearScreen {
