@@ -130,6 +130,7 @@ struct MyGearCameraDetailView: View {
 		}
 		.navigationTitle("My Gear")
 		.navigationSubtitle("Camera")
+		.scrollEdgeEffectStyle(.soft, for: .top)
 		.toolbarTitleDisplayMode(.inline)
 		.scrollDismissesKeyboard(.interactively)
 		.onDisappear {

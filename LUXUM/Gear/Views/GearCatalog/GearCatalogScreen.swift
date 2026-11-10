@@ -187,6 +187,7 @@ extension GearCatalogScreen {
 			feedbackView
 			
 		}
+		.scrollEdgeEffectStyle(.soft, for: .top)
 		.scrollDismissesKeyboard(.interactively)
 		.searchable(
 			text: $cameraSearchText,
@@ -241,6 +242,7 @@ extension GearCatalogScreen {
 		}
 		.navigationTitle("Camera")
 		.navigationSubtitle(brand.name)
+		.scrollEdgeEffectStyle(.soft, for: .top)
 		.toolbarTitleDisplayMode(.inline)
 	}
 	
@@ -464,6 +466,7 @@ extension GearCatalogScreen {
 			feedbackView
 			
 		}
+		.scrollEdgeEffectStyle(.soft, for: .top)
 		.scrollDismissesKeyboard(.interactively)
 		.searchable(
 			text: $lensSearchText,
@@ -532,6 +535,7 @@ extension GearCatalogScreen {
 		}
 		.navigationTitle("Lens")
 		.navigationSubtitle(brand.name)
+		.scrollEdgeEffectStyle(.soft, for: .top)
 		.toolbarTitleDisplayMode(.inline)
 	}
 	

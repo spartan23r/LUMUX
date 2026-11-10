@@ -63,6 +63,7 @@ struct RecipesScreen: View {
 			}
 		}
 		.navigationTitle("Recipes")
+		.scrollEdgeEffectStyle(.soft, for: .top)
 		.toolbarTitleDisplayMode(.inlineLarge)
 		.scrollDismissesKeyboard(.interactively)
 		.searchable(

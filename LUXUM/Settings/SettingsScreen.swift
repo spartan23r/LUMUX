@@ -28,6 +28,7 @@ struct SettingsScreen: View {
 				otherAppsSection
 			}
 			.navigationTitle("Settings")
+			.scrollEdgeEffectStyle(.soft, for: .top)
 			.toolbarTitleDisplayMode(.inline)
 			.toolbar {
 				ToolbarItem(placement: .topBarLeading) {
@@ -212,7 +213,7 @@ extension SettingsScreen {
 					.resizable()
 					.scaledToFit()
 					.corneredRadius(radius: 12)
-					.listRoundedIconStyle()
+					.listRoundedIconStyle(bgc: .clear)
 					.shadow(radius: 0.2)
 				VStack(alignment: .leading) {
 					Text(app.text)

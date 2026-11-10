@@ -99,6 +99,7 @@ struct GearCatalogLensDetailView: View {
 		}
 		.navigationTitle("Lens")
 		.navigationSubtitle(catalog.brand(for: lens.brandID)?.name ?? "")
+		.scrollEdgeEffectStyle(.soft, for: .top)
 		.toolbarTitleDisplayMode(.inline)
     }
 }

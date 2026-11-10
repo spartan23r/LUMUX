@@ -92,6 +92,7 @@ struct GearCatalogCameraDetailView: View {
 		}
 		.navigationTitle("Camera")
 		.navigationSubtitle(catalog.brand(for: camera.brandID)?.name ?? "")
+		.scrollEdgeEffectStyle(.soft, for: .top)
 		.toolbarTitleDisplayMode(.inline)
     }
 }

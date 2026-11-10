@@ -212,6 +212,7 @@ struct RecipesDetailView: View {
 		}
 		.navigationTitle("Recipe")
 		.navigationSubtitle(recipe.title)
+		.scrollEdgeEffectStyle(.soft, for: .top)
 		.navigationBarTitleDisplayMode(.inline)
 		.toolbar {
 			ToolbarItem(placement: .topBarTrailing) {

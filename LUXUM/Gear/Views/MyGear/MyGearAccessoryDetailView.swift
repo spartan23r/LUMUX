@@ -167,6 +167,7 @@ struct MyGearAccessoryDetailView: View {
 		}
 		.navigationTitle("My Gear")
 		.navigationSubtitle("Accessory")
+		.scrollEdgeEffectStyle(.soft, for: .top)
 		.navigationBarTitleDisplayMode(.inline)
 		.scrollDismissesKeyboard(.interactively)
 		.sheet(isPresented: $isShowingAccessoriesTypeInfo) {

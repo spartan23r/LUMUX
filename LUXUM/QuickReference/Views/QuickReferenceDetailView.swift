@@ -97,6 +97,7 @@ struct QuickReferenceDetailView: View {
 		}
 		.navigationTitle("Quick Reference")
 		.navigationSubtitle(topic.title)
+		.scrollEdgeEffectStyle(.soft, for: .top)
 		.navigationBarTitleDisplayMode(.inline)
 		.toolbar {
 			ToolbarItem(

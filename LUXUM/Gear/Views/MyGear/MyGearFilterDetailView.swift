@@ -178,6 +178,7 @@ struct MyGearFilterDetailView: View {
 		}
 		.navigationTitle("My Gear")
 		.navigationSubtitle("Filter")
+		.scrollEdgeEffectStyle(.soft, for: .top)
 		.navigationBarTitleDisplayMode(.inline)
 		.scrollDismissesKeyboard(.interactively)
 		.onDisappear {

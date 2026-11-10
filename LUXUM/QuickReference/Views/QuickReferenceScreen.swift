@@ -64,6 +64,7 @@ struct QuickReferenceScreen: View {
 			}
 		}
 		.navigationTitle("Quick Reference")
+		.scrollEdgeEffectStyle(.soft, for: .top)
 		.toolbarTitleDisplayMode(.inlineLarge)
 		.scrollDismissesKeyboard(.interactively)
 		.searchable(

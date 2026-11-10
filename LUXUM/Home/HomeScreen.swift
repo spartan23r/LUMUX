@@ -167,6 +167,7 @@ struct HomeScreen: View {
 			
 		}
 		.navigationTitle("Home")
+		.scrollEdgeEffectStyle(.soft, for: .top)
 		.toolbarTitleDisplayMode(.inlineLarge)
 		.toolbar {
 			ToolbarItem(placement: .topBarTrailing) {

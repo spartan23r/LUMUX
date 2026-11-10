@@ -20,11 +20,12 @@ struct RootView: View {
 	
 	// MARK: - body
 	var body: some View {
-		switch settingsStore.finishedOnboarding {
-		case true: rootTabView
-		case false: onboardingView
-		}
-		
+		// removed onboarding in v1.0.2
+//		switch settingsStore.finishedOnboarding {
+//		case true: rootTabView
+//		case false: onboardingView
+//		}
+		rootTabView
 	}
 }
 

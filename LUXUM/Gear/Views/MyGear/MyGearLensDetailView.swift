@@ -185,6 +185,7 @@ struct MyGearLensDetailView: View {
 		}
 		.navigationTitle("My Gear")
 		.navigationSubtitle("Lens")
+		.scrollEdgeEffectStyle(.soft, for: .top)
 		.toolbarTitleDisplayMode(.inline)
 		.scrollDismissesKeyboard(.interactively)
 		.onDisappear {

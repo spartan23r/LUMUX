@@ -76,6 +76,7 @@ struct MyGearScreen: View {
 			}
 		}
 		.navigationTitle("My Gear")
+		.scrollEdgeEffectStyle(.soft, for: .top)
 		.toolbarTitleDisplayMode(.inlineLarge)
 		.toolbar {
 			if hasAnyGear {

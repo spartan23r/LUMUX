@@ -36,6 +36,7 @@ struct MyGearAccessoryTypeInfoView: View {
 				}
 			}
 			.navigationTitle("Accessory Types")
+			.scrollEdgeEffectStyle(.soft, for: .top)
 			.navigationBarTitleDisplayMode(.inline)
 			.presentationDragIndicator(.visible)
 			.toolbar {
